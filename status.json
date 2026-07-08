@@ -4,7 +4,7 @@
     "items": [],
     "note": "Delayed historical tape. Symbols, events, and rounded price zones."
   },
-  "generated_at": "2026-07-08T16:00:57",
+  "generated_at": "2026-07-08T16:07:52",
   "heartbeat": {
     "interval_minutes": 60,
     "last_run_at": "2026-07-08T16:00:02",
@@ -502,6 +502,14 @@
         "target_cleanliness": 77,
         "time": "2026-07-08T16:00:57",
         "trinity": 81
+      },
+      {
+        "activity": 84,
+        "performance_pressure": 71,
+        "survival_floor": 90,
+        "target_cleanliness": 77,
+        "time": "2026-07-08T16:07:52",
+        "trinity": 81
       }
     ]
   },
@@ -830,6 +838,18 @@
     "start_flow": {
       "auto_follow": "Requires a future program vault, smart wallet policy, limited session key, or wallet-supported spending policy. Public address lookup alone cannot execute trades.",
       "current_status": "AIR is manual check-in with a ready intent; full automation is blocked until limited authority exists.",
+      "live_paths": [
+        {
+          "description": "Wallet connects, sees queued strategy intent, and signs manually when confirm mode is available.",
+          "name": "Ping-In",
+          "status": "active_preview"
+        },
+        {
+          "description": "Isolated sleeve automation requiring program-vault or limited-authority wallet support.",
+          "name": "Auto Vault",
+          "status": "design_review"
+        }
+      ],
       "manual_check_in": "User enters a public wallet address, reviews queued intents, and signs each transaction from their own wallet when confirm mode exists.",
       "public_site_mode": "static_preview"
     },
