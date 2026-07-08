@@ -4,7 +4,7 @@
     "items": [],
     "note": "Delayed historical tape. Symbols, events, and rounded price zones."
   },
-  "generated_at": "2026-07-08T16:07:52",
+  "generated_at": "2026-07-08T16:58:01",
   "heartbeat": {
     "interval_minutes": 60,
     "last_run_at": "2026-07-08T16:00:02",
@@ -15,6 +15,16 @@
       "Add": "High",
       "Hold": "High",
       "Pause Further Adds": "Low"
+    },
+    "actual_counts": {
+      "Add": 157,
+      "Hold": 146,
+      "Pause Further Adds": 2
+    },
+    "actual_event_counts": {
+      "Ladder signal": 34,
+      "Risk pause": 1,
+      "Target stretch": 124
     },
     "event_mix": {
       "Ladder signal": 34,
@@ -42,7 +52,80 @@
         "rank": "#3"
       }
     ],
-    "tape": [],
+    "tape": [
+      {
+        "event": "Target stretch",
+        "exchange": "Phemex",
+        "price_zone": "n/a",
+        "recommendation": "Add",
+        "status": "dry_run",
+        "symbol": "BSBUSDT",
+        "time": "2026-07-08T16:00:02"
+      },
+      {
+        "event": "Target stretch",
+        "exchange": "Phemex",
+        "price_zone": "n/a",
+        "recommendation": "Add",
+        "status": "dry_run",
+        "symbol": "SAHARAUSDT",
+        "time": "2026-07-08T16:00:02"
+      },
+      {
+        "event": "Target stretch",
+        "exchange": "Phemex",
+        "price_zone": "n/a",
+        "recommendation": "Add",
+        "status": "dry_run",
+        "symbol": "ZKUSDT",
+        "time": "2026-07-08T16:00:02"
+      },
+      {
+        "event": "Target stretch",
+        "exchange": "Phemex",
+        "price_zone": "n/a",
+        "recommendation": "Add",
+        "status": "dry_run",
+        "symbol": "ENSOUSDT",
+        "time": "2026-07-08T16:00:02"
+      },
+      {
+        "event": "Target stretch",
+        "exchange": "Phemex",
+        "price_zone": "n/a",
+        "recommendation": "Add",
+        "status": "dry_run",
+        "symbol": "OPNUSDT",
+        "time": "2026-07-08T16:00:02"
+      },
+      {
+        "event": "Target stretch",
+        "exchange": "Phemex",
+        "price_zone": "near 0.043",
+        "recommendation": "Add",
+        "status": "submitted",
+        "symbol": "MIRAUSDT",
+        "time": "2026-07-08T16:00:02"
+      },
+      {
+        "event": "Ladder signal",
+        "exchange": "Phemex",
+        "price_zone": "micro-price zone",
+        "recommendation": "Add",
+        "status": "submitted",
+        "symbol": "JASMYUSDT",
+        "time": "2026-07-08T16:00:02"
+      },
+      {
+        "event": "Target stretch",
+        "exchange": "Phemex",
+        "price_zone": "micro-price zone",
+        "recommendation": "Add",
+        "status": "submitted",
+        "symbol": "JASMYUSDT",
+        "time": "2026-07-08T16:00:02"
+      }
+    ],
     "timestamp": "2026-07-08T16:00:02"
   },
   "learning": {
@@ -211,25 +294,63 @@
     {
       "band": "Near origin",
       "closed_pct": 7.3,
+      "closed_value": "+15.63 USDT",
       "name": "Phemex",
+      "net_value": "+1.22 USDT",
       "open_pct": -6.8,
+      "open_value": "-14.41 USDT",
       "total_pct": 0.6
     },
     {
       "band": "Ahead",
       "closed_pct": 8.1,
+      "closed_value": "+1.31 USDT",
       "name": "ApeX",
+      "net_value": "+1.31 USDT",
       "open_pct": 0.0,
+      "open_value": "+0.00 USDT",
       "total_pct": 8.1
     },
     {
       "band": "Active proof",
       "closed_pct": 0,
+      "closed_value": "+0.00 SOL",
       "name": "SolSpot",
+      "net_value": "0.0215 SOL deployed today",
       "open_pct": 0,
+      "open_value": "watching",
       "total_pct": 0
     }
   ],
+  "performance_summary": {
+    "combined_net": "+2.53 USDT",
+    "combined_open": "-14.41 USDT",
+    "combined_realized": "+16.94 USDT",
+    "rows": [
+      {
+        "name": "Phemex",
+        "net": "+1.22 USDT",
+        "note": "Hedge-mode perp book",
+        "open": "-14.41 USDT",
+        "realized": "+15.63 USDT"
+      },
+      {
+        "name": "ApeX",
+        "net": "+1.31 USDT",
+        "note": "Futures-capable rotation book",
+        "open": "included",
+        "realized": "+1.31 USDT"
+      },
+      {
+        "name": "SolSpot",
+        "net": "0.0215 SOL deployed",
+        "note": "Long-only spot proof wallet",
+        "open": "spot proof",
+        "realized": "+0.00 SOL"
+      }
+    ],
+    "scale_note": "P/L is shown for strategy scale. Balances, active sizes, order IDs, and next targets stay hidden."
+  },
   "pulse": {
     "activity": 84,
     "performance_pressure": 71,
@@ -510,8 +631,92 @@
         "target_cleanliness": 77,
         "time": "2026-07-08T16:07:52",
         "trinity": 81
+      },
+      {
+        "activity": 84,
+        "performance_pressure": 71,
+        "survival_floor": 90,
+        "target_cleanliness": 77,
+        "time": "2026-07-08T16:09:11",
+        "trinity": 81
+      },
+      {
+        "activity": 84,
+        "performance_pressure": 71,
+        "survival_floor": 90,
+        "target_cleanliness": 77,
+        "time": "2026-07-08T16:46:20",
+        "trinity": 81
+      },
+      {
+        "activity": 84,
+        "performance_pressure": 71,
+        "survival_floor": 90,
+        "target_cleanliness": 77,
+        "time": "2026-07-08T16:49:47",
+        "trinity": 81
+      },
+      {
+        "activity": 84,
+        "performance_pressure": 71,
+        "survival_floor": 90,
+        "target_cleanliness": 77,
+        "time": "2026-07-08T16:51:39",
+        "trinity": 81
+      },
+      {
+        "actions": 159,
+        "activity": 84,
+        "adds": 157,
+        "checks": 305,
+        "combined_net": "+2.53 USDT",
+        "holds": 146,
+        "open_drag": "-14.41 USDT",
+        "pageviews": null,
+        "pauses": 2,
+        "performance_pressure": 71,
+        "repairs": 0,
+        "solspot_actions": 5,
+        "survival_floor": 90,
+        "target_cleanliness": 77,
+        "target_stretches": 124,
+        "time": "2026-07-08T16:56:53",
+        "trinity": 81,
+        "visitors": null
+      },
+      {
+        "actions": 159,
+        "activity": 84,
+        "adds": 157,
+        "checks": 305,
+        "combined_net": "+2.53 USDT",
+        "holds": 146,
+        "open_drag": "-14.41 USDT",
+        "pageviews": null,
+        "pauses": 2,
+        "performance_pressure": 71,
+        "repairs": 0,
+        "solspot_actions": 5,
+        "survival_floor": 90,
+        "target_cleanliness": 77,
+        "target_stretches": 124,
+        "time": "2026-07-08T16:58:01",
+        "trinity": 81,
+        "visitors": null
       }
     ]
+  },
+  "site_traffic": {
+    "bandwidth": null,
+    "generated_at": "2026-07-08T20:01:02+00:00",
+    "note": "Traffic snapshot pending. Netlify analytics update hourly; enter dashboard values into this packet when ready.",
+    "pageviews": null,
+    "source": "Trinity privacy-safe tracker",
+    "status": "pending_manual_entry",
+    "top_pages": [],
+    "top_sources": [],
+    "unique_visitors": null,
+    "window": "7 days"
   },
   "solspot": {
     "actions": [
@@ -587,7 +792,7 @@
     ],
     "daily_limit_sol": 1,
     "daily_spent_sol": "0.021501",
-    "generated_at": "2026-07-08T19:43:06.203Z",
+    "generated_at": "2026-07-08T20:43:06.207Z",
     "hard_memory": [
       {
         "policy": "No fresh discovery buy unless the token clears hard floors for 24h volume, current-hour volume, baseline hourly volume, liquidity, transaction count, route quality, and relative volume.",
@@ -612,108 +817,108 @@
       "candidates": [
         {
           "dex_url": "https://dexscreener.com/solana/gdc11vqjfq6isptw1avoqowxnd7eq3jetjwh1ltt4qt8",
-          "earlier_day_avg_hourly_volume": "257322",
-          "liquidity": "140028",
+          "earlier_day_avg_hourly_volume": "259850",
+          "liquidity": "149030",
           "relative_volume_1h": "0.4x",
-          "relative_volume_value": 0.45,
-          "route": "Candidate only",
-          "score": 348.62,
+          "relative_volume_value": 0.44,
+          "route": "Route OK",
+          "score": 349.32,
           "status": "candidate_only",
           "symbol": "tolywifhat",
           "trigger": "Watch",
-          "txns_1h": 1235,
-          "volume_1h": "115584",
-          "volume_24h": "6034001"
+          "txns_1h": 1245,
+          "volume_1h": "114861",
+          "volume_24h": "6091419"
         },
         {
           "dex_url": "https://dexscreener.com/solana/6adx5qhm4iwee39nik8cambb3sjdgslw7vgpomy2vqwz",
-          "earlier_day_avg_hourly_volume": "227142",
-          "liquidity": "59620",
-          "relative_volume_1h": "0.6x",
-          "relative_volume_value": 0.62,
-          "route": "Candidate only",
-          "score": 346.77,
+          "earlier_day_avg_hourly_volume": "233298",
+          "liquidity": "70260",
+          "relative_volume_1h": "0.4x",
+          "relative_volume_value": 0.36,
+          "route": "Route OK",
+          "score": 342.51,
           "status": "candidate_only",
           "symbol": "MASON",
           "trigger": "Watch",
-          "txns_1h": 2160,
-          "volume_1h": "141204",
-          "volume_24h": "5365470"
-        },
-        {
-          "dex_url": "https://dexscreener.com/solana/3pphocwrgfsk5juxavcke2tcrrjjljgwaupmuakjnhyq",
-          "earlier_day_avg_hourly_volume": "6913",
-          "liquidity": "21162",
-          "relative_volume_1h": "5.8x",
-          "relative_volume_value": 5.84,
-          "route": "Candidate only",
-          "score": 337.88,
-          "status": "candidate_only",
-          "symbol": "beluga",
-          "trigger": "Qualified scout",
-          "txns_1h": 3271,
-          "volume_1h": "40361",
-          "volume_24h": "199353"
+          "txns_1h": 1491,
+          "volume_1h": "83609",
+          "volume_24h": "5449460"
         },
         {
           "dex_url": "https://dexscreener.com/solana/5smcocy9fvw3g1apyzyhxd2ozyasewkozjmtgsphjsjg",
-          "earlier_day_avg_hourly_volume": "72721",
-          "liquidity": "102779",
+          "earlier_day_avg_hourly_volume": "69307",
+          "liquidity": "99952",
           "relative_volume_1h": "0.7x",
-          "relative_volume_value": 0.66,
+          "relative_volume_value": 0.71,
           "route": "Candidate only",
-          "score": 325.36,
+          "score": 326.45,
           "status": "candidate_only",
           "symbol": "SUNUSI",
           "trigger": "Watch",
-          "txns_1h": 1338,
-          "volume_1h": "47772",
-          "volume_24h": "1720358"
+          "txns_1h": 1604,
+          "volume_1h": "49519",
+          "volume_24h": "1643591"
         },
         {
           "dex_url": "https://dexscreener.com/solana/6mc6txdrckl1mhr8s9kys55cchkdzx3ayianas6aa9ym",
-          "earlier_day_avg_hourly_volume": "372251",
-          "liquidity": "26695",
+          "earlier_day_avg_hourly_volume": "373774",
+          "liquidity": "5805",
           "relative_volume_1h": "0.1x",
-          "relative_volume_value": 0.09,
+          "relative_volume_value": 0.07,
           "route": "Candidate only",
-          "score": 325.1,
+          "score": 320.52,
           "status": "candidate_only",
           "symbol": "BULLSEY",
           "trigger": "Watch",
-          "txns_1h": 3724,
-          "volume_1h": "34935",
-          "volume_24h": "8596713"
+          "txns_1h": 16643,
+          "volume_1h": "27882",
+          "volume_24h": "8624675"
         },
         {
           "dex_url": "https://dexscreener.com/solana/4dtppur4cp7eksn57bs2cnxay3e98fjtz5kce8v5juu2",
-          "earlier_day_avg_hourly_volume": "81874",
-          "liquidity": "25977",
-          "relative_volume_1h": "0.5x",
-          "relative_volume_value": 0.47,
+          "earlier_day_avg_hourly_volume": "83536",
+          "liquidity": "24254",
+          "relative_volume_1h": "0.3x",
+          "relative_volume_value": 0.3,
           "route": "Candidate only",
-          "score": 320.16,
+          "score": 312.35,
           "status": "candidate_only",
           "symbol": "BabyCupsey",
           "trigger": "Watch",
-          "txns_1h": 845,
-          "volume_1h": "38131",
-          "volume_24h": "1921224"
+          "txns_1h": 602,
+          "volume_1h": "25258",
+          "volume_24h": "1946590"
         },
         {
-          "dex_url": "https://dexscreener.com/solana/319sw8fbit7jdzpyswsln2qdfxtc6pb5mzujuuhkx6ua",
-          "earlier_day_avg_hourly_volume": "631",
-          "liquidity": "2879",
-          "relative_volume_1h": "11.2x",
-          "relative_volume_value": 11.18,
+          "dex_url": "https://dexscreener.com/solana/3pphocwrgfsk5juxavcke2tcrrjjljgwaupmuakjnhyq",
+          "earlier_day_avg_hourly_volume": "8670",
+          "liquidity": "21254",
+          "relative_volume_1h": "3.1x",
+          "relative_volume_value": 3.08,
           "route": "Candidate only",
-          "score": 315.2,
+          "score": 311.9,
           "status": "candidate_only",
-          "symbol": "Whales",
-          "trigger": "Qualified scout",
-          "txns_1h": 37,
-          "volume_1h": "7052",
-          "volume_24h": "21564"
+          "symbol": "beluga",
+          "trigger": "Watch",
+          "txns_1h": 837,
+          "volume_1h": "26745",
+          "volume_24h": "226164"
+        },
+        {
+          "dex_url": "https://dexscreener.com/solana/fzz5ekqopg6f7knm9wbpnfkwpce24vm6loakxsfcqjzx",
+          "earlier_day_avg_hourly_volume": "10118",
+          "liquidity": "5729",
+          "relative_volume_1h": "1.9x",
+          "relative_volume_value": 1.94,
+          "route": "Candidate only",
+          "score": 299.08,
+          "status": "candidate_only",
+          "symbol": "CASHDOG",
+          "trigger": "Watch",
+          "txns_1h": 723,
+          "volume_1h": "19619",
+          "volume_24h": "252331"
         }
       ],
       "filters": {
@@ -726,7 +931,7 @@
         "quote_sol": 0.001,
         "scan_limit": 20
       },
-      "generated_at": "2026-07-08T19:43:06.014Z",
+      "generated_at": "2026-07-08T20:43:06.010Z",
       "mode": "auto-rotation enabled for #1 eligible routeable candidate"
     },
     "wallet": "2Lv7...UzA2",
@@ -746,7 +951,7 @@
   "strategy": {
     "current_focus": "Trinity is tracking capital posture, target health, market pressure, and rotation activity.",
     "name": "Trinity Trading System",
-    "public_note": "Trading Station view: pulse, books, SolSpot radar, market tape, and HedgAI holder signals."
+    "public_note": "Wheelhouse view: strategy pulse, P/L posture, trading books, SolSpot radar, market tape, learning rules, and HedgAI holder signals."
   },
   "systems": {
     "apex": {
@@ -779,6 +984,96 @@
       "strategy_type": "Long and short can run on the same symbol",
       "target_health": "Repairing"
     }
+  },
+  "trade_report": {
+    "actions_logged": 159,
+    "adds": 157,
+    "apex_positions": 21,
+    "checks": 305,
+    "holds": 146,
+    "ladder_signals": 34,
+    "latest_events": [
+      {
+        "event": "Target stretch",
+        "exchange": "Phemex",
+        "price_zone": "n/a",
+        "recommendation": "Add",
+        "status": "dry_run",
+        "symbol": "BSBUSDT",
+        "time": "2026-07-08T16:00:02"
+      },
+      {
+        "event": "Target stretch",
+        "exchange": "Phemex",
+        "price_zone": "n/a",
+        "recommendation": "Add",
+        "status": "dry_run",
+        "symbol": "SAHARAUSDT",
+        "time": "2026-07-08T16:00:02"
+      },
+      {
+        "event": "Target stretch",
+        "exchange": "Phemex",
+        "price_zone": "n/a",
+        "recommendation": "Add",
+        "status": "dry_run",
+        "symbol": "ZKUSDT",
+        "time": "2026-07-08T16:00:02"
+      },
+      {
+        "event": "Target stretch",
+        "exchange": "Phemex",
+        "price_zone": "n/a",
+        "recommendation": "Add",
+        "status": "dry_run",
+        "symbol": "ENSOUSDT",
+        "time": "2026-07-08T16:00:02"
+      },
+      {
+        "event": "Target stretch",
+        "exchange": "Phemex",
+        "price_zone": "n/a",
+        "recommendation": "Add",
+        "status": "dry_run",
+        "symbol": "OPNUSDT",
+        "time": "2026-07-08T16:00:02"
+      },
+      {
+        "event": "Target stretch",
+        "exchange": "Phemex",
+        "price_zone": "near 0.043",
+        "recommendation": "Add",
+        "status": "submitted",
+        "symbol": "MIRAUSDT",
+        "time": "2026-07-08T16:00:02"
+      },
+      {
+        "event": "Ladder signal",
+        "exchange": "Phemex",
+        "price_zone": "micro-price zone",
+        "recommendation": "Add",
+        "status": "submitted",
+        "symbol": "JASMYUSDT",
+        "time": "2026-07-08T16:00:02"
+      },
+      {
+        "event": "Target stretch",
+        "exchange": "Phemex",
+        "price_zone": "micro-price zone",
+        "recommendation": "Add",
+        "status": "submitted",
+        "symbol": "JASMYUSDT",
+        "time": "2026-07-08T16:00:02"
+      }
+    ],
+    "mode": "Active management",
+    "note": "Trade report uses public-safe events. Active sizing and next targets are hidden.",
+    "pauses": 2,
+    "phemex_positions": 215,
+    "repairs": 0,
+    "solspot_actions_today": 5,
+    "target_stretches": 124,
+    "timestamp": "2026-07-08T16:00:02"
   },
   "vault": {
     "accounting_model": "isolated_user_vault_sleeves",
@@ -836,8 +1131,8 @@
       }
     ],
     "start_flow": {
-      "auto_follow": "Requires a future program vault, smart wallet policy, limited session key, or wallet-supported spending policy. Public address lookup alone cannot execute trades.",
-      "current_status": "AIR is manual check-in with a ready intent; full automation is blocked until limited authority exists.",
+      "auto_follow": "Parked as future research. Public address lookup alone cannot execute trades, so the active model is Ping-In manual signing.",
+      "current_status": "AIR is manual check-in with a ready intent; Ping-In is the active path and outside-wallet automation is parked.",
       "live_paths": [
         {
           "description": "Wallet connects, sees queued strategy intent, and signs manually when confirm mode is available.",
@@ -845,9 +1140,9 @@
           "status": "active_preview"
         },
         {
-          "description": "Isolated sleeve automation requiring program-vault or limited-authority wallet support.",
-          "name": "Auto Vault",
-          "status": "design_review"
+          "description": "Design-only idea for isolated sleeve automation. Not active until a safe limited-authority model exists.",
+          "name": "Future Vault",
+          "status": "research_only"
         }
       ],
       "manual_check_in": "User enters a public wallet address, reviews queued intents, and signs each transaction from their own wallet when confirm mode exists.",
@@ -856,7 +1151,7 @@
     "status": "concept_rules_active",
     "summary": "Rule-bound spot vault concept. Simulator phase.",
     "user_modes": {
-      "auto": "Auto Follow",
+      "auto": "Future Vault Research",
       "default": "manual_check_in",
       "manual": "Manual Check-In"
     },
