@@ -4,7 +4,7 @@
     "items": [],
     "note": "Delayed historical tape. Symbols, events, and rounded price zones."
   },
-  "generated_at": "2026-07-08T15:00:53",
+  "generated_at": "2026-07-08T15:25:02",
   "heartbeat": {
     "interval_minutes": 60,
     "last_run_at": "2026-07-08T15:00:02",
@@ -50,13 +50,13 @@
     "count": 1,
     "entries": [
       {
-        "change": "Added hard-memory token block and baseline hourly volume floor.",
+        "change": "Raised SolSpot discovery gates to require hard floors for 24h volume, current-hour volume, baseline hourly volume, liquidity, transaction count, route quality, and relative volume.",
         "date": "2026-07-08",
-        "lesson_type": "Hard memory",
-        "rule_effect": "No fresh buys or average-down adds. Green-exit quote only unless manually cleared.",
+        "lesson_type": "Market activity floor",
+        "rule_effect": "Fresh discovery buys require at least $1M 24h volume, $50K current-hour volume, $25K baseline hourly volume, $50K liquidity, 250 one-hour transactions, 5x relative volume, and a valid Jupiter route.",
         "status": "Active",
         "system": "SolSpot",
-        "trigger": "okdog dust scout collapsed after temporary volume spike."
+        "trigger": "okdog dust scout collapsed after a temporary spike with insufficient durable trading activity."
       }
     ],
     "feedback_channel": {
@@ -454,6 +454,22 @@
         "target_cleanliness": 77,
         "time": "2026-07-08T15:00:53",
         "trinity": 81
+      },
+      {
+        "activity": 84,
+        "performance_pressure": 71,
+        "survival_floor": 90,
+        "target_cleanliness": 77,
+        "time": "2026-07-08T15:22:18",
+        "trinity": 81
+      },
+      {
+        "activity": 84,
+        "performance_pressure": 71,
+        "survival_floor": 90,
+        "target_cleanliness": 77,
+        "time": "2026-07-08T15:25:02",
+        "trinity": 81
       }
     ]
   },
@@ -534,7 +550,7 @@
     "generated_at": "2026-07-08T18:43:06.712Z",
     "hard_memory": [
       {
-        "policy": "No fresh buys and no average-down adds. Quote for green exit only unless manually cleared.",
+        "policy": "No fresh discovery buy unless the token clears hard floors for 24h volume, current-hour volume, baseline hourly volume, liquidity, transaction count, route quality, and relative volume.",
         "symbol": "okdog"
       }
     ],
@@ -556,113 +572,121 @@
       "candidates": [
         {
           "dex_url": "https://dexscreener.com/solana/3pphocwrgfsk5juxavcke2tcrrjjljgwaupmuakjnhyq",
-          "earlier_day_avg_hourly_volume": "1",
-          "liquidity": "18984",
-          "relative_volume_1h": "158962.8x",
-          "relative_volume_value": 158962.8,
+          "earlier_day_avg_hourly_volume": "5993",
+          "liquidity": "19695",
+          "relative_volume_1h": "8.8x",
+          "relative_volume_value": 8.81,
           "route": "Candidate only",
-          "score": 461.89,
+          "score": 358.6,
           "status": "candidate_only",
           "symbol": "beluga",
           "trigger": "Qualified scout",
-          "volume_1h": "158963",
-          "volume_24h": "158963"
-        },
-        {
-          "dex_url": "https://dexscreener.com/solana/6adx5qhm4iwee39nik8cambb3sjdgslw7vgpomy2vqwz",
-          "earlier_day_avg_hourly_volume": "217676",
-          "liquidity": "75724",
-          "relative_volume_1h": "1.0x",
-          "relative_volume_value": 1.0,
-          "route": "Route OK",
-          "score": 354.05,
-          "status": "candidate_only",
-          "symbol": "MASON",
-          "trigger": "Watch",
-          "volume_1h": "216889",
-          "volume_24h": "5223434"
+          "txns_1h": 5197,
+          "volume_1h": "52774",
+          "volume_24h": "190608"
         },
         {
           "dex_url": "https://dexscreener.com/solana/gdc11vqjfq6isptw1avoqowxnd7eq3jetjwh1ltt4qt8",
-          "earlier_day_avg_hourly_volume": "254443",
-          "liquidity": "132630",
+          "earlier_day_avg_hourly_volume": "256419",
+          "liquidity": "137046",
           "relative_volume_1h": "0.5x",
-          "relative_volume_value": 0.51,
+          "relative_volume_value": 0.47,
           "route": "Route OK",
-          "score": 350,
+          "score": 348.73,
           "status": "candidate_only",
           "symbol": "tolywifhat",
           "trigger": "Watch",
-          "volume_1h": "130914",
-          "volume_24h": "5983114"
+          "txns_1h": 1293,
+          "volume_1h": "120008",
+          "volume_24h": "6017639"
+        },
+        {
+          "dex_url": "https://dexscreener.com/solana/6adx5qhm4iwee39nik8cambb3sjdgslw7vgpomy2vqwz",
+          "earlier_day_avg_hourly_volume": "225598",
+          "liquidity": "65795",
+          "relative_volume_1h": "0.7x",
+          "relative_volume_value": 0.66,
+          "route": "Route OK",
+          "score": 347.65,
+          "status": "candidate_only",
+          "symbol": "MASON",
+          "trigger": "Watch",
+          "txns_1h": 2248,
+          "volume_1h": "149630",
+          "volume_24h": "5338383"
         },
         {
           "dex_url": "https://dexscreener.com/solana/6mc6txdrckl1mhr8s9kys55cchkdzx3ayianas6aa9ym",
-          "earlier_day_avg_hourly_volume": "364527",
-          "liquidity": "25301",
-          "relative_volume_1h": "0.5x",
-          "relative_volume_value": 0.49,
-          "route": "Route OK",
-          "score": 345.53,
+          "earlier_day_avg_hourly_volume": "371753",
+          "liquidity": "25993",
+          "relative_volume_1h": "0.1x",
+          "relative_volume_value": 0.1,
+          "route": "Candidate only",
+          "score": 324.06,
           "status": "candidate_only",
           "symbol": "BULLSEY",
           "trigger": "Watch",
-          "volume_1h": "177558",
-          "volume_24h": "8561670"
-        },
-        {
-          "dex_url": "https://dexscreener.com/solana/pan7xphfkszcywtgg6k3nxgjx9ztr91lnqswqfke4qw",
-          "earlier_day_avg_hourly_volume": "41174",
-          "liquidity": "28776",
-          "relative_volume_1h": "1.5x",
-          "relative_volume_value": 1.52,
-          "route": "Route OK",
-          "score": 324.43,
-          "status": "candidate_only",
-          "symbol": "RIF",
-          "trigger": "Watch",
-          "volume_1h": "62606",
-          "volume_24h": "1009617"
-        },
-        {
-          "dex_url": "https://dexscreener.com/solana/4dtppur4cp7eksn57bs2cnxay3e98fjtz5kce8v5juu2",
-          "earlier_day_avg_hourly_volume": "80923",
-          "liquidity": "30317",
-          "relative_volume_1h": "0.3x",
-          "relative_volume_value": 0.26,
-          "route": "Route OK",
-          "score": 315.47,
-          "status": "candidate_only",
-          "symbol": "BabyCupsey",
-          "trigger": "Watch",
-          "volume_1h": "21199",
-          "volume_24h": "1882419"
+          "txns_1h": 3676,
+          "volume_1h": "35679",
+          "volume_24h": "8585998"
         },
         {
           "dex_url": "https://dexscreener.com/solana/5smcocy9fvw3g1apyzyhxd2ozyasewkozjmtgsphjsjg",
-          "earlier_day_avg_hourly_volume": "74858",
-          "liquidity": "101721",
-          "relative_volume_1h": "0.2x",
-          "relative_volume_value": 0.2,
-          "route": "Route OK",
-          "score": 314.38,
+          "earlier_day_avg_hourly_volume": "73492",
+          "liquidity": "101216",
+          "relative_volume_1h": "0.6x",
+          "relative_volume_value": 0.58,
+          "route": "Candidate only",
+          "score": 322.89,
           "status": "candidate_only",
           "symbol": "SUNUSI",
           "trigger": "Watch",
-          "volume_1h": "15173",
-          "volume_24h": "1736905"
+          "txns_1h": 1222,
+          "volume_1h": "42662",
+          "volume_24h": "1732977"
+        },
+        {
+          "dex_url": "https://dexscreener.com/solana/4dtppur4cp7eksn57bs2cnxay3e98fjtz5kce8v5juu2",
+          "earlier_day_avg_hourly_volume": "81457",
+          "liquidity": "29090",
+          "relative_volume_1h": "0.3x",
+          "relative_volume_value": 0.27,
+          "route": "Candidate only",
+          "score": 314.62,
+          "status": "candidate_only",
+          "symbol": "BabyCupsey",
+          "trigger": "Watch",
+          "txns_1h": 558,
+          "volume_1h": "22145",
+          "volume_24h": "1895664"
+        },
+        {
+          "dex_url": "https://dexscreener.com/solana/pan7xphfkszcywtgg6k3nxgjx9ztr91lnqswqfke4qw",
+          "earlier_day_avg_hourly_volume": "43703",
+          "liquidity": "29992",
+          "relative_volume_1h": "0.3x",
+          "relative_volume_value": 0.33,
+          "route": "Candidate only",
+          "score": 302.46,
+          "status": "candidate_only",
+          "symbol": "RIF",
+          "trigger": "Watch",
+          "txns_1h": 425,
+          "volume_1h": "14349",
+          "volume_24h": "1019510"
         }
       ],
       "filters": {
-        "min_baseline_hourly_volume_usd": 10000,
-        "min_liquidity_usd": 10000,
+        "min_baseline_hourly_volume_usd": 25000,
+        "min_liquidity_usd": 50000,
         "min_relative_volume_1h": 5,
-        "min_volume_1h_usd": 10000,
-        "min_volume_24h_usd": 25000,
+        "min_txns_1h": 250,
+        "min_volume_1h_usd": 50000,
+        "min_volume_24h_usd": 1000000,
         "quote_sol": 0.001,
         "scan_limit": 20
       },
-      "generated_at": "2026-07-08T18:43:06.504Z",
+      "generated_at": "2026-07-08T19:24:14.709Z",
       "mode": "auto-rotation enabled for #1 eligible routeable candidate"
     },
     "wallet": "2Lv7...UzA2",
