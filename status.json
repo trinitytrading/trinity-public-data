@@ -103,7 +103,7 @@
     ],
     "note": "Delayed historical tape. Symbols, events, and rounded price zones."
   },
-  "generated_at": "2026-07-11T11:02:36",
+  "generated_at": "2026-07-11T11:11:51",
   "heartbeat": {
     "interval_minutes": 60,
     "last_run_at": "2026-07-11T11:00:01",
@@ -651,6 +651,110 @@
     ],
     "scale_note": "P/L is shown for strategy scale. Balances, active sizes, order IDs, and next targets stay hidden."
   },
+  "product_economics": {
+    "costs": [
+      {
+        "label": "Build sprint AI",
+        "type": "temporary",
+        "value": "$100 this month"
+      },
+      {
+        "label": "Planned Codex",
+        "type": "planned",
+        "value": "$20/mo"
+      },
+      {
+        "label": "Low AI option",
+        "type": "optional",
+        "value": "$9/mo or static"
+      },
+      {
+        "label": "Netlify",
+        "type": "optional",
+        "value": "$9/mo or free static"
+      },
+      {
+        "label": "Domain",
+        "type": "fixed",
+        "value": "$23/year"
+      },
+      {
+        "label": "Local laptop",
+        "type": "local compute",
+        "value": "$800 one-time"
+      }
+    ],
+    "current_monthly_carry": "$110.92",
+    "domain_only_carry": "$1.92",
+    "first_year_with_laptop": "$1031.00",
+    "low_ai_static_carry": "$10.92",
+    "models": [
+      {
+        "equation": "$100 AI + $9 Netlify + $23/12 domain",
+        "label": "Current sprint carry",
+        "value": "$110.92"
+      },
+      {
+        "equation": "$20 AI + $9 Netlify + $23/12 domain",
+        "label": "Planned paid carry",
+        "value": "$30.92"
+      },
+      {
+        "equation": "$20 AI + $23/12 domain",
+        "label": "Planned free-Netlify carry",
+        "value": "$21.92"
+      },
+      {
+        "equation": "$9 AI + $23/12 domain",
+        "label": "Low-AI static carry",
+        "value": "$10.92"
+      },
+      {
+        "equation": "$23/12 domain",
+        "label": "Static domain-only carry",
+        "value": "$1.92"
+      }
+    ],
+    "planned_free_netlify_carry": "$21.92",
+    "planned_paid_monthly_carry": "$30.92",
+    "proof_points": [
+      "Trading scripts existed before the website layer.",
+      "The site reads packets instead of requiring an expensive public backend.",
+      "PIT lets qualified wallets sign their own orders without sharing private keys.",
+      "When deployments stop, the static site can keep presenting the latest public packet.",
+      "Usage can later be measured by holders, check-ins, PIT orders, SolSpot actions, and traffic."
+    ],
+    "safety_note": "This is project cost basis and operating efficiency. It is not token valuation, ROI, yield, or a promise that HedgAI has product rights.",
+    "subtitle": "AI capital efficiency and low-carry infrastructure.",
+    "summary": "Trinity was built as a local-first system: self-created strategy logic, local Python/Node automation, static website packets, and optional AI/deploy spend.",
+    "title": "Build Ledger",
+    "usage_inputs": [
+      {
+        "label": "Holder registry",
+        "value": 5
+      },
+      {
+        "label": "PIT eligible",
+        "value": 5
+      },
+      {
+        "label": "Ready PIT signatures",
+        "value": 4
+      },
+      {
+        "label": "Pending PIT records",
+        "value": 150
+      },
+      {
+        "label": "SolSpot actions",
+        "value": 0
+      },
+      {
+        "label": "Site traffic",
+        "value": "pending_manual_entry"
+      }
+    ]
+  },
   "pulse": {
     "activity": 84,
     "performance_pressure": 87,
@@ -660,66 +764,6 @@
   },
   "pulse_history": {
     "items": [
-      {
-        "actions": 36,
-        "activity": 84,
-        "adds": 32,
-        "checks": 231,
-        "combined_net": "+12.73 USDT",
-        "holds": 195,
-        "open_drag": "-11.71 USDT",
-        "pageviews": null,
-        "pauses": 4,
-        "performance_pressure": 87,
-        "repairs": 0,
-        "solspot_actions": 0,
-        "survival_floor": 80,
-        "target_cleanliness": 77,
-        "target_stretches": 23,
-        "time": "2026-07-11T00:43:01",
-        "trinity": 81,
-        "visitors": null
-      },
-      {
-        "actions": 36,
-        "activity": 84,
-        "adds": 32,
-        "checks": 231,
-        "combined_net": "+12.73 USDT",
-        "holds": 195,
-        "open_drag": "-11.71 USDT",
-        "pageviews": null,
-        "pauses": 4,
-        "performance_pressure": 87,
-        "repairs": 0,
-        "solspot_actions": 0,
-        "survival_floor": 80,
-        "target_cleanliness": 77,
-        "target_stretches": 23,
-        "time": "2026-07-11T00:44:03",
-        "trinity": 81,
-        "visitors": null
-      },
-      {
-        "actions": 36,
-        "activity": 84,
-        "adds": 32,
-        "checks": 231,
-        "combined_net": "+12.73 USDT",
-        "holds": 195,
-        "open_drag": "-11.71 USDT",
-        "pageviews": null,
-        "pauses": 4,
-        "performance_pressure": 87,
-        "repairs": 0,
-        "solspot_actions": 0,
-        "survival_floor": 80,
-        "target_cleanliness": 77,
-        "target_stretches": 23,
-        "time": "2026-07-11T00:44:42",
-        "trinity": 81,
-        "visitors": null
-      },
       {
         "actions": 36,
         "activity": 84,
@@ -2579,6 +2623,66 @@
         "time": "2026-07-11T11:02:36",
         "trinity": 81,
         "visitors": null
+      },
+      {
+        "actions": 40,
+        "activity": 84,
+        "adds": 38,
+        "checks": 226,
+        "combined_net": "+15.31 USDT",
+        "holds": 186,
+        "open_drag": "-10.03 USDT",
+        "pageviews": null,
+        "pauses": 2,
+        "performance_pressure": 87,
+        "repairs": 0,
+        "solspot_actions": 0,
+        "survival_floor": 80,
+        "target_cleanliness": 77,
+        "target_stretches": 33,
+        "time": "2026-07-11T11:08:53",
+        "trinity": 81,
+        "visitors": null
+      },
+      {
+        "actions": 40,
+        "activity": 84,
+        "adds": 38,
+        "checks": 226,
+        "combined_net": "+15.31 USDT",
+        "holds": 186,
+        "open_drag": "-10.03 USDT",
+        "pageviews": null,
+        "pauses": 2,
+        "performance_pressure": 87,
+        "repairs": 0,
+        "solspot_actions": 0,
+        "survival_floor": 80,
+        "target_cleanliness": 77,
+        "target_stretches": 33,
+        "time": "2026-07-11T11:09:39",
+        "trinity": 81,
+        "visitors": null
+      },
+      {
+        "actions": 40,
+        "activity": 84,
+        "adds": 38,
+        "checks": 226,
+        "combined_net": "+15.31 USDT",
+        "holds": 186,
+        "open_drag": "-10.03 USDT",
+        "pageviews": null,
+        "pauses": 2,
+        "performance_pressure": 87,
+        "repairs": 0,
+        "solspot_actions": 0,
+        "survival_floor": 80,
+        "target_cleanliness": 77,
+        "target_stretches": 33,
+        "time": "2026-07-11T11:11:51",
+        "trinity": 81,
+        "visitors": null
       }
     ]
   },
@@ -2632,7 +2736,7 @@
     ],
     "daily_limit_sol": 1,
     "daily_spent_sol": "0",
-    "generated_at": "2026-07-11T15:02:25.279Z",
+    "generated_at": "2026-07-11T15:11:48.291Z",
     "hard_memory": [
       {
         "policy": "No fresh discovery buy unless the token clears hard floors for 24h volume, current-hour volume, baseline hourly volume, liquidity, transaction count, route quality, and relative volume.",
@@ -2659,144 +2763,144 @@
           "dex_url": "https://dexscreener.com/solana/146363c3ktugm5cvbn6d7z5che73fgwqfvxrxftnzecm",
           "earlier_day_avg_hourly_volume": "1",
           "eligibility_reason": "",
-          "liquidity": "3377",
-          "relative_volume_1h": "689907.9x",
-          "relative_volume_value": 689907.94,
+          "liquidity": "3294",
+          "relative_volume_1h": "690092.5x",
+          "relative_volume_value": 690092.51,
           "route": "Candidate only",
           "route_ok": false,
-          "score": 471.22,
+          "score": 471.04,
           "status": "candidate_only",
           "symbol": "SCAMBULL",
           "trigger": "Volume spike",
-          "txns_1h": 11085,
-          "volume_1h": "689908",
-          "volume_24h": "689908",
+          "txns_1h": 11141,
+          "volume_1h": "690093",
+          "volume_24h": "690093",
           "volume_rank_gate": ""
         },
         {
           "dex_url": "https://dexscreener.com/solana/9s7eouej89ikefyxlgyenxgutj3pmr7owex3zgqadjnc",
           "earlier_day_avg_hourly_volume": "1",
           "eligibility_reason": "",
-          "liquidity": "23666",
-          "relative_volume_1h": "125461.9x",
-          "relative_volume_value": 125461.92,
+          "liquidity": "22170",
+          "relative_volume_1h": "186474.3x",
+          "relative_volume_value": 186474.26,
           "route": "Candidate only",
           "route_ok": false,
-          "score": 462.88,
+          "score": 467.55,
           "status": "candidate_only",
           "symbol": "CUM",
           "trigger": "Volume spike",
-          "txns_1h": 3430,
-          "volume_1h": "125462",
-          "volume_24h": "125462",
+          "txns_1h": 5293,
+          "volume_1h": "186474",
+          "volume_24h": "186474",
           "volume_rank_gate": ""
         },
         {
           "dex_url": "https://dexscreener.com/solana/f2njr5juypiritekj8qhgdgvvwgevvrg6jjh1q5uv3bk",
           "earlier_day_avg_hourly_volume": "1",
           "eligibility_reason": "",
-          "liquidity": "8750",
-          "relative_volume_1h": "232587.9x",
-          "relative_volume_value": 232587.94,
+          "liquidity": "6244",
+          "relative_volume_1h": "239690.5x",
+          "relative_volume_value": 239690.54,
           "route": "Candidate only",
           "route_ok": false,
-          "score": 457.9,
+          "score": 458.8,
           "status": "candidate_only",
           "symbol": "MOODENG",
           "trigger": "Volume spike",
-          "txns_1h": 6927,
-          "volume_1h": "232588",
-          "volume_24h": "232588",
-          "volume_rank_gate": ""
-        },
-        {
-          "dex_url": "https://dexscreener.com/solana/awksmyegbfvmrycxfcm2orfuzggmkdqtei5kdxklrlax",
-          "earlier_day_avg_hourly_volume": "1",
-          "eligibility_reason": "",
-          "liquidity": "7043",
-          "relative_volume_1h": "74464.8x",
-          "relative_volume_value": 74464.84,
-          "route": "Candidate only",
-          "route_ok": false,
-          "score": 440.52,
-          "status": "candidate_only",
-          "symbol": "febuwhale",
-          "trigger": "Volume spike",
-          "txns_1h": 2668,
-          "volume_1h": "74465",
-          "volume_24h": "74465",
+          "txns_1h": 7363,
+          "volume_1h": "239691",
+          "volume_24h": "239691",
           "volume_rank_gate": ""
         },
         {
           "dex_url": "https://dexscreener.com/solana/2yxivu1m7ma7aaer2a7mnjzctswxgbqhtgmaq8bspn87",
           "earlier_day_avg_hourly_volume": "1",
           "eligibility_reason": "",
-          "liquidity": "11577",
-          "relative_volume_1h": "89085.7x",
-          "relative_volume_value": 89085.68,
+          "liquidity": "10047",
+          "relative_volume_1h": "95443.4x",
+          "relative_volume_value": 95443.45,
           "route": "Candidate only",
           "route_ok": false,
-          "score": 440.21,
+          "score": 442.93,
           "status": "candidate_only",
           "symbol": "Fepe",
           "trigger": "Volume spike",
-          "txns_1h": 3564,
-          "volume_1h": "89086",
-          "volume_24h": "89086",
-          "volume_rank_gate": ""
-        },
-        {
-          "dex_url": "https://dexscreener.com/solana/6p618edy8xrq8hgmlsvwdxjpbebqpsvfgafucqb86jqa",
-          "earlier_day_avg_hourly_volume": "1",
-          "eligibility_reason": "",
-          "liquidity": "4036",
-          "relative_volume_1h": "60905.1x",
-          "relative_volume_value": 60905.06,
-          "route": "Candidate only",
-          "route_ok": false,
-          "score": 434.47,
-          "status": "candidate_only",
-          "symbol": "Solano",
-          "trigger": "Volume spike",
-          "txns_1h": 2624,
-          "volume_1h": "60905",
-          "volume_24h": "60905",
+          "txns_1h": 3858,
+          "volume_1h": "95443",
+          "volume_24h": "95443",
           "volume_rank_gate": ""
         },
         {
           "dex_url": "https://dexscreener.com/solana/dsz519fe2vxuqbg3dwjlahaxej8wiewlqga6mfnxyoy8",
           "earlier_day_avg_hourly_volume": "1",
           "eligibility_reason": "",
-          "liquidity": "12612",
-          "relative_volume_1h": "16253.5x",
-          "relative_volume_value": 16253.5,
+          "liquidity": "6023",
+          "relative_volume_1h": "47716.2x",
+          "relative_volume_value": 47716.2,
           "route": "Candidate only",
           "route_ok": false,
-          "score": 412.34,
+          "score": 433.47,
           "status": "candidate_only",
           "symbol": "stdout",
           "trigger": "Volume spike",
-          "txns_1h": 536,
-          "volume_1h": "16254",
-          "volume_24h": "16254",
+          "txns_1h": 1827,
+          "volume_1h": "47716",
+          "volume_24h": "47716",
+          "volume_rank_gate": ""
+        },
+        {
+          "dex_url": "https://dexscreener.com/solana/7p1ld2vwkrcdbxnhwak3fkdj7fcakubszmeaucgivngq",
+          "earlier_day_avg_hourly_volume": "1",
+          "eligibility_reason": "",
+          "liquidity": "14668",
+          "relative_volume_1h": "46158.2x",
+          "relative_volume_value": 46158.24,
+          "route": "Candidate only",
+          "route_ok": false,
+          "score": 430.45,
+          "status": "candidate_only",
+          "symbol": "POINTLESS",
+          "trigger": "Volume spike",
+          "txns_1h": 1676,
+          "volume_1h": "46158",
+          "volume_24h": "46158",
           "volume_rank_gate": ""
         },
         {
           "dex_url": "https://dexscreener.com/solana/8n544cg9j44dkzu4cjswhxpwekxhqptr4r17kw9y5fbk",
-          "earlier_day_avg_hourly_volume": "33517",
+          "earlier_day_avg_hourly_volume": "30336",
           "eligibility_reason": "",
-          "liquidity": "277096",
-          "relative_volume_1h": "2.1x",
-          "relative_volume_value": 2.12,
+          "liquidity": "275804",
+          "relative_volume_1h": "3.8x",
+          "relative_volume_value": 3.78,
           "route": "Route OK",
           "route_ok": true,
-          "score": 343.64,
+          "score": 360.6,
           "status": "candidate_only",
           "symbol": "NORMIE",
           "trigger": "Route scout",
-          "txns_1h": 838,
-          "volume_1h": "71162",
-          "volume_24h": "842052",
+          "txns_1h": 1408,
+          "volume_1h": "114590",
+          "volume_24h": "812321",
+          "volume_rank_gate": ""
+        },
+        {
+          "dex_url": "https://dexscreener.com/solana/gz1w1dp2j5mrshz9g1n9g4cta9gqganctsa3tatncuva",
+          "earlier_day_avg_hourly_volume": "1",
+          "eligibility_reason": "",
+          "liquidity": "0",
+          "relative_volume_1h": "18510.8x",
+          "relative_volume_value": 18510.76,
+          "route": "Candidate only",
+          "route_ok": false,
+          "score": 351.98,
+          "status": "candidate_only",
+          "symbol": "SHELL",
+          "trigger": "Volume spike",
+          "txns_1h": 455,
+          "volume_1h": "18511",
+          "volume_24h": "18511",
           "volume_rank_gate": ""
         }
       ],
@@ -2822,24 +2926,24 @@
         "quote_sol": 0.001,
         "scan_limit": 20
       },
-      "generated_at": "2026-07-11T15:01:02.625Z",
+      "generated_at": "2026-07-11T15:11:03.103Z",
       "mode": "auto-rotation enabled for #1 eligible routeable candidate",
       "top_eligible": {
         "dex_url": "https://dexscreener.com/solana/9pju7scvfbah7y6xd9jevaaxzggu7cqyw5pq5bxchamy",
-        "earlier_day_avg_hourly_volume": "9157",
+        "earlier_day_avg_hourly_volume": "9128",
         "eligibility_reason": "relative volume breakout",
-        "liquidity": "42164",
-        "relative_volume_1h": "1.7x",
-        "relative_volume_value": 1.66,
+        "liquidity": "41724",
+        "relative_volume_1h": "1.6x",
+        "relative_volume_value": 1.61,
         "route": "Route OK",
         "route_ok": true,
-        "score": 304.15,
+        "score": 301.59,
         "status": "candidate_only",
         "symbol": "BatCat",
         "trigger": "Route scout",
-        "txns_1h": 2179,
-        "volume_1h": "15207",
-        "volume_24h": "225817",
+        "txns_1h": 2216,
+        "volume_1h": "14731",
+        "volume_24h": "224670",
         "volume_rank_gate": "top 20"
       }
     },
@@ -3139,7 +3243,7 @@
     "pit_card_cadence_minutes": 10,
     "pit_card_expiry_minutes": 20,
     "pooled_funds": false,
-    "ready_signature_total": 5,
+    "ready_signature_total": 4,
     "revoke_model": "user_realizes_current_sleeve_state",
     "risk_modes": [
       "defensive",
@@ -3173,14 +3277,14 @@
         "queued_count_latest": 0,
         "ready": 0,
         "ready_intents": [],
-        "report_generated_at": "2026-07-11T15:01:02.243Z",
+        "report_generated_at": "2026-07-11T15:11:02.257Z",
         "status": "Waiting",
         "wallet": "F1Qm...WFsj",
         "wallet_full": "F1QmUpDLUJnCVQm1wLxPeNieA1psQgchTNPQb1MZWFsj"
       },
       {
         "account_profile": {
-          "checked_at": "2026-07-11T15:01:02.610Z",
+          "checked_at": "2026-07-11T15:11:02.851Z",
           "managed_position_count": 5,
           "observed_unmanaged_count": 2,
           "sol": 0.021922712,
@@ -3242,55 +3346,21 @@
         "authority": "Manual signatures",
         "custody": "public-address manual-sign test",
         "held_action": "",
-        "held_reason": "scanner PIT order already waiting",
-        "held_symbol": "BatCat",
+        "held_reason": "",
+        "held_symbol": "",
         "id": "air-public-sleeve",
-        "latest_action": "average_down_inside_caps",
-        "latest_intent_created_at": "2026-07-11T15:01:02.958Z",
-        "latest_intent_expires_at": "2026-07-11T15:21:02.958Z",
+        "latest_action": "buy_approved_spot_token",
+        "latest_intent_created_at": "2026-07-11T15:11:03.233Z",
+        "latest_intent_expires_at": "2026-07-11T15:31:03.233Z",
         "latest_intent_reasons": [],
         "latest_intent_status": "ready_for_user_signature",
-        "latest_symbol": "SUNUSI",
+        "latest_symbol": "BatCat",
         "mode": "manual_check_in",
         "pending": 30,
         "positions": 5,
-        "queued_count_latest": 1,
+        "queued_count_latest": 2,
         "ready": 2,
         "ready_intents": [
-          {
-            "action_type": "buy_approved_spot_token",
-            "amount_raw": "",
-            "amount_sol": 0.00125,
-            "amount_usd": 0.1,
-            "basis_usd": "",
-            "card_cadence_minutes": 10,
-            "created_at": "2026-07-11T14:51:02.841Z",
-            "expected": {
-              "add_count_after": 0,
-              "add_count_before": 0,
-              "add_usd": 0.1,
-              "average_cost_after_est_usd": 0.0003326,
-              "average_cost_before_usd": 0,
-              "basis_after_usd": 0.1,
-              "basis_before_usd": 0,
-              "estimated_tokens_added": 300.661455,
-              "intent": "new starter",
-              "token_count_after_est": 300.661455
-            },
-            "expires_at": "2026-07-11T15:11:02.841Z",
-            "green_exit_buffer_pct": "",
-            "id": "intent-1783781462841-366",
-            "lane": "discovery",
-            "min_exit_usd": "",
-            "mint": "HCkhfdDNF2dqMxxtL51AzgWU26MBNkUkEzGAHtqkpump",
-            "mode": "manual_check_in",
-            "red_close_drawdown_pct": "",
-            "status": "ready_for_user_signature",
-            "symbol": "BatCat",
-            "token_amount": "",
-            "token_decimals": "",
-            "wallet": "6KTsAmnL5RvQewAYxGtQiHudCxiiu9RpZgiA4YsiTRy6"
-          },
           {
             "action_type": "average_down_inside_caps",
             "amount_raw": "",
@@ -3298,22 +3368,22 @@
             "amount_usd": 0.1,
             "basis_usd": "",
             "card_cadence_minutes": 10,
-            "created_at": "2026-07-11T15:01:02.958Z",
+            "created_at": "2026-07-11T15:11:03.232Z",
             "expected": {
-              "add_count_after": 5,
-              "add_count_before": 4,
+              "add_count_after": 6,
+              "add_count_before": 5,
               "add_usd": 0.1,
-              "average_cost_after_est_usd": 0.0012478393,
-              "average_cost_before_usd": 0.001405125,
-              "basis_after_usd": 0.75,
-              "basis_before_usd": 0.65,
-              "estimated_tokens_added": 138.446629,
+              "average_cost_after_est_usd": 0.0014079012,
+              "average_cost_before_usd": 0.001621298,
+              "basis_after_usd": 0.85,
+              "basis_before_usd": 0.75,
+              "estimated_tokens_added": 141.14326,
               "intent": "position add",
-              "token_count_after_est": 601.038935
+              "token_count_after_est": 603.735566
             },
-            "expires_at": "2026-07-11T15:21:02.958Z",
+            "expires_at": "2026-07-11T15:31:03.232Z",
             "green_exit_buffer_pct": "",
-            "id": "intent-1783782062958-563",
+            "id": "intent-1783782663232-377",
             "lane": "workout",
             "min_exit_usd": "",
             "mint": "2vvw3cSwibzGD6SgW9QzRaBdmjkYrvs218DUy6VWpump",
@@ -3324,16 +3394,50 @@
             "token_amount": "",
             "token_decimals": "",
             "wallet": "6KTsAmnL5RvQewAYxGtQiHudCxiiu9RpZgiA4YsiTRy6"
+          },
+          {
+            "action_type": "buy_approved_spot_token",
+            "amount_raw": "",
+            "amount_sol": 0.00125,
+            "amount_usd": 0.1,
+            "basis_usd": "",
+            "card_cadence_minutes": 10,
+            "created_at": "2026-07-11T15:11:03.233Z",
+            "expected": {
+              "add_count_after": 0,
+              "add_count_before": 0,
+              "add_usd": 0.1,
+              "average_cost_after_est_usd": 0.0003,
+              "average_cost_before_usd": 0,
+              "basis_after_usd": 0.1,
+              "basis_before_usd": 0,
+              "estimated_tokens_added": 333.333333,
+              "intent": "new starter",
+              "token_count_after_est": 333.333333
+            },
+            "expires_at": "2026-07-11T15:31:03.233Z",
+            "green_exit_buffer_pct": "",
+            "id": "intent-1783782663233-904",
+            "lane": "discovery",
+            "min_exit_usd": "",
+            "mint": "HCkhfdDNF2dqMxxtL51AzgWU26MBNkUkEzGAHtqkpump",
+            "mode": "manual_check_in",
+            "red_close_drawdown_pct": "",
+            "status": "ready_for_user_signature",
+            "symbol": "BatCat",
+            "token_amount": "",
+            "token_decimals": "",
+            "wallet": "6KTsAmnL5RvQewAYxGtQiHudCxiiu9RpZgiA4YsiTRy6"
           }
         ],
-        "report_generated_at": "2026-07-11T15:01:02.243Z",
+        "report_generated_at": "2026-07-11T15:11:02.257Z",
         "status": "Ready signature",
         "wallet": "6KTs...TRy6",
         "wallet_full": "6KTsAmnL5RvQewAYxGtQiHudCxiiu9RpZgiA4YsiTRy6"
       },
       {
         "account_profile": {
-          "checked_at": "2026-07-11T15:01:06.955Z",
+          "checked_at": "2026-07-11T15:11:03.487Z",
           "managed_position_count": 3,
           "observed_unmanaged_count": 8,
           "sol": 0.048200087,
@@ -3389,16 +3493,16 @@
               "mint": "HEHT1eKNsTnuMAQaSM4ac8r3ynckmquxA3hUun5Npump"
             },
             {
-              "amount": 999901404.979049,
-              "decimals": 9,
-              "managed": false,
-              "mint": "E7mEDrhP2qQHk9Fj3TBorqVfoyBu4CheXjbFnEY2qtsb"
-            },
-            {
               "amount": 333.431336,
               "decimals": 6,
               "managed": true,
               "mint": "3grmULXrnQyN2A5LFStKFeSQsWvZjzNDsDVVLknFpump"
+            },
+            {
+              "amount": 4318.133597,
+              "decimals": 6,
+              "managed": true,
+              "mint": "Db3FyrbovdsJWXaCBvE24P31uheKQH58cfpqWsXcpump"
             },
             {
               "amount": 777.168609,
@@ -3407,10 +3511,10 @@
               "mint": "E2ueKQ3EDTTmCkUA17j3KeTb2u6VT91xiyECdKRzpump"
             },
             {
-              "amount": 4318.133597,
-              "decimals": 6,
-              "managed": true,
-              "mint": "Db3FyrbovdsJWXaCBvE24P31uheKQH58cfpqWsXcpump"
+              "amount": 999901404.979049,
+              "decimals": 9,
+              "managed": false,
+              "mint": "E7mEDrhP2qQHk9Fj3TBorqVfoyBu4CheXjbFnEY2qtsb"
             }
           ],
           "usdc": 1.982394,
@@ -3419,19 +3523,19 @@
         "authority": "Manual signatures",
         "custody": "public-address manual-sign holder sleeve",
         "held_action": "",
-        "held_reason": "scanner PIT order already waiting",
-        "held_symbol": "BatCat",
+        "held_reason": "",
+        "held_symbol": "",
         "id": "pit-cwfm-s2ev-sleeve",
         "latest_action": "buy_approved_spot_token",
-        "latest_intent_created_at": "2026-07-11T14:51:03.110Z",
-        "latest_intent_expires_at": "2026-07-11T15:11:03.110Z",
+        "latest_intent_created_at": "2026-07-11T15:11:03.669Z",
+        "latest_intent_expires_at": "2026-07-11T15:31:03.669Z",
         "latest_intent_reasons": [],
         "latest_intent_status": "ready_for_user_signature",
         "latest_symbol": "BatCat",
         "mode": "manual_check_in",
         "pending": 30,
         "positions": 3,
-        "queued_count_latest": 0,
+        "queued_count_latest": 1,
         "ready": 1,
         "ready_intents": [
           {
@@ -3441,22 +3545,22 @@
             "amount_usd": 0.25,
             "basis_usd": "",
             "card_cadence_minutes": 10,
-            "created_at": "2026-07-11T14:51:03.110Z",
+            "created_at": "2026-07-11T15:11:03.669Z",
             "expected": {
               "add_count_after": 0,
               "add_count_before": 0,
               "add_usd": 0.25,
-              "average_cost_after_est_usd": 0.0003326,
+              "average_cost_after_est_usd": 0.0003,
               "average_cost_before_usd": 0,
               "basis_after_usd": 0.25,
               "basis_before_usd": 0,
-              "estimated_tokens_added": 751.653638,
+              "estimated_tokens_added": 833.333333,
               "intent": "new starter",
-              "token_count_after_est": 751.653638
+              "token_count_after_est": 833.333333
             },
-            "expires_at": "2026-07-11T15:11:03.110Z",
+            "expires_at": "2026-07-11T15:31:03.669Z",
             "green_exit_buffer_pct": "",
-            "id": "intent-1783781463110-131",
+            "id": "intent-1783782663669-144",
             "lane": "discovery",
             "min_exit_usd": "",
             "mint": "HCkhfdDNF2dqMxxtL51AzgWU26MBNkUkEzGAHtqkpump",
@@ -3469,21 +3573,172 @@
             "wallet": "CWFmhfjxEw7b8FN6jjXTit47gbmRjjQVRrhuTxZ6s2ev"
           }
         ],
-        "report_generated_at": "2026-07-11T15:01:02.243Z",
+        "report_generated_at": "2026-07-11T15:11:02.257Z",
         "status": "Ready signature",
         "wallet": "CWFm...s2ev",
         "wallet_full": "CWFmhfjxEw7b8FN6jjXTit47gbmRjjQVRrhuTxZ6s2ev"
       },
       {
         "account_profile": {
-          "checked_at": "2026-07-11T15:02:07.695Z",
+          "checked_at": "2026-07-11T15:11:04.180Z",
           "managed_position_count": 0,
-          "observed_unmanaged_count": 0,
+          "observed_unmanaged_count": 54,
           "sol": 0,
-          "token_count": 0,
-          "token_scan_complete": false,
-          "tokens": [],
-          "usdc": 0,
+          "token_count": 55,
+          "token_scan_complete": true,
+          "tokens": [
+            {
+              "amount": 22028.244708,
+              "decimals": 6,
+              "managed": false,
+              "mint": "MFrSpeqYHwE9EJXkMRsT23GEuDaMwp5adST8LK9pump"
+            },
+            {
+              "amount": 0.000166,
+              "decimals": 6,
+              "managed": false,
+              "mint": "d2zwRmchWacKHFSpCKedTxkrKV8v8S2HqDajxdMpump"
+            },
+            {
+              "amount": 2.459048,
+              "decimals": 6,
+              "managed": false,
+              "mint": "fuN8agB49C8k9hpzy8saWuNxcbCdfHqyAXPiQbKpump"
+            },
+            {
+              "amount": 878.155942,
+              "decimals": 6,
+              "managed": false,
+              "mint": "qfsuDNcFqEGbDGWki8DLZKuUrEeqmEJADb4GExpaqR7"
+            },
+            {
+              "amount": 3507.090377,
+              "decimals": 9,
+              "managed": false,
+              "mint": "rrbb6nnY7X4VKpDw6sfXbucMbFW725MU49SZVZgKGFM"
+            },
+            {
+              "amount": 10159.806265,
+              "decimals": 6,
+              "managed": false,
+              "mint": "2FDw9tm6CKXafWRwZaMqErHhNhNSoDfnh2ZK34uRpump"
+            },
+            {
+              "amount": 1102.434227,
+              "decimals": 6,
+              "managed": false,
+              "mint": "2qHwwWsMuruwooN7nFVcwkDXeKuUDJY1VqsDefRQpump"
+            },
+            {
+              "amount": 0.000491,
+              "decimals": 6,
+              "managed": false,
+              "mint": "34oK9hpL7tjnZ3vf8grcbDJ5XRRLmjDH4Mg22tEEEi23"
+            },
+            {
+              "amount": 5715.821716,
+              "decimals": 6,
+              "managed": false,
+              "mint": "3PaawKgfWV4qViYuxFUc455N51TYck1QM9jdRcYgpump"
+            },
+            {
+              "amount": 1291.374115,
+              "decimals": 6,
+              "managed": false,
+              "mint": "3XxwrpPgrMK7eaZbaFTG9T1D7puLW2BVJW64nEBDpump"
+            },
+            {
+              "amount": 0.000126,
+              "decimals": 6,
+              "managed": false,
+              "mint": "4XZHV22iT63dYN95qdwEzdDJh19SVB5aitDcH4p2YZFx"
+            },
+            {
+              "amount": 0.000126,
+              "decimals": 6,
+              "managed": false,
+              "mint": "56KuUBwudXbgJtYNS7DyKJRJwyeSPtaStqJLic4YfK9s"
+            },
+            {
+              "amount": 5.631206,
+              "decimals": 6,
+              "managed": false,
+              "mint": "5HyvguGZmLiss9fMpdrUf5LiH6iy14bxskuV6fSJpump"
+            },
+            {
+              "amount": 1591.098712,
+              "decimals": 6,
+              "managed": false,
+              "mint": "5poDRfGiHJonS6SR6QiQvAPPLj4JghyS1mZ2zhGypump"
+            },
+            {
+              "amount": 750.964097,
+              "decimals": 6,
+              "managed": false,
+              "mint": "62gW38JHh2ueS5EWPgY49HRFDmPccrW3kDxsdqqJpump"
+            },
+            {
+              "amount": 0.0001,
+              "decimals": 6,
+              "managed": false,
+              "mint": "65NGDkEzV5vLVfZcB673LVy61MCe4BdHUWEwQF5Jwr9c"
+            },
+            {
+              "amount": 1.8e-05,
+              "decimals": 6,
+              "managed": false,
+              "mint": "6gdYQTyrEYAzEasUpjkLmxar92e3nNY8xK91XV7jK8wH"
+            },
+            {
+              "amount": 0.000207,
+              "decimals": 6,
+              "managed": false,
+              "mint": "7Am8Npn1DunLaQNMdbKmfYPfpgDfQ7UdrYPjTB8dMZce"
+            },
+            {
+              "amount": 93.61,
+              "decimals": 6,
+              "managed": false,
+              "mint": "7GQ3iDdFT38LLbnWaWvidjVnSY9PCfFmgc3LfqvuxqVa"
+            },
+            {
+              "amount": 741.166987,
+              "decimals": 6,
+              "managed": false,
+              "mint": "7VkXRGkKusn7m512CMeUuoENXf6kc2LpB2DnBGY6r5Ak"
+            },
+            {
+              "amount": 57.33828,
+              "decimals": 6,
+              "managed": false,
+              "mint": "7eLz7uTp7NX9PuRvEzV3atQTy3H57Bre78kTcufhvirt"
+            },
+            {
+              "amount": 4904.295797,
+              "decimals": 6,
+              "managed": false,
+              "mint": "8BCqahdmTceKSihaEpTNEUuAg583xYprY2CTkuxFpump"
+            },
+            {
+              "amount": 8023.90015,
+              "decimals": 6,
+              "managed": false,
+              "mint": "8iZQnth512B7Jcs46qxA68GRhEUGm5bz7CYcx5kDpump"
+            },
+            {
+              "amount": 13576.057109,
+              "decimals": 6,
+              "managed": false,
+              "mint": "8kaBb5VkTwqKnNEKzZziwnoNBDW5EbNL3wifSsvYpump"
+            },
+            {
+              "amount": 9946.393136,
+              "decimals": 6,
+              "managed": false,
+              "mint": "95EpPiCr2zDgs5teAWMzxQUQKzY5vU4mYogtUYimpump"
+            }
+          ],
+          "usdc": 0.086594,
           "wallet": "4aF3vKp6vyye5SxzRW5UFPNDkr7Hd9WxgfEjcyAh6Kt9"
         },
         "authority": "Manual signatures",
@@ -3492,9 +3747,199 @@
         "held_reason": "",
         "held_symbol": "",
         "id": "pit-4af3-6kt9-sleeve",
+        "latest_action": "buy_approved_spot_token",
+        "latest_intent_created_at": "2026-07-11T15:11:04.180Z",
+        "latest_intent_expires_at": "2026-07-11T15:31:04.180Z",
+        "latest_intent_reasons": [
+          "Trade exceeds risk-mode max trade size.",
+          "Trade exceeds risk-mode daily deployment cap.",
+          "Trade exceeds risk-mode symbol allocation cap."
+        ],
+        "latest_intent_status": "rejected_by_rules",
+        "latest_symbol": "BatCat",
+        "mode": "manual_check_in",
+        "pending": 30,
+        "positions": 0,
+        "queued_count_latest": 1,
+        "ready": 0,
+        "ready_intents": [],
+        "report_generated_at": "2026-07-11T15:11:02.257Z",
+        "status": "Waiting",
+        "wallet": "4aF3...6Kt9",
+        "wallet_full": "4aF3vKp6vyye5SxzRW5UFPNDkr7Hd9WxgfEjcyAh6Kt9"
+      },
+      {
+        "account_profile": {
+          "checked_at": "2026-07-11T15:11:47.806Z",
+          "managed_position_count": 0,
+          "observed_unmanaged_count": 778,
+          "sol": 0.012674788,
+          "token_count": 779,
+          "token_scan_complete": true,
+          "tokens": [
+            {
+              "amount": 354298.973913,
+              "decimals": 6,
+              "managed": false,
+              "mint": "142f1ffiV9RHzpiYYf4HZRqzqLotT9n52Exc1vBMBoby"
+            },
+            {
+              "amount": 509504.509114,
+              "decimals": 6,
+              "managed": false,
+              "mint": "5yUpWRnEjadp6ERVuXVgkRnMBzqtjtH57YAvcQipump"
+            },
+            {
+              "amount": 133738.573105,
+              "decimals": 6,
+              "managed": false,
+              "mint": "7TeuehPQa9FRUnpdseYRgs6LtSkuXknfb5JTS3Ppump"
+            },
+            {
+              "amount": 91314.540479,
+              "decimals": 6,
+              "managed": false,
+              "mint": "7uyNniK2RYvZX39Zffk3BZeLWNbgDRsb6kUEiyspump"
+            },
+            {
+              "amount": 122765.016166,
+              "decimals": 6,
+              "managed": false,
+              "mint": "88o85XXsR4Biud5cw7NYr8r3xhTSWRVvYeQMs8Qpump"
+            },
+            {
+              "amount": 85598.79991,
+              "decimals": 6,
+              "managed": false,
+              "mint": "9nxVMhLF8adyP35ENAFLH5sLrVbPpRwaW28VW6Tpump"
+            },
+            {
+              "amount": 182889.762074,
+              "decimals": 6,
+              "managed": false,
+              "mint": "AaFhVqXC1RUonsjCFU8uTDXSWsq2rv9hjtF3PqKpump"
+            },
+            {
+              "amount": 159641.610185,
+              "decimals": 6,
+              "managed": false,
+              "mint": "AgiLABSL8gU5j5qYQHif29wKCHAJ7kaMFnmSmdunk9s"
+            },
+            {
+              "amount": 195711.922839,
+              "decimals": 6,
+              "managed": false,
+              "mint": "AyM62Rina4MVfbiDkWEFGd7mWfTdChw999aCJdQpump"
+            },
+            {
+              "amount": 71306.150243,
+              "decimals": 6,
+              "managed": false,
+              "mint": "DMhskXA5TTQZy113TuyRKqdKKPb8n5uPw4v93oDpump"
+            },
+            {
+              "amount": 72430.443702,
+              "decimals": 6,
+              "managed": false,
+              "mint": "Db5mb8fqzxgsBWCFXDb76cMRpKuzP4tiZ3WhmHzpump"
+            },
+            {
+              "amount": 149374.295453,
+              "decimals": 6,
+              "managed": false,
+              "mint": "JMiVPYthSXJhLrqzwZdVpfeejax4r6FuFGQU8JEEZvC"
+            },
+            {
+              "amount": 364194.288393,
+              "decimals": 6,
+              "managed": false,
+              "mint": "Kvg6fmfrss71koyMRUnf2GCVepXDbZBdsZwQDPhpump"
+            },
+            {
+              "amount": 1139277.660618,
+              "decimals": 6,
+              "managed": false,
+              "mint": "LFGgKzG9Li1PjThk9avZsAeBNeyqiPWj9NmoYtomY89"
+            },
+            {
+              "amount": 386878.748321,
+              "decimals": 6,
+              "managed": false,
+              "mint": "MobqhYDPXhXSEv9om2Aw24D1RtvXhyizgYVDC8bpump"
+            },
+            {
+              "amount": 287176.227479,
+              "decimals": 6,
+              "managed": false,
+              "mint": "MozYh5ZGQ7je31KHhywWTgsC8Mo3WxwMx1KUHD9o72c"
+            },
+            {
+              "amount": 108788.641005,
+              "decimals": 6,
+              "managed": false,
+              "mint": "NFsUka9hiZVMt6oh4YcfXTq5DDEUE2G3eyugEGBpump"
+            },
+            {
+              "amount": 249760.565496,
+              "decimals": 6,
+              "managed": false,
+              "mint": "PaKLa2DUrFGa33Tvk5JURHjyaDUCWWrGtDecXXDpump"
+            },
+            {
+              "amount": 228531.585026,
+              "decimals": 6,
+              "managed": false,
+              "mint": "QyNGBBAsUQj8FUR338ivZhAxpr1pKEBgEgu1pi5mogX"
+            },
+            {
+              "amount": 172110.174695,
+              "decimals": 6,
+              "managed": false,
+              "mint": "RFgFpKNz3o6JQvjnRAmvZEdh42PaopAPTtFZWgDpump"
+            },
+            {
+              "amount": 151785.150414,
+              "decimals": 6,
+              "managed": false,
+              "mint": "SaoG2m9mqnGzf3u68d6RHKPLdbtZQyUBbEwf6xKpump"
+            },
+            {
+              "amount": 405925.41089,
+              "decimals": 6,
+              "managed": false,
+              "mint": "UCVEGWx7rzD5FfRJiHgbSn45dGCB4ArEUgDt2HLpump"
+            },
+            {
+              "amount": 229492.98747,
+              "decimals": 6,
+              "managed": false,
+              "mint": "V59td8rzPCpPdzmX8GWAgHYdr3aV1tDQ4JZiL9Upump"
+            },
+            {
+              "amount": 501453.23124,
+              "decimals": 6,
+              "managed": false,
+              "mint": "VfVdV7HN4deVbM3dGANeDaazmZiUgscMF5h7ABUpump"
+            },
+            {
+              "amount": 913936.504684,
+              "decimals": 6,
+              "managed": false,
+              "mint": "WNHzp2vEyhXGrjdXeuFi9AdTNr7G4EePyTd4ZDTpump"
+            }
+          ],
+          "usdc": 0,
+          "wallet": "H85vnK9iX9DJAFXiwcDh9NQdDLgrekhwvyzZnaR6PqdS"
+        },
+        "authority": "Manual signatures",
+        "custody": "public-address manual-sign holder sleeve",
+        "held_action": "",
+        "held_reason": "",
+        "held_symbol": "",
+        "id": "pit-h85v-pqds-sleeve",
         "latest_action": "convert_sol_to_usdc_reserve",
-        "latest_intent_created_at": "2026-07-11T15:02:07.695Z",
-        "latest_intent_expires_at": "2026-07-11T15:22:07.695Z",
+        "latest_intent_created_at": "2026-07-11T15:11:47.807Z",
+        "latest_intent_expires_at": "2026-07-11T15:31:47.807Z",
         "latest_intent_reasons": [
           "Trade exceeds risk-mode max trade size.",
           "Trade exceeds risk-mode daily deployment cap.",
@@ -3508,235 +3953,14 @@
         "queued_count_latest": 1,
         "ready": 0,
         "ready_intents": [],
-        "report_generated_at": "2026-07-11T15:01:02.243Z",
-        "status": "Waiting",
-        "wallet": "4aF3...6Kt9",
-        "wallet_full": "4aF3vKp6vyye5SxzRW5UFPNDkr7Hd9WxgfEjcyAh6Kt9"
-      },
-      {
-        "account_profile": {
-          "checked_at": "2026-07-11T15:02:24.816Z",
-          "managed_position_count": 0,
-          "observed_unmanaged_count": 28,
-          "sol": 0.012674788,
-          "token_count": 28,
-          "token_scan_complete": false,
-          "tokens": [
-            {
-              "amount": 1485966.149667,
-              "decimals": 6,
-              "managed": false,
-              "mint": "891G2K8VXcN8n1gCXMLSRxNysfyg1vbr48CQqQZNLh38"
-            },
-            {
-              "amount": 682493.512334,
-              "decimals": 9,
-              "managed": false,
-              "mint": "DvEivVdMcmvQPgBf4XYf4Dens5eEA52y3DNaWfi3L4J2"
-            },
-            {
-              "amount": 3049982.119071,
-              "decimals": 6,
-              "managed": false,
-              "mint": "PMGEuUuhGo7RTJy6T5TSPnmse4eBQXX95UMi31wPoaB"
-            },
-            {
-              "amount": 9502447.811957,
-              "decimals": 9,
-              "managed": false,
-              "mint": "BooSTStrrjMfHFVsU3pH7WH4XgVnmdJSEZAZPs3pmxAd"
-            },
-            {
-              "amount": 901892.800542,
-              "decimals": 9,
-              "managed": false,
-              "mint": "BFGb9EAwSjts8jFN9zdWqU7AJj6Dtx4vyNTwCDeBCyTf"
-            },
-            {
-              "amount": 4102666.101468,
-              "decimals": 6,
-              "managed": false,
-              "mint": "CbuUJLwGNYW3jJ3XRL2emrrAuXiEb7PgrJojVgrpbtJ7"
-            },
-            {
-              "amount": 53.595,
-              "decimals": 6,
-              "managed": false,
-              "mint": "2BAeAAZ3zCszZ2H6vVPqeSEcdpy9bGy8twvfcK52CN47"
-            },
-            {
-              "amount": 688302.082246,
-              "decimals": 6,
-              "managed": false,
-              "mint": "4SoFBPgce9mRQHqEnNAHbjWUVVBsphkeNbj2rM4RWYRi"
-            },
-            {
-              "amount": 1303576.7838,
-              "decimals": 9,
-              "managed": false,
-              "mint": "AMGc59xjhA1UNcn8dJt5mhZaqsxzYX1rSo5qY6nZHsG2"
-            },
-            {
-              "amount": 607844.303165,
-              "decimals": 9,
-              "managed": false,
-              "mint": "23D3vcELAmGPsobdq7i2BqtGXWaph7PAAbxQufWP22xt"
-            },
-            {
-              "amount": 1166363.178797,
-              "decimals": 6,
-              "managed": false,
-              "mint": "3nrAM5TqejBeLawHDVeTeHKnkZGCWd56aMQNvjZcm8R2"
-            },
-            {
-              "amount": 1037113.346818,
-              "decimals": 9,
-              "managed": false,
-              "mint": "mntLJAQWQZFgBgHCqCGaE71i2saSKmVhobFES7m4w4B"
-            },
-            {
-              "amount": 690794.896852,
-              "decimals": 9,
-              "managed": false,
-              "mint": "BGqX4GzSgfcfbmv3VNzG5fWJQyFKX2QiRsxajJkTZhnF"
-            },
-            {
-              "amount": 5147599.012465,
-              "decimals": 6,
-              "managed": false,
-              "mint": "DYMphQw9fJRMGZbXSk35rZtq4TBwDFhCgdAykhkMSfJo"
-            },
-            {
-              "amount": 145216.447653,
-              "decimals": 9,
-              "managed": false,
-              "mint": "3EoKfUZuWCHeBSsXCnDUEDSSaugx73KgCkz7aXuYNnzC"
-            },
-            {
-              "amount": 1765236.926963,
-              "decimals": 6,
-              "managed": false,
-              "mint": "HBFCXPKw9FFpFHwPzWeWg9L8L2RWeK1pdepddk9AEJ8w"
-            },
-            {
-              "amount": 994397.780668,
-              "decimals": 9,
-              "managed": false,
-              "mint": "C5Gp6eypR2Wx3kgJnqPbyAapWe2UYyYF8TPAYSkGaUcr"
-            },
-            {
-              "amount": 1085886.040177,
-              "decimals": 9,
-              "managed": false,
-              "mint": "64PdSrNwu5rSTZtGr1RUtQYeb5NPVBtUUkHnLmtaXLtR"
-            },
-            {
-              "amount": 2492306.023802,
-              "decimals": 6,
-              "managed": false,
-              "mint": "Hop6RzUYPw7hLTT7UAGCYvHVnTGetFQQ9GFTePP1R2mx"
-            },
-            {
-              "amount": 842957.451036,
-              "decimals": 9,
-              "managed": false,
-              "mint": "EEmxKK1BxvKLgeMpBt7iYfwcK8H5Hvp5vJ1kgihieWD9"
-            },
-            {
-              "amount": 445402.302746,
-              "decimals": 6,
-              "managed": false,
-              "mint": "3VSGBCfzZ8kxCs4T2Yt93DcXxSaeca4eKKgXzWcZmAtm"
-            },
-            {
-              "amount": 3386.921825,
-              "decimals": 6,
-              "managed": false,
-              "mint": "B9r1YcdKPg6AmTb4RaFJtucjocozVKJ3gpAcRp7PQ6kE"
-            },
-            {
-              "amount": 4431793.663548,
-              "decimals": 9,
-              "managed": false,
-              "mint": "H7fadXpscRfKqp237x3eDE7K37dCXf7aH7X49FMQTNPA"
-            },
-            {
-              "amount": 3210.669713,
-              "decimals": 9,
-              "managed": false,
-              "mint": "23vpKKUf6PLHZN8BhxyNneX1dJcDwcXiKPJHgsWje4fD"
-            },
-            {
-              "amount": 1251.915017,
-              "decimals": 6,
-              "managed": false,
-              "mint": "9J8URFQWSur2P4B8aWMsAMtzhRPMs37TteCikM5x92Qh"
-            }
-          ],
-          "usdc": 1.17573,
-          "wallet": "H85vnK9iX9DJAFXiwcDh9NQdDLgrekhwvyzZnaR6PqdS"
-        },
-        "authority": "Manual signatures",
-        "custody": "public-address manual-sign holder sleeve",
-        "held_action": "",
-        "held_reason": "scanner PIT order already waiting",
-        "held_symbol": "BatCat",
-        "id": "pit-h85v-pqds-sleeve",
-        "latest_action": "buy_approved_spot_token",
-        "latest_intent_created_at": "2026-07-11T14:51:04.255Z",
-        "latest_intent_expires_at": "2026-07-11T15:11:04.255Z",
-        "latest_intent_reasons": [],
-        "latest_intent_status": "ready_for_user_signature",
-        "latest_symbol": "BatCat",
-        "mode": "manual_check_in",
-        "pending": 30,
-        "positions": 0,
-        "queued_count_latest": 0,
-        "ready": 1,
-        "ready_intents": [
-          {
-            "action_type": "buy_approved_spot_token",
-            "amount_raw": "",
-            "amount_sol": 0.00125,
-            "amount_usd": 0.1,
-            "basis_usd": "",
-            "card_cadence_minutes": 10,
-            "created_at": "2026-07-11T14:51:04.255Z",
-            "expected": {
-              "add_count_after": 0,
-              "add_count_before": 0,
-              "add_usd": 0.1,
-              "average_cost_after_est_usd": 0.0003326,
-              "average_cost_before_usd": 0,
-              "basis_after_usd": 0.1,
-              "basis_before_usd": 0,
-              "estimated_tokens_added": 300.661455,
-              "intent": "new starter",
-              "token_count_after_est": 300.661455
-            },
-            "expires_at": "2026-07-11T15:11:04.255Z",
-            "green_exit_buffer_pct": "",
-            "id": "intent-1783781464255-960",
-            "lane": "discovery",
-            "min_exit_usd": "",
-            "mint": "HCkhfdDNF2dqMxxtL51AzgWU26MBNkUkEzGAHtqkpump",
-            "mode": "manual_check_in",
-            "red_close_drawdown_pct": "",
-            "status": "ready_for_user_signature",
-            "symbol": "BatCat",
-            "token_amount": "",
-            "token_decimals": "",
-            "wallet": "H85vnK9iX9DJAFXiwcDh9NQdDLgrekhwvyzZnaR6PqdS"
-          }
-        ],
-        "report_generated_at": "2026-07-11T15:01:02.243Z",
-        "status": "Ready signature",
+        "report_generated_at": "2026-07-11T15:11:02.257Z",
+        "status": "Funded",
         "wallet": "H85v...PqdS",
         "wallet_full": "H85vnK9iX9DJAFXiwcDh9NQdDLgrekhwvyzZnaR6PqdS"
       },
       {
         "account_profile": {
-          "checked_at": "2026-07-11T15:02:25.071Z",
+          "checked_at": "2026-07-11T15:11:48.053Z",
           "managed_position_count": 0,
           "observed_unmanaged_count": 5,
           "sol": 0.224832758,
@@ -3786,19 +4010,19 @@
         "authority": "Manual signatures",
         "custody": "public-address manual-sign holder sleeve",
         "held_action": "",
-        "held_reason": "scanner PIT order already waiting",
-        "held_symbol": "BatCat",
+        "held_reason": "",
+        "held_symbol": "",
         "id": "pit-5gvj-z8ut-sleeve",
         "latest_action": "buy_approved_spot_token",
-        "latest_intent_created_at": "2026-07-11T14:51:04.390Z",
-        "latest_intent_expires_at": "2026-07-11T15:11:04.390Z",
+        "latest_intent_created_at": "2026-07-11T15:11:48.053Z",
+        "latest_intent_expires_at": "2026-07-11T15:31:48.053Z",
         "latest_intent_reasons": [],
         "latest_intent_status": "ready_for_user_signature",
         "latest_symbol": "BatCat",
         "mode": "manual_check_in",
         "pending": 30,
         "positions": 0,
-        "queued_count_latest": 0,
+        "queued_count_latest": 1,
         "ready": 1,
         "ready_intents": [
           {
@@ -3808,22 +4032,22 @@
             "amount_usd": 0.25,
             "basis_usd": "",
             "card_cadence_minutes": 10,
-            "created_at": "2026-07-11T14:51:04.390Z",
+            "created_at": "2026-07-11T15:11:48.053Z",
             "expected": {
               "add_count_after": 0,
               "add_count_before": 0,
               "add_usd": 0.25,
-              "average_cost_after_est_usd": 0.0003326,
+              "average_cost_after_est_usd": 0.0003,
               "average_cost_before_usd": 0,
               "basis_after_usd": 0.25,
               "basis_before_usd": 0,
-              "estimated_tokens_added": 751.653638,
+              "estimated_tokens_added": 833.333333,
               "intent": "new starter",
-              "token_count_after_est": 751.653638
+              "token_count_after_est": 833.333333
             },
-            "expires_at": "2026-07-11T15:11:04.390Z",
+            "expires_at": "2026-07-11T15:31:48.053Z",
             "green_exit_buffer_pct": "",
-            "id": "intent-1783781464390-756",
+            "id": "intent-1783782708053-606",
             "lane": "discovery",
             "min_exit_usd": "",
             "mint": "HCkhfdDNF2dqMxxtL51AzgWU26MBNkUkEzGAHtqkpump",
@@ -3836,7 +4060,7 @@
             "wallet": "5GvJdZdEfGsqZBW3G6cebuUYLxhyBGazuF3pu7i7Z8ut"
           }
         ],
-        "report_generated_at": "2026-07-11T15:01:02.243Z",
+        "report_generated_at": "2026-07-11T15:11:02.257Z",
         "status": "Ready signature",
         "wallet": "5GvJ...Z8ut",
         "wallet_full": "5GvJdZdEfGsqZBW3G6cebuUYLxhyBGazuF3pu7i7Z8ut"
