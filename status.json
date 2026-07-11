@@ -103,7 +103,7 @@
     ],
     "note": "Delayed historical tape. Symbols, events, and rounded price zones."
   },
-  "generated_at": "2026-07-11T15:22:55",
+  "generated_at": "2026-07-11T15:32:26",
   "heartbeat": {
     "interval_minutes": 60,
     "last_run_at": "2026-07-11T15:00:01",
@@ -266,19 +266,19 @@
         "pit_below_since": "",
         "pit_grace_active": false,
         "pit_grace_floor": "1 HedgAI",
-        "posture": "Balanced watch",
+        "posture": "Speculative",
         "rank": 7,
         "recognized": true,
         "slot_tier": "PIT active",
         "strategy_slots_available": 7,
         "tier": "Ping-In eligible",
         "total_slots": 10,
-        "trinity_score": 23,
+        "trinity_score": 10,
         "wallet": "6KTs...TRy6",
         "wallet_full": "6KTsAmnL5RvQewAYxGtQiHudCxiiu9RpZgiA4YsiTRy6"
       }
     ],
-    "generated_at": "2026-07-11T19:21:16+00:00",
+    "generated_at": "2026-07-11T19:31:02+00:00",
     "hedgai_price_usd": "unavailable",
     "holder_count": 7,
     "max_slots": 60,
@@ -785,7 +785,7 @@
       },
       {
         "label": "Ready PIT signatures",
-        "value": 5
+        "value": 6
       },
       {
         "label": "Pending PIT records",
@@ -810,26 +810,6 @@
   },
   "pulse_history": {
     "items": [
-      {
-        "actions": 29,
-        "activity": 84,
-        "adds": 27,
-        "checks": 224,
-        "combined_net": "+12.41 USDT",
-        "holds": 195,
-        "open_drag": "-12.26 USDT",
-        "pageviews": null,
-        "pauses": 2,
-        "performance_pressure": 87,
-        "repairs": 0,
-        "solspot_actions": 0,
-        "survival_floor": 80,
-        "target_cleanliness": 77,
-        "target_stretches": 17,
-        "time": "2026-07-11T06:02:33",
-        "trinity": 81,
-        "visitors": null
-      },
       {
         "actions": 29,
         "activity": 84,
@@ -2729,6 +2709,26 @@
         "time": "2026-07-11T15:22:55",
         "trinity": 84,
         "visitors": null
+      },
+      {
+        "actions": 36,
+        "activity": 84,
+        "adds": 35,
+        "checks": 222,
+        "combined_net": "+15.90 USDT",
+        "holds": 186,
+        "open_drag": "-10.40 USDT",
+        "pageviews": null,
+        "pauses": 1,
+        "performance_pressure": 87,
+        "repairs": 0,
+        "solspot_actions": 0,
+        "survival_floor": 90,
+        "target_cleanliness": 77,
+        "target_stretches": 26,
+        "time": "2026-07-11T15:32:26",
+        "trinity": 84,
+        "visitors": null
       }
     ]
   },
@@ -2782,7 +2782,7 @@
     ],
     "daily_limit_sol": 1,
     "daily_spent_sol": "0",
-    "generated_at": "2026-07-11T19:22:52.070Z",
+    "generated_at": "2026-07-11T19:32:16.906Z",
     "hard_memory": [
       {
         "policy": "No fresh discovery buy unless the token clears hard floors for 24h volume, current-hour volume, baseline hourly volume, liquidity, transaction count, route quality, and relative volume.",
@@ -2790,9 +2790,9 @@
       }
     ],
     "latest_execution": {
-      "action": "Manage workout tolywifhat",
-      "attempted": true,
-      "reason": "Risk-Curve Coil token is being managed toward green exit or controlled average-down.",
+      "action": "",
+      "attempted": false,
+      "reason": "",
       "signature": "",
       "solscan": ""
     },
@@ -2800,51 +2800,51 @@
     "max_swap_sol": 0.25,
     "mode": "auto_live",
     "recommendation": {
-      "action": "Hold",
-      "reason": "tolywifhat workout held; new hunt exists but capital capacity did not qualify."
+      "action": "Pause",
+      "reason": "SOL reserve is too low for adds; preserve gas and optionality."
     },
     "rotation": {
       "candidates": [
-        {
-          "dex_url": "https://dexscreener.com/solana/6gnve2ybexw5h3crd7s9yqbqydnwgdgvapb4ekcsabqx",
-          "earlier_day_avg_hourly_volume": "1",
-          "eligibility_reason": "",
-          "lane_label": "Risk-Curve Coil",
-          "liquidity": "14000",
-          "relative_volume_1h": "121743.4x",
-          "relative_volume_value": 121743.44,
-          "route": "Candidate only",
-          "route_ok": false,
-          "score": 444.53,
-          "status": "candidate_only",
-          "strategy_lane": "risk_curve",
-          "symbol": "Sol",
-          "trigger": "Volume spike",
-          "txns_1h": 3771,
-          "verification_band": "risk_curve_unverified",
-          "volume_1h": "121743",
-          "volume_24h": "121743",
-          "volume_rank_gate": ""
-        },
         {
           "dex_url": "https://dexscreener.com/solana/g21jbcbadb45chys7guknkdvchnfet2svujnpvgevwjx",
           "earlier_day_avg_hourly_volume": "1",
           "eligibility_reason": "",
           "lane_label": "Risk-Curve Coil",
-          "liquidity": "20256",
-          "relative_volume_1h": "41793.3x",
-          "relative_volume_value": 41793.33,
+          "liquidity": "20205",
+          "relative_volume_1h": "92371.1x",
+          "relative_volume_value": 92371.1,
           "route": "Candidate only",
           "route_ok": false,
-          "score": 439.56,
+          "score": 454.25,
           "status": "candidate_only",
           "strategy_lane": "risk_curve",
           "symbol": "FrogCat",
           "trigger": "Volume spike",
-          "txns_1h": 452,
+          "txns_1h": 831,
           "verification_band": "risk_curve_unverified",
-          "volume_1h": "41793",
-          "volume_24h": "41793",
+          "volume_1h": "92371",
+          "volume_24h": "92371",
+          "volume_rank_gate": ""
+        },
+        {
+          "dex_url": "https://dexscreener.com/solana/6gnve2ybexw5h3crd7s9yqbqydnwgdgvapb4ekcsabqx",
+          "earlier_day_avg_hourly_volume": "1",
+          "eligibility_reason": "",
+          "lane_label": "Risk-Curve Coil",
+          "liquidity": "12024",
+          "relative_volume_1h": "168824.3x",
+          "relative_volume_value": 168824.26,
+          "route": "Candidate only",
+          "route_ok": false,
+          "score": 449.25,
+          "status": "candidate_only",
+          "strategy_lane": "risk_curve",
+          "symbol": "Sol",
+          "trigger": "Volume spike",
+          "txns_1h": 5454,
+          "verification_band": "risk_curve_unverified",
+          "volume_1h": "168824",
+          "volume_24h": "168824",
           "volume_rank_gate": ""
         },
         {
@@ -2852,20 +2852,20 @@
           "earlier_day_avg_hourly_volume": "1",
           "eligibility_reason": "",
           "lane_label": "Risk-Curve Coil",
-          "liquidity": "9901",
-          "relative_volume_1h": "59893.8x",
-          "relative_volume_value": 59893.76,
+          "liquidity": "8754",
+          "relative_volume_1h": "64000.5x",
+          "relative_volume_value": 64000.46,
           "route": "Candidate only",
           "route_ok": false,
-          "score": 435.77,
+          "score": 437.61,
           "status": "candidate_only",
           "strategy_lane": "risk_curve",
           "symbol": "Drivingcat",
           "trigger": "Volume spike",
-          "txns_1h": 1803,
+          "txns_1h": 2057,
           "verification_band": "risk_curve_unverified",
-          "volume_1h": "59894",
-          "volume_24h": "59894",
+          "volume_1h": "64000",
+          "volume_24h": "64000",
           "volume_rank_gate": ""
         },
         {
@@ -2874,19 +2874,19 @@
           "eligibility_reason": "",
           "lane_label": "Risk-Curve Coil",
           "liquidity": "0",
-          "relative_volume_1h": "86812.6x",
-          "relative_volume_value": 86812.6,
+          "relative_volume_1h": "102217.3x",
+          "relative_volume_value": 102217.31,
           "route": "Candidate only",
           "route_ok": false,
-          "score": 378.39,
+          "score": 379.77,
           "status": "candidate_only",
           "strategy_lane": "risk_curve",
           "symbol": "FPB",
           "trigger": "Volume spike",
-          "txns_1h": 2733,
+          "txns_1h": 3291,
           "verification_band": "risk_curve_unverified",
-          "volume_1h": "86813",
-          "volume_24h": "86813",
+          "volume_1h": "102217",
+          "volume_24h": "102217",
           "volume_rank_gate": ""
         },
         {
@@ -2895,61 +2895,61 @@
           "eligibility_reason": "",
           "lane_label": "Risk-Curve Coil",
           "liquidity": "0",
-          "relative_volume_1h": "55311.2x",
-          "relative_volume_value": 55311.15,
+          "relative_volume_1h": "73212.7x",
+          "relative_volume_value": 73212.71,
           "route": "Candidate only",
           "route_ok": false,
-          "score": 370.47,
+          "score": 367.43,
           "status": "candidate_only",
           "strategy_lane": "risk_curve",
           "symbol": "America",
           "trigger": "Volume spike",
-          "txns_1h": 1340,
+          "txns_1h": 2023,
           "verification_band": "risk_curve_unverified",
-          "volume_1h": "55311",
-          "volume_24h": "55311",
+          "volume_1h": "73213",
+          "volume_24h": "73213",
           "volume_rank_gate": ""
         },
         {
           "dex_url": "https://dexscreener.com/solana/8n544cg9j44dkzu4cjswhxpwekxhqptr4r17kw9y5fbk",
-          "earlier_day_avg_hourly_volume": "37796",
+          "earlier_day_avg_hourly_volume": "38164",
           "eligibility_reason": "",
           "lane_label": "Risk-Curve Coil",
-          "liquidity": "245484",
-          "relative_volume_1h": "3.4x",
-          "relative_volume_value": 3.35,
+          "liquidity": "251027",
+          "relative_volume_1h": "2.6x",
+          "relative_volume_value": 2.64,
           "route": "Route OK",
           "route_ok": true,
-          "score": 353.85,
+          "score": 348.7,
           "status": "candidate_only",
           "strategy_lane": "risk_curve",
           "symbol": "NORMIE",
           "trigger": "Route scout",
-          "txns_1h": 823,
+          "txns_1h": 678,
           "verification_band": "risk_curve_unverified",
-          "volume_1h": "126514",
-          "volume_24h": "995815",
+          "volume_1h": "100886",
+          "volume_24h": "978653",
           "volume_rank_gate": ""
         },
         {
           "dex_url": "https://dexscreener.com/solana/5sgh3r8p76vchzzy1pxrwcelbehzxbrx1dbnzvlvdfsh",
-          "earlier_day_avg_hourly_volume": "58512",
+          "earlier_day_avg_hourly_volume": "59363",
           "eligibility_reason": "",
           "lane_label": "Risk-Curve Coil",
-          "liquidity": "22274",
-          "relative_volume_1h": "2.3x",
-          "relative_volume_value": 2.26,
+          "liquidity": "22654",
+          "relative_volume_1h": "2.2x",
+          "relative_volume_value": 2.16,
           "route": "Route OK",
           "route_ok": true,
-          "score": 339.97,
+          "score": 339.81,
           "status": "candidate_only",
           "strategy_lane": "risk_curve",
           "symbol": "LIZARD",
           "trigger": "Route scout",
-          "txns_1h": 2504,
+          "txns_1h": 2432,
           "verification_band": "risk_curve_unverified",
-          "volume_1h": "132291",
-          "volume_24h": "1478064",
+          "volume_1h": "128289",
+          "volume_24h": "1493632",
           "volume_rank_gate": ""
         }
       ],
@@ -3003,27 +3003,27 @@
           }
         }
       },
-      "generated_at": "2026-07-11T19:21:16.002Z",
+      "generated_at": "2026-07-11T19:31:02.833Z",
       "mode": "auto-rotation enabled for #1 eligible routeable candidate",
       "top_eligible": {
         "dex_url": "https://dexscreener.com/solana/8n544cg9j44dkzu4cjswhxpwekxhqptr4r17kw9y5fbk",
-        "earlier_day_avg_hourly_volume": "37796",
+        "earlier_day_avg_hourly_volume": "38164",
         "eligibility_reason": "risk-curve routeable volatility",
         "lane_label": "Risk-Curve Coil",
-        "liquidity": "245484",
-        "relative_volume_1h": "3.4x",
-        "relative_volume_value": 3.35,
+        "liquidity": "251027",
+        "relative_volume_1h": "2.6x",
+        "relative_volume_value": 2.64,
         "route": "Route OK",
         "route_ok": true,
-        "score": 353.85,
+        "score": 348.7,
         "status": "candidate_only",
         "strategy_lane": "risk_curve",
         "symbol": "NORMIE",
         "trigger": "Route scout",
-        "txns_1h": 823,
+        "txns_1h": 678,
         "verification_band": "risk_curve_unverified",
-        "volume_1h": "126514",
-        "volume_24h": "995815",
+        "volume_1h": "100886",
+        "volume_24h": "978653",
         "volume_rank_gate": "top 20"
       }
     },
@@ -3036,8 +3036,8 @@
         "daily_spent_sol": "0",
         "label": "Main SolSpot",
         "mode": "auto_live",
-        "reason": "tolywifhat workout held; new hunt exists but capital capacity did not qualify.",
-        "recommendation": "Hold",
+        "reason": "SOL reserve is too low for adds; preserve gas and optionality.",
+        "recommendation": "Pause",
         "wallet": "2Lv7...UzA2",
         "workout_count": 2
       },
@@ -3323,7 +3323,7 @@
     "pit_card_cadence_minutes": 10,
     "pit_card_expiry_minutes": 20,
     "pooled_funds": false,
-    "ready_signature_total": 5,
+    "ready_signature_total": 6,
     "revoke_model": "user_realizes_current_sleeve_state",
     "risk_modes": [
       "defensive",
@@ -3357,14 +3357,14 @@
         "queued_count_latest": 0,
         "ready": 0,
         "ready_intents": [],
-        "report_generated_at": "2026-07-11T19:21:25.581Z",
+        "report_generated_at": "2026-07-11T19:31:11.281Z",
         "status": "Waiting",
         "wallet": "F1Qm...WFsj",
         "wallet_full": "F1QmUpDLUJnCVQm1wLxPeNieA1psQgchTNPQb1MZWFsj"
       },
       {
         "account_profile": {
-          "checked_at": "2026-07-11T19:21:25.789Z",
+          "checked_at": "2026-07-11T19:31:33.193Z",
           "managed_position_count": 5,
           "observed_unmanaged_count": 1,
           "sol": 0.021922712,
@@ -3420,8 +3420,8 @@
         "authority": "Manual signatures",
         "custody": "public-address manual-sign test",
         "held_action": "",
-        "held_reason": "",
-        "held_symbol": "",
+        "held_reason": "scanner PIT order already waiting",
+        "held_symbol": "NORMIE",
         "id": "air-public-sleeve",
         "latest_action": "buy_approved_spot_token",
         "latest_intent_created_at": "2026-07-11T19:21:26.142Z",
@@ -3432,7 +3432,7 @@
         "mode": "manual_check_in",
         "pending": 30,
         "positions": 5,
-        "queued_count_latest": 1,
+        "queued_count_latest": 0,
         "ready": 1,
         "ready_intents": [
           {
@@ -3470,14 +3470,14 @@
             "wallet": "6KTsAmnL5RvQewAYxGtQiHudCxiiu9RpZgiA4YsiTRy6"
           }
         ],
-        "report_generated_at": "2026-07-11T19:21:25.581Z",
+        "report_generated_at": "2026-07-11T19:31:11.281Z",
         "status": "Ready signature",
         "wallet": "6KTs...TRy6",
         "wallet_full": "6KTsAmnL5RvQewAYxGtQiHudCxiiu9RpZgiA4YsiTRy6"
       },
       {
         "account_profile": {
-          "checked_at": "2026-07-11T19:22:08.674Z",
+          "checked_at": "2026-07-11T19:31:33.652Z",
           "managed_position_count": 3,
           "observed_unmanaged_count": 8,
           "sol": 0.048200087,
@@ -3557,7 +3557,7 @@
               "mint": "E7mEDrhP2qQHk9Fj3TBorqVfoyBu4CheXjbFnEY2qtsb"
             }
           ],
-          "usdc": 0,
+          "usdc": 1.982394,
           "wallet": "CWFmhfjxEw7b8FN6jjXTit47gbmRjjQVRrhuTxZ6s2ev"
         },
         "authority": "Manual signatures",
@@ -3566,28 +3566,61 @@
         "held_reason": "",
         "held_symbol": "",
         "id": "pit-cwfm-s2ev-sleeve",
-        "latest_action": "convert_sol_to_usdc_reserve",
-        "latest_intent_created_at": "2026-07-11T19:22:08.674Z",
-        "latest_intent_expires_at": "2026-07-11T19:42:08.674Z",
-        "latest_intent_reasons": [
-          "Trade exceeds risk-mode max trade size."
-        ],
-        "latest_intent_status": "rejected_by_rules",
-        "latest_symbol": "USDC",
+        "latest_action": "buy_approved_spot_token",
+        "latest_intent_created_at": "2026-07-11T19:31:33.849Z",
+        "latest_intent_expires_at": "2026-07-11T19:51:33.849Z",
+        "latest_intent_reasons": [],
+        "latest_intent_status": "ready_for_user_signature",
+        "latest_symbol": "NORMIE",
         "mode": "manual_check_in",
         "pending": 30,
         "positions": 3,
         "queued_count_latest": 1,
-        "ready": 0,
-        "ready_intents": [],
-        "report_generated_at": "2026-07-11T19:21:25.581Z",
-        "status": "Active position",
+        "ready": 1,
+        "ready_intents": [
+          {
+            "action_type": "buy_approved_spot_token",
+            "amount_raw": "",
+            "amount_sol": 0.0015,
+            "amount_usd": 0.12,
+            "basis_usd": "",
+            "card_cadence_minutes": 10,
+            "created_at": "2026-07-11T19:31:33.849Z",
+            "expected": {
+              "add_count_after": 0,
+              "add_count_before": 0,
+              "add_usd": 0.12,
+              "average_cost_after_est_usd": 0.009057,
+              "average_cost_before_usd": 0,
+              "basis_after_usd": 0.12,
+              "basis_before_usd": 0,
+              "estimated_tokens_added": 13.24942,
+              "intent": "new starter",
+              "token_count_after_est": 13.24942
+            },
+            "expires_at": "2026-07-11T19:51:33.849Z",
+            "green_exit_buffer_pct": "",
+            "id": "intent-1783798293849-57",
+            "lane": "risk_curve",
+            "min_exit_usd": "",
+            "mint": "4MrsXQzaosYNyFd4wKDvgnC5xRtRqgXRrijFTGj9pump",
+            "mode": "manual_check_in",
+            "red_close_drawdown_pct": "",
+            "status": "ready_for_user_signature",
+            "symbol": "NORMIE",
+            "token_amount": "",
+            "token_decimals": "",
+            "wallet": "CWFmhfjxEw7b8FN6jjXTit47gbmRjjQVRrhuTxZ6s2ev"
+          }
+        ],
+        "report_generated_at": "2026-07-11T19:31:11.281Z",
+        "status": "Ready signature",
         "wallet": "CWFm...s2ev",
         "wallet_full": "CWFmhfjxEw7b8FN6jjXTit47gbmRjjQVRrhuTxZ6s2ev"
       },
       {
         "account_profile": {
-          "checked_at": "2026-07-11T19:22:08.861Z",
+          "checked_at": "2026-07-11T19:31:34.034Z",
           "managed_position_count": 0,
           "observed_unmanaged_count": 54,
           "sol": 0,
@@ -3755,8 +3788,8 @@
         "held_symbol": "",
         "id": "pit-4af3-6kt9-sleeve",
         "latest_action": "buy_approved_spot_token",
-        "latest_intent_created_at": "2026-07-11T19:22:08.862Z",
-        "latest_intent_expires_at": "2026-07-11T19:42:08.862Z",
+        "latest_intent_created_at": "2026-07-11T19:31:34.034Z",
+        "latest_intent_expires_at": "2026-07-11T19:51:34.034Z",
         "latest_intent_reasons": [
           "Trade exceeds risk-mode max trade size.",
           "Trade exceeds risk-mode daily deployment cap.",
@@ -3770,19 +3803,19 @@
         "queued_count_latest": 1,
         "ready": 0,
         "ready_intents": [],
-        "report_generated_at": "2026-07-11T19:21:25.581Z",
+        "report_generated_at": "2026-07-11T19:31:11.281Z",
         "status": "Waiting",
         "wallet": "4aF3...6Kt9",
         "wallet_full": "4aF3vKp6vyye5SxzRW5UFPNDkr7Hd9WxgfEjcyAh6Kt9"
       },
       {
         "account_profile": {
-          "checked_at": "2026-07-11T19:22:09.132Z",
+          "checked_at": "2026-07-11T19:32:16.328Z",
           "managed_position_count": 0,
-          "observed_unmanaged_count": 778,
+          "observed_unmanaged_count": 750,
           "sol": 0.012674788,
-          "token_count": 779,
-          "token_scan_complete": true,
+          "token_count": 751,
+          "token_scan_complete": false,
           "tokens": [
             {
               "amount": 354298.973913,
@@ -3941,8 +3974,8 @@
         "authority": "Manual signatures",
         "custody": "public-address manual-sign holder sleeve",
         "held_action": "",
-        "held_reason": "",
-        "held_symbol": "",
+        "held_reason": "scanner PIT order already waiting",
+        "held_symbol": "NORMIE",
         "id": "pit-h85v-pqds-sleeve",
         "latest_action": "buy_approved_spot_token",
         "latest_intent_created_at": "2026-07-11T19:22:09.133Z",
@@ -3953,7 +3986,7 @@
         "mode": "manual_check_in",
         "pending": 30,
         "positions": 0,
-        "queued_count_latest": 1,
+        "queued_count_latest": 0,
         "ready": 1,
         "ready_intents": [
           {
@@ -3991,28 +4024,65 @@
             "wallet": "H85vnK9iX9DJAFXiwcDh9NQdDLgrekhwvyzZnaR6PqdS"
           }
         ],
-        "report_generated_at": "2026-07-11T19:21:25.581Z",
+        "report_generated_at": "2026-07-11T19:31:11.281Z",
         "status": "Ready signature",
         "wallet": "H85v...PqdS",
         "wallet_full": "H85vnK9iX9DJAFXiwcDh9NQdDLgrekhwvyzZnaR6PqdS"
       },
       {
         "account_profile": {
-          "checked_at": "2026-07-11T19:22:51.579Z",
+          "checked_at": "2026-07-11T19:32:16.530Z",
           "managed_position_count": 0,
-          "observed_unmanaged_count": 0,
+          "observed_unmanaged_count": 5,
           "sol": 0.224832758,
-          "token_count": 0,
-          "token_scan_complete": false,
-          "tokens": [],
+          "token_count": 6,
+          "token_scan_complete": true,
+          "tokens": [
+            {
+              "amount": 17027788.031624,
+              "decimals": 6,
+              "managed": false,
+              "mint": "5LwseQRo8fsz4S3y7jbqqe5C7tZTz5PwhXNCHj13jLBi"
+            },
+            {
+              "amount": 24.036674,
+              "decimals": 9,
+              "managed": false,
+              "mint": "8h3dF9onih2DZxp2hRFMEkn7ULPr3HHQYtNVH17vG7fz"
+            },
+            {
+              "amount": 10,
+              "decimals": 6,
+              "managed": false,
+              "mint": "C2os8wCNEFANWWLehhf3j5kb4g3qQsbmdCb5bsR9F1ow"
+            },
+            {
+              "amount": 7.176409,
+              "decimals": 6,
+              "managed": false,
+              "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+            },
+            {
+              "amount": 336993.103314,
+              "decimals": 6,
+              "managed": false,
+              "mint": "HEHT1eKNsTnuMAQaSM4ac8r3ynckmquxA3hUun5Npump"
+            },
+            {
+              "amount": 7999891360.112038,
+              "decimals": 9,
+              "managed": false,
+              "mint": "E7mEDrhP2qQHk9Fj3TBorqVfoyBu4CheXjbFnEY2qtsb"
+            }
+          ],
           "usdc": 7.176409,
           "wallet": "5GvJdZdEfGsqZBW3G6cebuUYLxhyBGazuF3pu7i7Z8ut"
         },
         "authority": "Manual signatures",
         "custody": "public-address manual-sign holder sleeve",
         "held_action": "",
-        "held_reason": "",
-        "held_symbol": "",
+        "held_reason": "scanner PIT order already waiting",
+        "held_symbol": "NORMIE",
         "id": "pit-5gvj-z8ut-sleeve",
         "latest_action": "buy_approved_spot_token",
         "latest_intent_created_at": "2026-07-11T19:22:51.579Z",
@@ -4023,7 +4093,7 @@
         "mode": "manual_check_in",
         "pending": 30,
         "positions": 0,
-        "queued_count_latest": 1,
+        "queued_count_latest": 0,
         "ready": 1,
         "ready_intents": [
           {
@@ -4061,14 +4131,14 @@
             "wallet": "5GvJdZdEfGsqZBW3G6cebuUYLxhyBGazuF3pu7i7Z8ut"
           }
         ],
-        "report_generated_at": "2026-07-11T19:21:25.581Z",
+        "report_generated_at": "2026-07-11T19:31:11.281Z",
         "status": "Ready signature",
         "wallet": "5GvJ...Z8ut",
         "wallet_full": "5GvJdZdEfGsqZBW3G6cebuUYLxhyBGazuF3pu7i7Z8ut"
       },
       {
         "account_profile": {
-          "checked_at": "2026-07-11T19:22:51.799Z",
+          "checked_at": "2026-07-11T19:32:16.632Z",
           "managed_position_count": 0,
           "observed_unmanaged_count": 1,
           "sol": 0.069077788,
@@ -4087,8 +4157,8 @@
         },
         "authority": "Manual signatures",
         "custody": "public-address manual-sign holder sleeve",
-        "held_action": "",
-        "held_reason": "",
+        "held_action": "convert_sol_to_usdc_reserve",
+        "held_reason": "reserve PIT order already waiting",
         "held_symbol": "",
         "id": "pit-f4hz-8xze-sleeve",
         "latest_action": "convert_sol_to_usdc_reserve",
@@ -4100,7 +4170,7 @@
         "mode": "manual_check_in",
         "pending": 11,
         "positions": 0,
-        "queued_count_latest": 1,
+        "queued_count_latest": 0,
         "ready": 1,
         "ready_intents": [
           {
@@ -4127,14 +4197,14 @@
             "wallet": "F4HzFiCPR5oTNxgiLd4Tw54Rq1vJEhEBCWHNzXeY8xZE"
           }
         ],
-        "report_generated_at": "2026-07-11T19:21:25.581Z",
+        "report_generated_at": "2026-07-11T19:31:11.281Z",
         "status": "Ready signature",
         "wallet": "F4Hz...8xZE",
         "wallet_full": "F4HzFiCPR5oTNxgiLd4Tw54Rq1vJEhEBCWHNzXeY8xZE"
       },
       {
         "account_profile": {
-          "checked_at": "2026-07-11T19:22:51.892Z",
+          "checked_at": "2026-07-11T19:32:16.720Z",
           "managed_position_count": 0,
           "observed_unmanaged_count": 1,
           "sol": 0.063834393,
@@ -4160,8 +4230,8 @@
         "authority": "Manual signatures",
         "custody": "public-address manual-sign holder sleeve",
         "held_action": "",
-        "held_reason": "",
-        "held_symbol": "",
+        "held_reason": "scanner PIT order already waiting",
+        "held_symbol": "NORMIE",
         "id": "pit-dfbb-qrnw-sleeve",
         "latest_action": "buy_approved_spot_token",
         "latest_intent_created_at": "2026-07-11T19:22:51.892Z",
@@ -4172,7 +4242,7 @@
         "mode": "manual_check_in",
         "pending": 11,
         "positions": 0,
-        "queued_count_latest": 1,
+        "queued_count_latest": 0,
         "ready": 1,
         "ready_intents": [
           {
@@ -4210,7 +4280,7 @@
             "wallet": "DfBb6XizbtquMMBb33mjoxfuREJ1KvbtdH7byFTiQrNW"
           }
         ],
-        "report_generated_at": "2026-07-11T19:21:25.581Z",
+        "report_generated_at": "2026-07-11T19:31:11.281Z",
         "status": "Ready signature",
         "wallet": "DfBb...QrNW",
         "wallet_full": "DfBb6XizbtquMMBb33mjoxfuREJ1KvbtdH7byFTiQrNW"
