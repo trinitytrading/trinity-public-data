@@ -103,7 +103,7 @@
     ],
     "note": "Delayed historical tape. Symbols, events, and rounded price zones."
   },
-  "generated_at": "2026-07-12T00:12:42",
+  "generated_at": "2026-07-12T00:19:54",
   "heartbeat": {
     "interval_minutes": 60,
     "last_run_at": "2026-07-12T00:00:02",
@@ -686,9 +686,9 @@
       "closed_value": "+0.00 SOL",
       "name": "SolSpot",
       "net_value": "-0.01 SOL",
-      "open_pct": -24.2,
+      "open_pct": -25.9,
       "open_value": "-0.01 SOL",
-      "total_pct": -22.9
+      "total_pct": -24.7
     }
   ],
   "performance_summary": {
@@ -816,7 +816,7 @@
       },
       {
         "label": "SolSpot actions",
-        "value": 5
+        "value": 7
       },
       {
         "label": "Site traffic",
@@ -833,26 +833,6 @@
   },
   "pulse_history": {
     "items": [
-      {
-        "actions": 37,
-        "activity": 84,
-        "adds": 37,
-        "checks": 222,
-        "combined_net": "+16.33 USDT",
-        "holds": 185,
-        "open_drag": "-10.06 USDT",
-        "pageviews": null,
-        "pauses": 0,
-        "performance_pressure": 87,
-        "repairs": 0,
-        "solspot_actions": 0,
-        "survival_floor": 80,
-        "target_cleanliness": 96,
-        "target_stretches": 25,
-        "time": "2026-07-11T17:20:19",
-        "trinity": 87,
-        "visitors": null
-      },
       {
         "actions": 37,
         "activity": 84,
@@ -2752,6 +2732,26 @@
         "time": "2026-07-12T00:12:42",
         "trinity": 81,
         "visitors": null
+      },
+      {
+        "actions": 34,
+        "activity": 84,
+        "adds": 33,
+        "checks": 221,
+        "combined_net": "+13.65 USDT",
+        "holds": 187,
+        "open_drag": "-13.16 USDT",
+        "pageviews": null,
+        "pauses": 1,
+        "performance_pressure": 87,
+        "repairs": 0,
+        "solspot_actions": 7,
+        "survival_floor": 80,
+        "target_cleanliness": 77,
+        "target_stretches": 21,
+        "time": "2026-07-12T00:19:54",
+        "trinity": 81,
+        "visitors": null
       }
     ]
   },
@@ -2769,6 +2769,20 @@
   },
   "solspot": {
     "actions": [
+      {
+        "action": "SOL -> BC",
+        "signature": "oQodYiEL4eZ8nD1gM1sUQM336sXGCwz2coVn7qbSJcakbgrPDQjDcyccAZoPEheu6upCnaWxxvANvR1MwByU3nN",
+        "solscan": "https://solscan.io/tx/oQodYiEL4eZ8nD1gM1sUQM336sXGCwz2coVn7qbSJcakbgrPDQjDcyccAZoPEheu6upCnaWxxvANvR1MwByU3nN",
+        "spent_sol": "0.0015",
+        "time": "2026-07-12T04:18:11.657Z"
+      },
+      {
+        "action": "SOL -> 1 USDC",
+        "signature": "39pQXA28KymB52Jr7HQhWGkyJLH14RyVANj1wwE95nHi6R6GpdTFh9Au5z5xVCmgnxsL7FmHbARjcYqWpQqyuBHa",
+        "solscan": "https://solscan.io/tx/39pQXA28KymB52Jr7HQhWGkyJLH14RyVANj1wwE95nHi6R6GpdTFh9Au5z5xVCmgnxsL7FmHbARjcYqWpQqyuBHa",
+        "spent_sol": "0.013011",
+        "time": "2026-07-12T04:13:00.410Z"
+      },
       {
         "action": "SOL -> PUMP",
         "signature": "5aLiDxpLSAA4tv5j6rkwQBPfuXJshXiVk6riLLVPUZStL63vPmYoVLDd1Vy5BeB6GoAMP5kF91WCACLE4f1gEmb",
@@ -2806,11 +2820,11 @@
       }
     ],
     "active_rotation": {
-      "entered_at": "",
-      "entry_reason": "",
+      "entered_at": "2026-07-12T04:18:11.657Z",
+      "entry_reason": "Risk-Curve Coil #1 baseline-qualified volume expansion candidate",
       "green_exit_rule": "Exit only after quote is green versus entry cost plus buffer.",
       "state": "Eligible management",
-      "symbol": ""
+      "symbol": "BC"
     },
     "approved": [
       "JUP",
@@ -2819,12 +2833,12 @@
     "auto_sign": true,
     "balances": [
       {
-        "amount": "0.458103",
+        "amount": "0.445087",
         "role": "gas and opportunity reserve",
         "symbol": "SOL"
       },
       {
-        "amount": "2",
+        "amount": "3",
         "role": "defensive reserve",
         "symbol": "USDC"
       },
@@ -2840,8 +2854,8 @@
       }
     ],
     "daily_limit_sol": 1,
-    "daily_spent_sol": "0.0075",
-    "generated_at": "2026-07-12T04:12:39.863Z",
+    "daily_spent_sol": "0.022011",
+    "generated_at": "2026-07-12T04:18:07.213Z",
     "hard_memory": [
       {
         "policy": "No fresh discovery buy unless the token clears hard floors for 24h volume, current-hour volume, baseline hourly volume, liquidity, transaction count, route quality, and relative volume.",
@@ -2849,27 +2863,27 @@
       }
     ],
     "latest_execution": {
-      "action": "Manage workout PUMP",
+      "action": "SOL -> BC",
       "attempted": true,
-      "reason": "Risk-Curve Coil token is being managed toward green exit or controlled average-down.",
-      "signature": "",
-      "solscan": ""
+      "reason": "PUMP workout held; new hunt qualified with capital still available.",
+      "signature": "oQodYiEL4eZ8nD1gM1sUQM336sXGCwz2coVn7qbSJcakbgrPDQjDcyccAZoPEheu6upCnaWxxvANvR1MwByU3nN",
+      "solscan": "https://solscan.io/tx/oQodYiEL4eZ8nD1gM1sUQM336sXGCwz2coVn7qbSJcakbgrPDQjDcyccAZoPEheu6upCnaWxxvANvR1MwByU3nN"
     },
     "manual_confirm_required": false,
     "max_swap_sol": 0.25,
     "mode": "auto_live",
     "performance": {
-      "actions_today": 7,
-      "actions_total": 31,
-      "net_sol": "-0.009982",
+      "actions_today": 10,
+      "actions_total": 34,
+      "net_sol": "-0.011486",
       "note": "SolSpot P/L is estimated from realized SOL exits plus latest quoted workout posture when available.",
-      "open_basis_sol": "0.043500",
-      "open_est_sol": "-0.010523",
+      "open_basis_sol": "0.046500",
+      "open_est_sol": "-0.012028",
       "realized_sol": "0.000542"
     },
     "recommendation": {
-      "action": "Hold",
-      "reason": "PUMP workout held. Exit is not green and ladder add did not qualify by spacing, max adds, caps, or reserve rules."
+      "action": "Executed",
+      "reason": "PUMP remains in workout; new rotation scout entered BC."
     },
     "rotation": {
       "candidates": [
@@ -3189,30 +3203,30 @@
     },
     "sleeves": [
       {
-        "actions_today": 5,
-        "active_rotation": "None",
+        "actions_today": 7,
+        "active_rotation": "BC",
         "auto_sign": true,
         "daily_limit_sol": 1,
-        "daily_spent_sol": "0.0075",
+        "daily_spent_sol": "0.022011",
         "label": "Main SolSpot",
         "mode": "auto_live",
-        "reason": "PUMP workout held. Exit is not green and ladder add did not qualify by spacing, max adds, caps, or reserve rules.",
-        "recommendation": "Hold",
+        "reason": "PUMP remains in workout; new rotation scout entered BC.",
+        "recommendation": "Executed",
         "wallet": "2Lv7...UzA2",
         "workout_count": 3
       },
       {
-        "actions_today": 2,
-        "active_rotation": "BC",
+        "actions_today": 3,
+        "active_rotation": "None",
         "auto_sign": true,
-        "daily_limit_sol": 0.03,
-        "daily_spent_sol": "0.003",
+        "daily_limit_sol": 0.02,
+        "daily_spent_sol": "0.0045",
         "label": "Dust Auto Sleeve",
         "mode": "auto_live",
-        "reason": "PUMP remains in workout; new rotation scout entered BC.",
+        "reason": "Workout average-down submitted for BC.",
         "recommendation": "Executed",
         "wallet": "F1Qm...WFsj",
-        "workout_count": 5
+        "workout_count": 6
       }
     ],
     "wallet": "2Lv7...UzA2",
@@ -3412,7 +3426,7 @@
     "pauses": 1,
     "phemex_positions": 186,
     "repairs": 0,
-    "solspot_actions_today": 5,
+    "solspot_actions_today": 7,
     "strategy_flow": {
       "active_count": 48,
       "process_touches": 48,
