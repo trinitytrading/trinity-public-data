@@ -1,11 +1,11 @@
 {
   "amazon_book": {
     "book": "The Trinity Investor",
-    "expected_by": "2026-07-16T06:43:47",
+    "expected_by": "2026-07-16T06:48:36",
     "market_window": "Expected on the market in less than 72 hours from this update.",
     "note": "Amazon review and store propagation can take up to 72 hours after publishing.",
     "price": "$12.99",
-    "published_at": "2026-07-13T06:43:47",
+    "published_at": "2026-07-13T06:48:36",
     "status": "Published on Amazon / coming soon",
     "title": "Amazon Book"
   },
@@ -113,7 +113,7 @@
     ],
     "note": "Delayed historical tape. Symbols, events, and rounded price zones."
   },
-  "generated_at": "2026-07-13T06:43:47",
+  "generated_at": "2026-07-13T06:48:36",
   "heartbeat": {
     "interval_minutes": 60,
     "last_run_at": "2026-07-13T06:00:02",
@@ -702,18 +702,18 @@
     {
       "band": "Active proof",
       "closed_pct": 21.8,
-      "closed_value": "+0.02 SOL",
+      "closed_value": "+1.24 USDT",
       "name": "SolSpot",
-      "net_value": "+0.01 SOL",
+      "net_value": "+0.87 USDT",
       "open_pct": -6.4,
-      "open_value": "-0.01 SOL",
+      "open_value": "-0.37 USDT",
       "total_pct": 15.3
     }
   ],
   "performance_summary": {
-    "combined_net": "+8.97 USDT",
-    "combined_open": "-19.69 USDT",
-    "combined_realized": "+28.66 USDT",
+    "combined_net": "+9.84 USDT",
+    "combined_open": "-20.06 USDT",
+    "combined_realized": "+29.90 USDT",
     "rows": [
       {
         "name": "Phemex",
@@ -731,10 +731,10 @@
       },
       {
         "name": "SolSpot",
-        "net": "+0.01 SOL",
-        "note": "Long-only spot proof wallet",
-        "open": "-0.01 SOL",
-        "realized": "+0.02 SOL"
+        "net": "+0.87 USDT",
+        "note": "Long-only spot proof wallet; SOL P/L shown as a USDT estimate",
+        "open": "-0.37 USDT",
+        "realized": "+1.24 USDT"
       }
     ],
     "scale_note": "P/L is shown for strategy scale. Balances, active sizes, order IDs, and next targets stay hidden."
@@ -900,46 +900,6 @@
   },
   "pulse_history": {
     "items": [
-      {
-        "actions": 28,
-        "activity": 84,
-        "adds": 27,
-        "checks": 215,
-        "combined_net": "+12.14 USDT",
-        "holds": 187,
-        "open_drag": "-15.91 USDT",
-        "pageviews": null,
-        "pauses": 1,
-        "performance_pressure": 87,
-        "repairs": 0,
-        "solspot_actions": 8,
-        "survival_floor": 80,
-        "target_cleanliness": 77,
-        "target_stretches": 20,
-        "time": "2026-07-12T17:42:50",
-        "trinity": 81,
-        "visitors": null
-      },
-      {
-        "actions": 28,
-        "activity": 84,
-        "adds": 27,
-        "checks": 215,
-        "combined_net": "+12.14 USDT",
-        "holds": 187,
-        "open_drag": "-15.91 USDT",
-        "pageviews": null,
-        "pauses": 1,
-        "performance_pressure": 87,
-        "repairs": 0,
-        "solspot_actions": 8,
-        "survival_floor": 80,
-        "target_cleanliness": 77,
-        "target_stretches": 20,
-        "time": "2026-07-12T17:52:55",
-        "trinity": 81,
-        "visitors": null
-      },
       {
         "actions": 37,
         "activity": 84,
@@ -2819,6 +2779,46 @@
         "time": "2026-07-13T06:43:47",
         "trinity": 81,
         "visitors": null
+      },
+      {
+        "actions": 54,
+        "activity": 84,
+        "adds": 53,
+        "checks": 222,
+        "combined_net": "+9.84 USDT",
+        "holds": 168,
+        "open_drag": "-20.06 USDT",
+        "pageviews": null,
+        "pauses": 1,
+        "performance_pressure": 87,
+        "repairs": 0,
+        "solspot_actions": 8,
+        "survival_floor": 80,
+        "target_cleanliness": 77,
+        "target_stretches": 40,
+        "time": "2026-07-13T06:48:11",
+        "trinity": 81,
+        "visitors": null
+      },
+      {
+        "actions": 54,
+        "activity": 84,
+        "adds": 53,
+        "checks": 222,
+        "combined_net": "+9.84 USDT",
+        "holds": 168,
+        "open_drag": "-20.06 USDT",
+        "pageviews": null,
+        "pauses": 1,
+        "performance_pressure": 87,
+        "repairs": 0,
+        "solspot_actions": 8,
+        "survival_floor": 80,
+        "target_cleanliness": 77,
+        "target_stretches": 40,
+        "time": "2026-07-13T06:48:36",
+        "trinity": 81,
+        "visitors": null
       }
     ]
   },
@@ -2950,10 +2950,14 @@
       "actions_today": 35,
       "actions_total": 120,
       "net_sol": "0.013107",
-      "note": "SolSpot P/L is estimated from realized SOL exits plus latest quoted workout posture when available.",
+      "net_usd": "0.87",
+      "note": "SolSpot P/L is estimated from realized SOL exits plus latest quoted workout posture, converted through the latest stable-swap quote when available.",
       "open_basis_sol": "0.085500",
       "open_est_sol": "-0.005510",
-      "realized_sol": "0.018617"
+      "open_est_usd": "-0.37",
+      "realized_sol": "0.018617",
+      "realized_usd": "1.24",
+      "sol_usd_price": "66.75"
     },
     "recommendation": {
       "action": "Executed",
