@@ -45,7 +45,7 @@
     },
     "eligibility": "eligible_holder_verified",
     "execution": {
-      "blocked_or_failed": 325,
+      "blocked_or_failed": 326,
       "cap_policy": "protective_reserve_rebalance",
       "executed_cards": 5,
       "latest_action": "convert_sol_to_usdc_reserve",
@@ -55,15 +55,15 @@
       "latest_spent_sol": "0.003154519",
       "preflight_cards": 5
     },
-    "last_refreshed": "2026-07-20T02:15:30.365Z",
+    "last_refreshed": "2026-07-20T02:25:27.502Z",
     "performance": {
       "band": "Ahead strongly",
-      "baseline_usd": "$5.20",
+      "baseline_usd": "$5.18",
       "drag_pct": 0.0,
       "drag_usd": "+0.00 USD",
-      "liquid_equity_usd": "$27.89",
-      "net_pct": 436.7,
-      "net_usd": "+22.70 USD",
+      "liquid_equity_usd": "$27.82",
+      "net_pct": 436.8,
+      "net_usd": "+22.64 USD",
       "portfolio_below_drawdown_stop": false,
       "sol_only_drawdown_is_not_equity_drawdown": false
     },
@@ -72,13 +72,13 @@
       "closed_pct": 0,
       "closed_value": "+0.00 USD",
       "name": "Agent Zero",
-      "net_value": "+22.70 USD",
-      "open_pct": 436.7,
+      "net_value": "+22.64 USD",
+      "open_pct": 436.8,
       "open_value": "+0.00 USD",
-      "total_pct": 436.7
+      "total_pct": 436.8
     },
     "pricing": {
-      "SOL_USDC": 76.734968,
+      "SOL_USDC": 76.503655,
       "quote_status": "ok"
     },
     "role": "Trinity Investor display modal agent",
@@ -112,7 +112,7 @@
     "status": "Available now",
     "subtitle": "A Unified Theory of Long, Short, and Neutral Capital",
     "title": "Book",
-    "verified_at": "2026-07-19T22:21:37"
+    "verified_at": "2026-07-19T22:31:40"
   },
   "build_version": "public-wheelhouse-v2.0.0",
   "delayed_fills": {
@@ -219,10 +219,10 @@
     ],
     "note": "Delayed historical tape. Symbols, events, and rounded price zones."
   },
-  "generated_at": "2026-07-20T02:21:37Z",
+  "generated_at": "2026-07-20T02:31:40Z",
   "heartbeat": {
     "interval_minutes": 60,
-    "last_run_at": "2026-07-19T21:27:02",
+    "last_run_at": "2026-07-19T22:27:02",
     "status": "Online"
   },
   "holder_registry": {
@@ -422,7 +422,7 @@
         "control": "No token holder receives Trinity control.",
         "hedgai_held": "1.00 HedgAI",
         "hedgai_value_usd": "unavailable",
-        "last_add": "not detected",
+        "last_add": "2026-07-09T21:32+00:00",
         "ping_in_eligible": true,
         "ping_in_threshold": "1 HedgAI",
         "pit_below_since": "",
@@ -440,7 +440,7 @@
         "wallet_full": "6KTsAmnL5RvQewAYxGtQiHudCxiiu9RpZgiA4YsiTRy6"
       }
     ],
-    "generated_at": "2026-07-20T02:21:10+00:00",
+    "generated_at": "2026-07-20T02:31:09+00:00",
     "hedgai_price_usd": "unavailable",
     "holder_count": 9,
     "max_slots": 105,
@@ -456,39 +456,41 @@
   },
   "latest_recommendations": {
     "activity": {
-      "Executed": "Low"
+      "Add": "Medium",
+      "Hold": "High"
     },
     "actual_counts": {
-      "Executed": 1
+      "Add": 7,
+      "Hold": 237
     },
     "actual_event_counts": {
-      "Monitoring": 1
+      "Ladder signal": 7
     },
     "event_mix": {
-      "Monitoring": 1
+      "Ladder signal": 7
     },
     "mode": "Selective adjustments",
     "pressure_board": [
       {
-        "heat": "Low",
-        "name": "Monitoring",
+        "heat": "Medium",
+        "name": "Ladder signal",
         "note": "Anonymized strategy cluster",
         "rank": "#1"
       }
     ],
     "strategy_flow": {
-      "active_count": 0,
-      "process_touches": 0,
+      "active_count": 29,
+      "process_touches": 29,
       "rows": [
         {
-          "count": 0,
-          "heat": "Clear",
+          "count": 120,
+          "heat": "High",
           "label": "Watch / Hold",
           "stage": "watch"
         },
         {
-          "count": 0,
-          "heat": "Clear",
+          "count": 21,
+          "heat": "Medium",
           "label": "Ladder / Average",
           "stage": "ladder"
         },
@@ -499,8 +501,8 @@
           "stage": "target_stretch"
         },
         {
-          "count": 0,
-          "heat": "Clear",
+          "count": 8,
+          "heat": "Medium",
           "label": "Repair",
           "stage": "repair"
         },
@@ -530,20 +532,74 @@
         }
       ],
       "summary": "Aggregated process touches only. One symbol can appear in multiple stages. No active size, exact target, or next-entry data.",
-      "unique_symbols": 0
+      "unique_symbols": 140
     },
     "tape": [
       {
-        "event": "Monitoring",
-        "exchange": "ApeX",
-        "price_zone": "near 0.188",
-        "recommendation": "Executed",
-        "status": "submitted_filled_and_reprotected",
-        "symbol": "PROVE-USDT",
-        "time": "2026-07-19T21:37:04-04:00"
+        "event": "Ladder signal",
+        "exchange": "Phemex",
+        "price_zone": "near 1.5",
+        "recommendation": "Add",
+        "status": "recommended",
+        "symbol": "ATOMUSDT",
+        "time": "2026-07-19T22:27:02"
+      },
+      {
+        "event": "Ladder signal",
+        "exchange": "Phemex",
+        "price_zone": "near 0.352",
+        "recommendation": "Add",
+        "status": "recommended",
+        "symbol": "LDOUSDT",
+        "time": "2026-07-19T22:27:02"
+      },
+      {
+        "event": "Ladder signal",
+        "exchange": "Phemex",
+        "price_zone": "micro-price zone",
+        "recommendation": "Add",
+        "status": "recommended",
+        "symbol": "ZILUSDT",
+        "time": "2026-07-19T22:27:02"
+      },
+      {
+        "event": "Ladder signal",
+        "exchange": "Phemex",
+        "price_zone": "near 0.190",
+        "recommendation": "Add",
+        "status": "recommended",
+        "symbol": "BERAUSDT",
+        "time": "2026-07-19T22:27:02"
+      },
+      {
+        "event": "Ladder signal",
+        "exchange": "Phemex",
+        "price_zone": "near 1.5",
+        "recommendation": "Add",
+        "status": "submitted",
+        "symbol": "ATOMUSDT",
+        "time": "2026-07-19T22:27:02"
+      },
+      {
+        "event": "Ladder signal",
+        "exchange": "Phemex",
+        "price_zone": "near 0.352",
+        "recommendation": "Add",
+        "status": "submitted",
+        "symbol": "LDOUSDT",
+        "time": "2026-07-19T22:27:02"
+      },
+      {
+        "event": "Ladder signal",
+        "exchange": "Phemex",
+        "price_zone": "micro-price zone",
+        "recommendation": "Add",
+        "status": "submitted",
+        "symbol": "ZILUSDT",
+        "time": "2026-07-19T22:27:02"
       }
     ],
-    "timestamp": "2026-07-19T21:37:04-04:00"
+    "timestamp": "2026-07-19T22:27:02"
   },
   "learning": {
     "active_count": 4,
@@ -599,8 +655,20 @@
       "news": [],
       "phemex": []
     },
-    "generated_at": "2026-07-20T01:27:51+00:00",
+    "generated_at": "2026-07-20T02:27:50+00:00",
     "headlines": [
+      {
+        "published": "Mon, 20 Jul 2026 02:23:36 +0000",
+        "source": "Cointelegraph",
+        "title": "Allbridge Core pauses cross-chain bridge after $1.65M exploit",
+        "url": "https://cointelegraph.com/news/allbridge-core-pauses-cross-chain-bridge-after-165m-exploit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+      },
+      {
+        "published": "Mon, 20 Jul 2026 01:27:42 +0000",
+        "source": "Cointelegraph",
+        "title": "Japanese logistics company eyes JPYC stablecoin to pay drivers",
+        "url": "https://cointelegraph.com/news/japanese-logistics-company-eyes-jpyc-stablecoin-to-pay-drivers?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+      },
       {
         "published": "Mon, 20 Jul 2026 00:33:12 +0000",
         "source": "Cointelegraph",
@@ -612,18 +680,6 @@
         "source": "Cointelegraph",
         "title": "Will the US get CLARITY this week? Bitcoin\u2019s new $80K target: Hodler\u2019s Digest, July 19",
         "url": "https://cointelegraph.com/magazine/will-the-us-get-finally-clarity-this-week-bitcoin-80k-hodlers-digest?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-      },
-      {
-        "published": "Sun, 19 Jul 2026 18:23:00 +0000",
-        "source": "Cointelegraph",
-        "title": "Here\u2019s what happened in crypto today",
-        "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-      },
-      {
-        "published": "Sun, 19 Jul 2026 16:37:00 +0000",
-        "source": "Cointelegraph",
-        "title": "Saylor turns up heat with \u2018110 reasons\u2019 why BIP-110 is a bad idea",
-        "url": "https://cointelegraph.com/news/saylor-turns-up-heat-with-110-reasons-why-bip-110-is-a-bad-idea?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
       },
       {
         "published": "Sun, 19 Jul 2026 17:51:32 -0400",
@@ -654,65 +710,65 @@
       "errors": [],
       "items": [
         {
-          "change_pct": "+0.23%",
-          "last_zone": "64.90K",
+          "change_pct": "-0.25%",
+          "last_zone": "64.64K",
           "symbol": "BTCUSDT",
-          "volume_band": "213.57M"
+          "volume_band": "216.80M"
         },
         {
-          "change_pct": "+1.29%",
-          "last_zone": "1.88K",
+          "change_pct": "+0.07%",
+          "last_zone": "1.87K",
           "symbol": "ETHUSDT",
-          "volume_band": "33.02M"
+          "volume_band": "32.72M"
         },
         {
-          "change_pct": "+2.12%",
-          "last_zone": "77.17",
+          "change_pct": "+0.50%",
+          "last_zone": "76.43",
           "symbol": "SOLUSDT",
-          "volume_band": "23.87M"
+          "volume_band": "24.72M"
         },
         {
-          "change_pct": "+0.32%",
-          "last_zone": "572.85",
+          "change_pct": "-0.30%",
+          "last_zone": "569.91",
           "symbol": "BNBUSDT",
-          "volume_band": "17.96M"
+          "volume_band": "18.49M"
         },
         {
-          "change_pct": "+1.78%",
-          "last_zone": "0.756",
+          "change_pct": "+0.71%",
+          "last_zone": "0.7498",
           "symbol": "SUIUSDT",
-          "volume_band": "11.06M"
+          "volume_band": "11.29M"
         },
         {
-          "change_pct": "+0.93%",
-          "last_zone": "1.1038",
+          "change_pct": "+0.06%",
+          "last_zone": "1.0965",
           "symbol": "XRPUSDT",
-          "volume_band": "10.74M"
+          "volume_band": "11.20M"
         },
         {
-          "change_pct": "+1.50%",
-          "last_zone": "8.465",
+          "change_pct": "+0.74%",
+          "last_zone": "8.424",
           "symbol": "LINKUSDT",
-          "volume_band": "9.51M"
+          "volume_band": "9.79M"
         },
         {
-          "change_pct": "+0.58%",
-          "last_zone": "0.07293",
+          "change_pct": "-0.28%",
+          "last_zone": "0.07235",
           "symbol": "DOGEUSDT",
-          "volume_band": "6.51M"
+          "volume_band": "6.75M"
         }
       ],
       "top_percentage_mover": {
-        "change_pct": "+40.58%",
-        "last_zone": "0.04732",
+        "change_pct": "+39.24%",
+        "last_zone": "0.04702",
         "symbol": "ZEREBROUSDT",
-        "volume_band": "1.15M"
+        "volume_band": "1.18M"
       },
       "top_volume_perp": {
-        "change_pct": "+0.23%",
-        "last_zone": "64.90K",
+        "change_pct": "-0.25%",
+        "last_zone": "64.64K",
         "symbol": "BTCUSDT",
-        "volume_band": "213.57M"
+        "volume_band": "216.80M"
       }
     },
     "stance": "Defensive watch",
@@ -734,41 +790,41 @@
     }
   },
   "market_trinity": {
-    "breadth": 1.0,
-    "confidence": 86,
-    "directional_index": 0.4475,
+    "breadth": 0.25,
+    "confidence": 83,
+    "directional_index": 0.0723,
     "explanation": "100 means the observed market is closest to balanced center; the stance and three percentages show directional lean.",
-    "generated_at": "2026-07-20T01:27:51+00:00",
-    "long_pct": 32,
-    "neutral_pct": 56,
+    "generated_at": "2026-07-20T02:27:50+00:00",
+    "long_pct": 13,
+    "neutral_pct": 76,
     "observations": 8,
-    "score": 55,
-    "short_pct": 12,
+    "score": 93,
+    "short_pct": 11,
     "source": "Phemex public watchlist price change weighted by reported volume",
-    "stance": "Bullish",
+    "stance": "Balanced neutral",
     "status": "verified_public_macro",
-    "weighted_change_pct": 0.6001
+    "weighted_change_pct": -0.0936
   },
   "performance_chart": [
     {
-      "band": "Ahead",
+      "band": "Near origin",
       "closed_pct": 16.8,
-      "closed_value": "+35.81 USDT",
+      "closed_value": "+35.85 USDT",
       "name": "Phemex",
-      "net_value": "+5.20 USDT",
-      "open_pct": -14.4,
-      "open_value": "-30.61 USDT",
-      "total_pct": 2.4
+      "net_value": "+2.55 USDT",
+      "open_pct": -15.6,
+      "open_value": "-33.30 USDT",
+      "total_pct": 1.2
     },
     {
       "band": "Ahead strongly",
-      "closed_pct": 17.2,
-      "closed_value": "+2.77 USDT",
+      "closed_pct": 16.2,
+      "closed_value": "+2.61 USDT",
       "name": "ApeX",
-      "net_value": "+2.77 USDT",
+      "net_value": "+2.61 USDT",
       "open_pct": 0.0,
       "open_value": "+0.00 USDT",
-      "total_pct": 17.2
+      "total_pct": 16.2
     },
     {
       "band": "Proof phase",
@@ -785,30 +841,30 @@
       "closed_pct": 0,
       "closed_value": "+0.00 USD",
       "name": "Agent Zero",
-      "net_value": "+22.70 USD",
-      "open_pct": 436.7,
+      "net_value": "+22.64 USD",
+      "open_pct": 436.8,
       "open_value": "+0.00 USD",
-      "total_pct": 436.7
+      "total_pct": 436.8
     }
   ],
   "performance_summary": {
-    "combined_net": "+7.97 USDT",
-    "combined_open": "-30.61 USDT",
-    "combined_realized": "+38.58 USDT",
+    "combined_net": "+5.16 USDT",
+    "combined_open": "-33.30 USDT",
+    "combined_realized": "+38.46 USDT",
     "rows": [
       {
         "name": "Phemex",
-        "net": "+5.20 USDT",
+        "net": "+2.55 USDT",
         "note": "Hedge-mode perp book",
-        "open": "-30.61 USDT",
-        "realized": "+35.81 USDT"
+        "open": "-33.30 USDT",
+        "realized": "+35.85 USDT"
       },
       {
         "name": "ApeX",
-        "net": "+2.77 USDT",
+        "net": "+2.61 USDT",
         "note": "Futures-capable rotation book",
         "open": "included",
-        "realized": "+2.77 USDT"
+        "realized": "+2.61 USDT"
       },
       {
         "name": "SolSpot",
@@ -819,7 +875,7 @@
       },
       {
         "name": "Agent Zero",
-        "net": "+22.70 USD",
+        "net": "+22.64 USD",
         "note": "Tiny isolated wallet; X points and reserve health are shown separately",
         "open": "+0.00 USD",
         "realized": "+0.00 USD"
@@ -981,33 +1037,13 @@
   },
   "pulse": {
     "activity": 68,
-    "performance_pressure": 87,
-    "survival_floor": 69,
+    "performance_pressure": 78,
+    "survival_floor": 80,
     "target_cleanliness": 96,
-    "trinity": 80
+    "trinity": 82
   },
   "pulse_history": {
     "items": [
-      {
-        "actions": 1,
-        "activity": 68,
-        "adds": 0,
-        "checks": 1,
-        "combined_net": "+7.21 USDT",
-        "holds": 0,
-        "open_drag": "-30.72 USDT",
-        "pageviews": null,
-        "pauses": 0,
-        "performance_pressure": 87,
-        "repairs": 0,
-        "solspot_actions": 0,
-        "survival_floor": 80,
-        "target_cleanliness": 96,
-        "target_stretches": 0,
-        "time": "2026-07-19T20:55:37Z",
-        "trinity": 83,
-        "visitors": null
-      },
       {
         "actions": 1,
         "activity": 68,
@@ -2907,12 +2943,32 @@
         "time": "2026-07-20T02:21:37Z",
         "trinity": 80,
         "visitors": null
+      },
+      {
+        "actions": 7,
+        "activity": 68,
+        "adds": 7,
+        "checks": 244,
+        "combined_net": "+5.16 USDT",
+        "holds": 237,
+        "open_drag": "-33.30 USDT",
+        "pageviews": null,
+        "pauses": 0,
+        "performance_pressure": 78,
+        "repairs": 0,
+        "solspot_actions": 0,
+        "survival_floor": 80,
+        "target_cleanliness": 96,
+        "target_stretches": 0,
+        "time": "2026-07-20T02:31:40Z",
+        "trinity": 82,
+        "visitors": null
       }
     ]
   },
   "site_traffic": {
     "bandwidth": null,
-    "generated_at": "2026-07-20T01:27:51+00:00",
+    "generated_at": "2026-07-20T02:27:50+00:00",
     "note": "Traffic snapshot pending. Netlify analytics update hourly; enter dashboard values into this packet when ready.",
     "pageviews": null,
     "source": "Trinity privacy-safe tracker",
@@ -2960,7 +3016,7 @@
     ],
     "daily_limit_sol": 1,
     "daily_spent_sol": "0",
-    "generated_at": "2026-07-20T02:13:02.530Z",
+    "generated_at": "2026-07-20T02:23:02.522Z",
     "hard_memory": [
       {
         "policy": "No fresh discovery buy unless the token clears hard floors for 24h volume, current-hour volume, baseline hourly volume, liquidity, transaction count, route quality, and relative volume.",
@@ -2997,176 +3053,65 @@
     "rotation": {
       "candidates": [
         {
-          "dex_url": "https://dexscreener.com/solana/cmcusmxpgzmhbntqumg3ca1aen4tpitc3e92ssbekedc",
-          "earlier_day_avg_hourly_volume": "1",
+          "dex_url": "https://dexscreener.com/solana/df4majjymwejlqyb2wuzdiuhcpdgcrximmfcwfvmnwnf",
+          "earlier_day_avg_hourly_volume": "19",
           "eligibility_reason": "",
           "entry_lane": "",
           "excluded_from_strategy": false,
           "known_token_identity": true,
           "lane_label": "Top-100 Capital Rotation",
-          "liquidity": "29252",
-          "previous_relative_volume_1h": 2.82,
-          "relative_volume_1h": "119.0x",
-          "relative_volume_delta": 116.18,
+          "liquidity": "88219",
+          "previous_relative_volume_1h": 12.32,
+          "relative_volume_1h": "90.1x",
+          "relative_volume_delta": 77.82,
           "relative_volume_rising": true,
-          "relative_volume_value": 119.0,
+          "relative_volume_value": 90.14,
           "route": "Candidate only",
           "route_ok": false,
-          "score": 330.77,
+          "score": 374.5,
           "signal_basis": "rising relative volume with positive price pressure",
-          "signal_quality_score": 2025.38,
+          "signal_quality_score": 1717.05,
           "status": "candidate_only",
           "strategy_lane": "top100_rotation",
           "sustained_volume_minutes": 0,
           "sustained_volume_observations": 0,
           "sustained_volume_qualified": false,
           "sustained_volume_required_observations": 3,
-          "symbol": "PENGU",
-          "token_address": "2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv",
+          "symbol": "Fartcoin ",
+          "token_address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
           "token_identity_verified": true,
           "top_market_cap_eligible": true,
           "trigger": "Volume check",
-          "txns_1h": 1,
+          "txns_1h": 2,
           "verification_band": "top100_index_verified",
-          "volume_1h": "119",
-          "volume_24h": "119",
-          "volume_rank_gate": "",
-          "volume_signal": "rising relative volume"
-        },
-        {
-          "dex_url": "https://dexscreener.com/solana/gyqytuxsix3gapucklmy4jerr3matyauqqhd32d45g5y",
-          "earlier_day_avg_hourly_volume": "1",
-          "eligibility_reason": "",
-          "entry_lane": "",
-          "excluded_from_strategy": false,
-          "known_token_identity": true,
-          "lane_label": "Top-100 Capital Rotation",
-          "liquidity": "4701",
-          "previous_relative_volume_1h": 640.54,
-          "relative_volume_1h": "711.8x",
-          "relative_volume_delta": 71.23,
-          "relative_volume_rising": true,
-          "relative_volume_value": 711.77,
-          "route": "Candidate only",
-          "route_ok": false,
-          "score": 336.99,
-          "signal_basis": "rising relative volume with positive price pressure",
-          "signal_quality_score": 1683.02,
-          "status": "candidate_only",
-          "strategy_lane": "top100_rotation",
-          "sustained_volume_minutes": 0,
-          "sustained_volume_observations": 0,
-          "sustained_volume_qualified": false,
-          "sustained_volume_required_observations": 3,
-          "symbol": "MET",
-          "token_address": "METvsvVRapdj9cFLzq4Tr43xK4tAjQfwX76z3n6mWQL",
-          "token_identity_verified": true,
-          "top_market_cap_eligible": true,
-          "trigger": "Volume check",
-          "txns_1h": 163,
-          "verification_band": "top100_index_verified",
-          "volume_1h": "712",
-          "volume_24h": "712",
-          "volume_rank_gate": "",
-          "volume_signal": "rising relative volume"
-        },
-        {
-          "dex_url": "https://dexscreener.com/solana/67kn7dbruvagsntqdegwfac9p1ypnn9lmjd4qduo6kfg",
-          "earlier_day_avg_hourly_volume": "1046",
-          "eligibility_reason": "",
-          "entry_lane": "",
-          "excluded_from_strategy": false,
-          "known_token_identity": true,
-          "lane_label": "Top-100 Capital Rotation",
-          "liquidity": "1850751",
-          "previous_relative_volume_1h": 0.03,
-          "relative_volume_1h": "23.3x",
-          "relative_volume_delta": 23.3,
-          "relative_volume_rising": true,
-          "relative_volume_value": 23.33,
-          "route": "Route OK",
-          "route_ok": true,
-          "score": 453.42,
-          "signal_basis": "rising relative volume with positive price pressure",
-          "signal_quality_score": 1475.1,
-          "status": "candidate_only",
-          "strategy_lane": "top100_rotation",
-          "sustained_volume_minutes": 0,
-          "sustained_volume_observations": 0,
-          "sustained_volume_qualified": false,
-          "sustained_volume_required_observations": 3,
-          "symbol": "JupSOL",
-          "token_address": "jupSoLaHXQiZZTSfEWMTRRgpnyFm8f6sZdosWBjx93v",
-          "token_identity_verified": true,
-          "top_market_cap_eligible": true,
-          "trigger": "Route verified",
-          "txns_1h": 10,
-          "verification_band": "top100_index_verified",
-          "volume_1h": "24413",
-          "volume_24h": "48478",
-          "volume_rank_gate": "",
-          "volume_signal": "rising relative volume"
-        },
-        {
-          "dex_url": "https://dexscreener.com/solana/4oyxqcgzaa9hgnjflvu7k57yg3iezgyfky8dudbltzhf",
-          "earlier_day_avg_hourly_volume": "2",
-          "eligibility_reason": "",
-          "entry_lane": "",
-          "excluded_from_strategy": false,
-          "known_token_identity": true,
-          "lane_label": "Top-100 Capital Rotation",
-          "liquidity": "442193",
-          "previous_relative_volume_1h": 3771.63,
-          "relative_volume_1h": "3793.1x",
-          "relative_volume_delta": 21.5,
-          "relative_volume_rising": true,
-          "relative_volume_value": 3793.13,
-          "route": "Candidate only",
-          "route_ok": false,
-          "score": 407.79,
-          "signal_basis": "rising relative volume with positive price pressure",
-          "signal_quality_score": 1346.25,
-          "status": "candidate_only",
-          "strategy_lane": "top100_rotation",
-          "sustained_volume_minutes": 0,
-          "sustained_volume_observations": 0,
-          "sustained_volume_qualified": false,
-          "sustained_volume_required_observations": 3,
-          "symbol": "2Z",
-          "token_address": "J6pQQ3FAcJQeWPPGppWRb4nM8jU3wLyYbRrLh7feMfvd",
-          "token_identity_verified": true,
-          "top_market_cap_eligible": true,
-          "trigger": "Volume check",
-          "txns_1h": 10,
-          "verification_band": "top100_index_verified",
-          "volume_1h": "7439",
-          "volume_24h": "7485",
+          "volume_1h": "1754",
+          "volume_24h": "2202",
           "volume_rank_gate": "",
           "volume_signal": "rising relative volume"
         },
         {
           "dex_url": "https://dexscreener.com/solana/6e7v9eegchw997t72mxgwwjipz6gjyzf8nvjkzt1rvpn",
-          "earlier_day_avg_hourly_volume": "283204",
+          "earlier_day_avg_hourly_volume": "293790",
           "eligibility_reason": "",
           "entry_lane": "",
           "excluded_from_strategy": false,
           "known_token_identity": true,
           "lane_label": "Top-100 Capital Rotation",
-          "liquidity": "2123216",
-          "previous_relative_volume_1h": 3.61,
-          "relative_volume_1h": "3.8x",
-          "relative_volume_delta": 0.21,
-          "relative_volume_rising": true,
-          "relative_volume_value": 3.82,
+          "liquidity": "2081764",
+          "previous_relative_volume_1h": 3.82,
+          "relative_volume_1h": "3.3x",
+          "relative_volume_delta": -0.52,
+          "relative_volume_rising": false,
+          "relative_volume_value": 3.3,
           "route": "Route OK",
           "route_ok": true,
-          "score": 406.74,
-          "signal_basis": "rising relative volume with positive price pressure",
-          "signal_quality_score": 1325.64,
+          "score": 401.27,
+          "signal_basis": "observed, not a buy signal yet",
+          "signal_quality_score": 1304.05,
           "status": "candidate_only",
           "strategy_lane": "top100_rotation",
-          "sustained_volume_minutes": 719.98,
-          "sustained_volume_observations": 70,
+          "sustained_volume_minutes": 729.98,
+          "sustained_volume_observations": 71,
           "sustained_volume_qualified": true,
           "sustained_volume_required_observations": 3,
           "symbol": "ANSEM",
@@ -3174,12 +3119,12 @@
           "token_identity_verified": true,
           "top_market_cap_eligible": true,
           "trigger": "Route verified",
-          "txns_1h": 1976,
+          "txns_1h": 1842,
           "verification_band": "top100_index_verified",
-          "volume_1h": "1082710",
-          "volume_24h": "7596395",
+          "volume_1h": "968142",
+          "volume_24h": "7725309",
           "volume_rank_gate": "",
-          "volume_signal": "rising relative volume"
+          "volume_signal": "no rising relative volume"
         },
         {
           "dex_url": "https://dexscreener.com/solana/2ntussb3dl7lbutys6wg9payb3hwvaei1oa2mucx3pct",
@@ -3215,6 +3160,43 @@
           "verification_band": "top100_index_verified",
           "volume_1h": "1485",
           "volume_24h": "1526",
+          "volume_rank_gate": "",
+          "volume_signal": "no rising relative volume"
+        },
+        {
+          "dex_url": "https://dexscreener.com/solana/67kn7dbruvagsntqdegwfac9p1ypnn9lmjd4qduo6kfg",
+          "earlier_day_avg_hourly_volume": "1046",
+          "eligibility_reason": "",
+          "entry_lane": "",
+          "excluded_from_strategy": false,
+          "known_token_identity": true,
+          "lane_label": "Top-100 Capital Rotation",
+          "liquidity": "1850751",
+          "previous_relative_volume_1h": 23.33,
+          "relative_volume_1h": "23.3x",
+          "relative_volume_delta": 0,
+          "relative_volume_rising": false,
+          "relative_volume_value": 23.33,
+          "route": "Route OK",
+          "route_ok": true,
+          "score": 453.42,
+          "signal_basis": "observed, not a buy signal yet",
+          "signal_quality_score": 1288.7,
+          "status": "candidate_only",
+          "strategy_lane": "top100_rotation",
+          "sustained_volume_minutes": 0,
+          "sustained_volume_observations": 0,
+          "sustained_volume_qualified": false,
+          "sustained_volume_required_observations": 3,
+          "symbol": "JupSOL",
+          "token_address": "jupSoLaHXQiZZTSfEWMTRRgpnyFm8f6sZdosWBjx93v",
+          "token_identity_verified": true,
+          "top_market_cap_eligible": true,
+          "trigger": "Route verified",
+          "txns_1h": 10,
+          "verification_band": "top100_index_verified",
+          "volume_1h": "24413",
+          "volume_24h": "48478",
           "volume_rank_gate": "",
           "volume_signal": "no rising relative volume"
         },
@@ -3256,28 +3238,102 @@
           "volume_signal": "no rising relative volume"
         },
         {
-          "dex_url": "https://dexscreener.com/solana/hxa6skw5qa4o12fjvgtpxdq2ynz5zv1s7sb4ffomsylm",
-          "earlier_day_avg_hourly_volume": "272562",
+          "dex_url": "https://dexscreener.com/solana/56ekyu6ubptna3lr2qkjhjnbdnkclwk2lt3uwh7j2r8z",
+          "earlier_day_avg_hourly_volume": "17431",
           "eligibility_reason": "",
           "entry_lane": "",
           "excluded_from_strategy": false,
           "known_token_identity": true,
           "lane_label": "Top-100 Capital Rotation",
-          "liquidity": "5495372",
-          "previous_relative_volume_1h": 3.83,
-          "relative_volume_1h": "3.8x",
-          "relative_volume_delta": 0.02,
-          "relative_volume_rising": false,
-          "relative_volume_value": 3.85,
+          "liquidity": "10657925",
+          "previous_relative_volume_1h": 15.52,
+          "relative_volume_1h": "22.0x",
+          "relative_volume_delta": 6.53,
+          "relative_volume_rising": true,
+          "relative_volume_value": 22.05,
           "route": "Route OK",
           "route_ok": true,
-          "score": 412.43,
-          "signal_basis": "observed, not a buy signal yet",
-          "signal_quality_score": 1252.9,
+          "score": 503.48,
+          "signal_basis": "rising relative volume inside pullback risk band",
+          "signal_quality_score": 1244,
           "status": "candidate_only",
           "strategy_lane": "top100_rotation",
-          "sustained_volume_minutes": 250,
-          "sustained_volume_observations": 26,
+          "sustained_volume_minutes": 0,
+          "sustained_volume_observations": 0,
+          "sustained_volume_qualified": false,
+          "sustained_volume_required_observations": 3,
+          "symbol": "$WIF",
+          "token_address": "EKpQGSJtjMFqKZ9KQanSqYXRcF8fBopzLHYxdM65zcjm",
+          "token_identity_verified": true,
+          "top_market_cap_eligible": true,
+          "trigger": "Route verified",
+          "txns_1h": 61,
+          "verification_band": "top100_index_verified",
+          "volume_1h": "384280",
+          "volume_24h": "785200",
+          "volume_rank_gate": "",
+          "volume_signal": "rising relative volume"
+        },
+        {
+          "dex_url": "https://dexscreener.com/solana/2hxctgnfeqfnsxv8d7ztybebeaowmwwvedqq8v3obyas",
+          "earlier_day_avg_hourly_volume": "3270860",
+          "eligibility_reason": "",
+          "entry_lane": "",
+          "excluded_from_strategy": false,
+          "known_token_identity": true,
+          "lane_label": "Top-100 Capital Rotation",
+          "liquidity": "86605329",
+          "previous_relative_volume_1h": 2.44,
+          "relative_volume_1h": "3.2x",
+          "relative_volume_delta": 0.8,
+          "relative_volume_rising": true,
+          "relative_volume_value": 3.24,
+          "route": "Route OK",
+          "route_ok": true,
+          "score": 450.64,
+          "signal_basis": "rising relative volume with positive price pressure",
+          "signal_quality_score": 1238.84,
+          "status": "candidate_only",
+          "strategy_lane": "top100_rotation",
+          "sustained_volume_minutes": 0,
+          "sustained_volume_observations": 0,
+          "sustained_volume_qualified": false,
+          "sustained_volume_required_observations": 3,
+          "symbol": "Bonk",
+          "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "token_identity_verified": true,
+          "top_market_cap_eligible": true,
+          "trigger": "Route verified",
+          "txns_1h": 59,
+          "verification_band": "top100_index_verified",
+          "volume_1h": "10589536",
+          "volume_24h": "85819317",
+          "volume_rank_gate": "",
+          "volume_signal": "rising relative volume"
+        },
+        {
+          "dex_url": "https://dexscreener.com/solana/hxa6skw5qa4o12fjvgtpxdq2ynz5zv1s7sb4ffomsylm",
+          "earlier_day_avg_hourly_volume": "281474",
+          "eligibility_reason": "",
+          "entry_lane": "",
+          "excluded_from_strategy": false,
+          "known_token_identity": true,
+          "lane_label": "Top-100 Capital Rotation",
+          "liquidity": "5495241",
+          "previous_relative_volume_1h": 3.85,
+          "relative_volume_1h": "3.2x",
+          "relative_volume_delta": -0.62,
+          "relative_volume_rising": false,
+          "relative_volume_value": 3.23,
+          "route": "Route OK",
+          "route_ok": true,
+          "score": 406.74,
+          "signal_basis": "observed, not a buy signal yet",
+          "signal_quality_score": 1233.42,
+          "status": "candidate_only",
+          "strategy_lane": "top100_rotation",
+          "sustained_volume_minutes": 260,
+          "sustained_volume_observations": 27,
           "sustained_volume_qualified": true,
           "sustained_volume_required_observations": 3,
           "symbol": "cbBTC",
@@ -3285,10 +3341,10 @@
           "token_identity_verified": true,
           "top_market_cap_eligible": true,
           "trigger": "Route verified",
-          "txns_1h": 1185,
+          "txns_1h": 1008,
           "verification_band": "top100_index_verified",
-          "volume_1h": "1048863",
-          "volume_24h": "7317795",
+          "volume_1h": "909722",
+          "volume_24h": "7383633",
           "volume_rank_gate": "",
           "volume_signal": "no rising relative volume"
         }
@@ -3355,31 +3411,31 @@
           "source_status": "cache"
         }
       },
-      "generated_at": "2026-07-20T02:21:02.716Z",
+      "generated_at": "2026-07-20T02:31:02.777Z",
       "mode": "auto-rotation enabled only inside the verified Solana top-100 index",
       "top_eligible": {
         "dex_url": "https://dexscreener.com/solana/54vp27ulaw4wnlo5n7r4fcc6zlamoqc28xbarjss4euj",
-        "earlier_day_avg_hourly_volume": "200917",
+        "earlier_day_avg_hourly_volume": "201026",
         "eligibility_reason": "verified top-100 token with sustained volume, ranked by lowest nominal price",
         "entry_lane": "top100_rotation",
         "excluded_from_strategy": false,
         "known_token_identity": true,
         "lane_label": "Top-100 Capital Rotation",
-        "liquidity": "10269901",
-        "previous_relative_volume_1h": 0.72,
-        "relative_volume_1h": "0.9x",
+        "liquidity": "10269923",
+        "previous_relative_volume_1h": 0.86,
+        "relative_volume_1h": "1.0x",
         "relative_volume_delta": 0.14,
         "relative_volume_rising": true,
-        "relative_volume_value": 0.86,
+        "relative_volume_value": 1.0,
         "route": "Route OK",
         "route_ok": true,
-        "score": 378.4,
+        "score": 380.57,
         "signal_basis": "top-100 identity, sustained volume, liquidity, transactions, and route passed before price ranking",
-        "signal_quality_score": 1174.06,
+        "signal_quality_score": 1182.96,
         "status": "candidate_only",
         "strategy_lane": "top100_rotation",
-        "sustained_volume_minutes": 1500.02,
-        "sustained_volume_observations": 145,
+        "sustained_volume_minutes": 1510.02,
+        "sustained_volume_observations": 146,
         "sustained_volume_qualified": true,
         "sustained_volume_required_observations": 3,
         "symbol": "ANTFUN",
@@ -3387,10 +3443,10 @@
         "token_identity_verified": true,
         "top_market_cap_eligible": true,
         "trigger": "Watch",
-        "txns_1h": 835,
+        "txns_1h": 898,
         "verification_band": "top100_index_verified",
-        "volume_1h": "172773",
-        "volume_24h": "4793874",
+        "volume_1h": "201788",
+        "volume_24h": "4825394",
         "volume_rank_gate": "sustained volume floors",
         "volume_signal": "rising relative volume"
       }
@@ -3476,18 +3532,18 @@
     "public_note": "Wheelhouse view: strategy pulse, P/L posture, trading books, SolSpot radar, market tape, learning rules, and HedgAI holder signals."
   },
   "strategy_flow": {
-    "active_count": 0,
-    "process_touches": 0,
+    "active_count": 29,
+    "process_touches": 29,
     "rows": [
       {
-        "count": 0,
-        "heat": "Clear",
+        "count": 120,
+        "heat": "High",
         "label": "Watch / Hold",
         "stage": "watch"
       },
       {
-        "count": 0,
-        "heat": "Clear",
+        "count": 21,
+        "heat": "Medium",
         "label": "Ladder / Average",
         "stage": "ladder"
       },
@@ -3498,8 +3554,8 @@
         "stage": "target_stretch"
       },
       {
-        "count": 0,
-        "heat": "Clear",
+        "count": 8,
+        "heat": "Medium",
         "label": "Repair",
         "stage": "repair"
       },
@@ -3529,7 +3585,7 @@
       }
     ],
     "summary": "Aggregated process touches only. One symbol can appear in multiple stages. No active size, exact target, or next-entry data.",
-    "unique_symbols": 0
+    "unique_symbols": 140
   },
   "systems": {
     "apex": {
@@ -3555,8 +3611,8 @@
     "phemex": {
       "automation": "Hourly review active",
       "connection": "Online",
-      "free_capital": "Caution",
-      "performance": "Ahead",
+      "free_capital": "Usable",
+      "performance": "Near origin",
       "risk_mode": "Normal",
       "role": "Same-symbol long/short hedge-mode volatility book",
       "strategy_type": "Long and short can run on the same symbol",
@@ -3564,42 +3620,96 @@
     }
   },
   "trade_report": {
-    "actions_logged": 1,
-    "adds": 0,
+    "actions_logged": 7,
+    "adds": 7,
     "apex_positions": 17,
-    "checks": 1,
-    "holds": 0,
-    "ladder_signals": 0,
+    "checks": 244,
+    "holds": 237,
+    "ladder_signals": 7,
     "latest_events": [
       {
-        "event": "Monitoring",
-        "exchange": "ApeX",
-        "price_zone": "near 0.188",
-        "recommendation": "Executed",
-        "status": "submitted_filled_and_reprotected",
-        "symbol": "PROVE-USDT",
-        "time": "2026-07-19T21:37:04-04:00"
+        "event": "Ladder signal",
+        "exchange": "Phemex",
+        "price_zone": "near 1.5",
+        "recommendation": "Add",
+        "status": "recommended",
+        "symbol": "ATOMUSDT",
+        "time": "2026-07-19T22:27:02"
+      },
+      {
+        "event": "Ladder signal",
+        "exchange": "Phemex",
+        "price_zone": "near 0.352",
+        "recommendation": "Add",
+        "status": "recommended",
+        "symbol": "LDOUSDT",
+        "time": "2026-07-19T22:27:02"
+      },
+      {
+        "event": "Ladder signal",
+        "exchange": "Phemex",
+        "price_zone": "micro-price zone",
+        "recommendation": "Add",
+        "status": "recommended",
+        "symbol": "ZILUSDT",
+        "time": "2026-07-19T22:27:02"
+      },
+      {
+        "event": "Ladder signal",
+        "exchange": "Phemex",
+        "price_zone": "near 0.190",
+        "recommendation": "Add",
+        "status": "recommended",
+        "symbol": "BERAUSDT",
+        "time": "2026-07-19T22:27:02"
+      },
+      {
+        "event": "Ladder signal",
+        "exchange": "Phemex",
+        "price_zone": "near 1.5",
+        "recommendation": "Add",
+        "status": "submitted",
+        "symbol": "ATOMUSDT",
+        "time": "2026-07-19T22:27:02"
+      },
+      {
+        "event": "Ladder signal",
+        "exchange": "Phemex",
+        "price_zone": "near 0.352",
+        "recommendation": "Add",
+        "status": "submitted",
+        "symbol": "LDOUSDT",
+        "time": "2026-07-19T22:27:02"
+      },
+      {
+        "event": "Ladder signal",
+        "exchange": "Phemex",
+        "price_zone": "micro-price zone",
+        "recommendation": "Add",
+        "status": "submitted",
+        "symbol": "ZILUSDT",
+        "time": "2026-07-19T22:27:02"
       }
     ],
     "mode": "Selective adjustments",
     "note": "Trade report uses public-safe events. Active sizing and next targets are hidden.",
     "pauses": 0,
-    "phemex_positions": 209,
+    "phemex_positions": 210,
     "repairs": 0,
     "solspot_actions_today": 0,
     "strategy_flow": {
-      "active_count": 0,
-      "process_touches": 0,
+      "active_count": 29,
+      "process_touches": 29,
       "rows": [
         {
-          "count": 0,
-          "heat": "Clear",
+          "count": 120,
+          "heat": "High",
           "label": "Watch / Hold",
           "stage": "watch"
         },
         {
-          "count": 0,
-          "heat": "Clear",
+          "count": 21,
+          "heat": "Medium",
           "label": "Ladder / Average",
           "stage": "ladder"
         },
@@ -3610,8 +3720,8 @@
           "stage": "target_stretch"
         },
         {
-          "count": 0,
-          "heat": "Clear",
+          "count": 8,
+          "heat": "Medium",
           "label": "Repair",
           "stage": "repair"
         },
@@ -3641,10 +3751,10 @@
         }
       ],
       "summary": "Aggregated process touches only. One symbol can appear in multiple stages. No active size, exact target, or next-entry data.",
-      "unique_symbols": 0
+      "unique_symbols": 140
     },
     "target_stretches": 0,
-    "timestamp": "2026-07-19T21:37:04-04:00"
+    "timestamp": "2026-07-19T22:27:02"
   },
   "trinity_ai": {
     "analysis": [
@@ -3671,22 +3781,22 @@
     "dao_enabled": false,
     "direct_wallet_approval": true,
     "discovery_policy": "Current #1 eligible routeable spot candidate, opened only when capital capacity allows.",
-    "generated_at": "2026-07-20T02:21:36.860Z",
+    "generated_at": "2026-07-20T02:31:28.497Z",
     "market_trinity": {
-      "breadth": 1.0,
-      "confidence": 86,
-      "directional_index": 0.4475,
+      "breadth": 0.25,
+      "confidence": 83,
+      "directional_index": 0.0723,
       "explanation": "100 means the observed market is closest to balanced center; the stance and three percentages show directional lean.",
-      "generated_at": "2026-07-20T01:27:51+00:00",
-      "long_pct": 32,
-      "neutral_pct": 56,
+      "generated_at": "2026-07-20T02:27:50+00:00",
+      "long_pct": 13,
+      "neutral_pct": 76,
       "observations": 8,
-      "score": 55,
-      "short_pct": 12,
+      "score": 93,
+      "short_pct": 11,
       "source": "Phemex public watchlist price change weighted by reported volume",
-      "stance": "Bullish",
+      "stance": "Balanced neutral",
       "status": "verified_public_macro",
-      "weighted_change_pct": 0.6001
+      "weighted_change_pct": -0.0936
     },
     "name": "Ping-In Vault",
     "pending_total": 270,
@@ -3697,7 +3807,7 @@
     "ready_signature_total": 6,
     "release_control": {
       "allowed_wallets": [],
-      "checked_at": "2026-07-20T02:21:21.587Z",
+      "checked_at": "2026-07-20T02:31:21.372Z",
       "execution_enabled": true,
       "notifications_enabled": true,
       "reason": "Open wallet-owned PIT release: every eligible wallet may receive only its own current card, subject to its live holdings, verified capital capacity, risk rules, exact-card verification, and separate Solflare approval.",
@@ -3719,7 +3829,7 @@
     "sleeves": [
       {
         "account_profile": {
-          "checked_at": "2026-07-20T02:21:22.288Z",
+          "checked_at": "2026-07-20T02:31:21.759Z",
           "managed_position_count": 0,
           "observed_unmanaged_count": 11,
           "scan_errors": [],
@@ -3833,7 +3943,7 @@
           "schema": "trinity.pit.add_capacity.v1",
           "scope": "current_on_chain_structural_liquidity",
           "status": "verified",
-          "verified_at": "2026-07-20T02:21:22.289Z",
+          "verified_at": "2026-07-20T02:31:22.376Z",
           "weekly_earned_adds": null,
           "weekly_earned_adds_status": "awaiting_realized_profit_and_yield_ledger"
         },
@@ -3855,7 +3965,7 @@
         },
         "custody": "public-address manual-sign holder sleeve",
         "held_action": "",
-        "held_reason": "",
+        "held_reason": "current highest-priority PIT order remains active",
         "held_symbol": "",
         "id": "pit-cwfm-s2ev-sleeve",
         "latest_action": "buy_approved_spot_token",
@@ -3873,7 +3983,7 @@
           "status": "verified_active_sleeve"
         },
         "positions": 0,
-        "queued_count_latest": 1,
+        "queued_count_latest": 0,
         "ready": 1,
         "ready_intents": [
           {
@@ -3932,14 +4042,14 @@
             "wallet_value_usd": 5.67
           }
         ],
-        "report_generated_at": "2026-07-20T02:21:21.587Z",
+        "report_generated_at": "2026-07-20T02:31:21.372Z",
         "status": "Ready signature",
         "wallet": "CWFm...s2ev",
         "wallet_full": "CWFmhfjxEw7b8FN6jjXTit47gbmRjjQVRrhuTxZ6s2ev"
       },
       {
         "account_profile": {
-          "checked_at": "2026-07-20T02:21:23.962Z",
+          "checked_at": "2026-07-20T02:31:24.067Z",
           "managed_position_count": 0,
           "observed_unmanaged_count": 54,
           "scan_errors": [],
@@ -4131,7 +4241,7 @@
           "schema": "trinity.pit.add_capacity.v1",
           "scope": "current_on_chain_structural_liquidity",
           "status": "verified",
-          "verified_at": "2026-07-20T02:21:23.962Z",
+          "verified_at": "2026-07-20T02:31:24.067Z",
           "weekly_earned_adds": null,
           "weekly_earned_adds_status": "awaiting_realized_profit_and_yield_ledger"
         },
@@ -4176,14 +4286,14 @@
         "queued_count_latest": 0,
         "ready": 0,
         "ready_intents": [],
-        "report_generated_at": "2026-07-20T02:21:21.587Z",
+        "report_generated_at": "2026-07-20T02:31:21.372Z",
         "status": "Waiting",
         "wallet": "4aF3...6Kt9",
         "wallet_full": "4aF3vKp6vyye5SxzRW5UFPNDkr7Hd9WxgfEjcyAh6Kt9"
       },
       {
         "account_profile": {
-          "checked_at": "2026-07-20T02:21:26.112Z",
+          "checked_at": "2026-07-20T02:31:26.264Z",
           "managed_position_count": 0,
           "observed_unmanaged_count": 778,
           "scan_errors": [],
@@ -4375,7 +4485,7 @@
           "schema": "trinity.pit.add_capacity.v1",
           "scope": "current_on_chain_structural_liquidity",
           "status": "verified",
-          "verified_at": "2026-07-20T02:21:26.113Z",
+          "verified_at": "2026-07-20T02:31:26.265Z",
           "weekly_earned_adds": null,
           "weekly_earned_adds_status": "awaiting_realized_profit_and_yield_ledger"
         },
@@ -4420,14 +4530,14 @@
         "queued_count_latest": 0,
         "ready": 0,
         "ready_intents": [],
-        "report_generated_at": "2026-07-20T02:21:21.587Z",
+        "report_generated_at": "2026-07-20T02:31:21.372Z",
         "status": "Funded",
         "wallet": "H85v...PqdS",
         "wallet_full": "H85vnK9iX9DJAFXiwcDh9NQdDLgrekhwvyzZnaR6PqdS"
       },
       {
         "account_profile": {
-          "checked_at": "2026-07-20T02:21:27.775Z",
+          "checked_at": "2026-07-20T02:31:27.934Z",
           "managed_position_count": 0,
           "observed_unmanaged_count": 1,
           "scan_errors": [],
@@ -4459,21 +4569,21 @@
             "configured_full_position_commitment_sol": 0.012,
             "default_new_position_profile": "small",
             "default_new_position_profile_version": 1,
-            "deployable_sol": 0.307730355,
+            "deployable_sol": 0.3076733,
             "extra_uncommitted_add_equivalents": 153,
             "full_position_commitment_sol": 0.012,
             "funded_ladder_add_equivalents": 0,
             "liquidity_safe_add_equivalents": 153,
             "max_positions": 7,
             "minimum_add_size_sol": 0.002,
-            "minimum_add_size_usd": 0.1535,
+            "minimum_add_size_usd": 0.153,
             "open_positions": 0,
             "outstanding_ladder_commitment_sol": 0,
             "position_commitments": [],
-            "protected_reserve_sol": 0.018870145,
+            "protected_reserve_sol": 0.0189272,
             "supported_positions": 7,
             "uncommitted_add_equivalents": 153,
-            "uncommitted_structural_sol": 0.307730355
+            "uncommitted_structural_sol": 0.3076733
           },
           "note": "Capacity is funded structural room, not permission to trade. A fresh, authenticated PIT add card is still required.",
           "projected_yield_counted": false,
@@ -4481,7 +4591,7 @@
           "schema": "trinity.pit.add_capacity.v1",
           "scope": "current_on_chain_structural_liquidity",
           "status": "verified",
-          "verified_at": "2026-07-20T02:21:28.357Z",
+          "verified_at": "2026-07-20T02:31:28.495Z",
           "weekly_earned_adds": null,
           "weekly_earned_adds_status": "awaiting_realized_profit_and_yield_ledger"
         },
@@ -4489,17 +4599,17 @@
         "capital_capacity": {
           "additional_positions_supported": 7,
           "committed_ladder_add_equivalents": 0,
-          "deployable_sol": 0.307730355,
+          "deployable_sol": 0.3076733,
           "full_position_commitment_sol": 0.012,
           "liquidity_safe_add_equivalents": 153,
           "max_positions": 7,
           "minimum_add_size_sol": 0.002,
           "open_positions": 0,
           "outstanding_ladder_commitment_sol": 0,
-          "protected_reserve_sol": 0.018870145,
+          "protected_reserve_sol": 0.0189272,
           "supported_positions": 7,
           "uncommitted_add_equivalents": 153,
-          "uncommitted_structural_sol": 0.307730355
+          "uncommitted_structural_sol": 0.3076733
         },
         "custody": "public-address manual-sign holder sleeve",
         "held_action": "convert_sol_to_usdc_reserve",
@@ -4507,8 +4617,8 @@
         "held_symbol": "USDC",
         "id": "pit-avjl-zybf-sleeve",
         "latest_action": "convert_sol_to_usdc_reserve",
-        "latest_intent_created_at": "2026-07-20T02:21:28.358Z",
-        "latest_intent_expires_at": "2026-07-20T02:41:28.358Z",
+        "latest_intent_created_at": "2026-07-20T02:31:28.497Z",
+        "latest_intent_expires_at": "2026-07-20T02:51:28.497Z",
         "latest_intent_reasons": [],
         "latest_intent_status": "ready_for_user_signature",
         "latest_symbol": "USDC",
@@ -4527,20 +4637,20 @@
           {
             "action_type": "convert_sol_to_usdc_reserve",
             "amount_raw": "",
-            "amount_sol": 0.01342543,
+            "amount_sol": 0.013466023,
             "amount_usd": 1.01,
             "basis_detail": "USDC reserve is below the 33.3% target; refill the target deficit if it clears the $0.12 non-exit minimum.",
             "basis_signal": "Reserve triangle below target",
             "basis_usd": "",
             "card_cadence_minutes": 10,
             "card_tone": "",
-            "created_at": "2026-07-20T02:21:28.358Z",
+            "created_at": "2026-07-20T02:31:28.497Z",
             "entry_lane": "",
             "expected": {},
-            "expires_at": "2026-07-20T02:41:28.358Z",
+            "expires_at": "2026-07-20T02:51:28.497Z",
             "gold_card": true,
             "green_exit_buffer_pct": "",
-            "id": "pit_f_BwowCwWXHvFY1y78UPcWm4ZViPqqc6",
+            "id": "pit_kfe0cLSRdBNvYloj3vhJrcsvRAZXRT6r",
             "known_token_identity": false,
             "lane": "reserve",
             "market_cap_gate": "",
@@ -4569,14 +4679,14 @@
             "wallet_value_usd": 28.96
           }
         ],
-        "report_generated_at": "2026-07-20T02:21:21.587Z",
+        "report_generated_at": "2026-07-20T02:31:21.372Z",
         "status": "Ready signature",
         "wallet": "AvJL...Zybf",
         "wallet_full": "AvJLQtsVfGdVdsWoiMiScVGaJ7bTFKVHQ7BPZAPZybf"
       },
       {
         "account_profile": {
-          "checked_at": "2026-07-20T02:21:30.023Z",
+          "checked_at": "2026-07-20T02:31:30.165Z",
           "managed_position_count": 1,
           "observed_unmanaged_count": 5,
           "scan_errors": [],
@@ -4668,7 +4778,7 @@
           "schema": "trinity.pit.add_capacity.v1",
           "scope": "current_on_chain_structural_liquidity",
           "status": "verified",
-          "verified_at": "2026-07-20T02:21:30.023Z",
+          "verified_at": "2026-07-20T02:31:30.738Z",
           "weekly_earned_adds": null,
           "weekly_earned_adds_status": "awaiting_realized_profit_and_yield_ledger"
         },
@@ -4689,9 +4799,9 @@
           "uncommitted_structural_sol": 0.175505141
         },
         "custody": "public-address manual-sign holder sleeve",
-        "held_action": "convert_sol_to_usdc_reserve",
-        "held_reason": "higher-priority PIT order already waiting",
-        "held_symbol": "",
+        "held_action": "green_exit_position",
+        "held_reason": "management PIT order already waiting",
+        "held_symbol": "PUMP",
         "id": "pit-5fr5-rban-sleeve",
         "latest_action": "green_exit_position",
         "latest_intent_created_at": "2026-07-20T02:21:30.024Z",
@@ -4708,7 +4818,7 @@
           "status": "verified_active_sleeve"
         },
         "positions": 1,
-        "queued_count_latest": 1,
+        "queued_count_latest": 0,
         "ready": 1,
         "ready_intents": [
           {
@@ -4765,14 +4875,14 @@
             "wallet_value_usd": ""
           }
         ],
-        "report_generated_at": "2026-07-20T02:21:21.587Z",
+        "report_generated_at": "2026-07-20T02:31:21.372Z",
         "status": "Ready signature",
         "wallet": "5Fr5...RBan",
         "wallet_full": "5Fr5Q2oWVtH3CJ49JH3ud3wDbUFg5169DE6GuXfNRBan"
       },
       {
         "account_profile": {
-          "checked_at": "2026-07-20T02:21:31.690Z",
+          "checked_at": "2026-07-20T02:31:32.413Z",
           "managed_position_count": 1,
           "observed_unmanaged_count": 1,
           "scan_errors": [],
@@ -4840,7 +4950,7 @@
           "schema": "trinity.pit.add_capacity.v1",
           "scope": "current_on_chain_structural_liquidity",
           "status": "verified",
-          "verified_at": "2026-07-20T02:21:31.690Z",
+          "verified_at": "2026-07-20T02:31:32.943Z",
           "weekly_earned_adds": null,
           "weekly_earned_adds_status": "awaiting_realized_profit_and_yield_ledger"
         },
@@ -4861,9 +4971,9 @@
           "uncommitted_structural_sol": 0.037857168
         },
         "custody": "public-address manual-sign holder sleeve",
-        "held_action": "",
-        "held_reason": "current highest-priority PIT order remains active",
-        "held_symbol": "",
+        "held_action": "green_exit_position",
+        "held_reason": "management PIT order already waiting",
+        "held_symbol": "PUMP",
         "id": "pit-dfbb-qrnw-sleeve",
         "latest_action": "green_exit_position",
         "latest_intent_created_at": "2026-07-20T02:21:31.691Z",
@@ -4880,7 +4990,7 @@
           "status": "verified_active_sleeve"
         },
         "positions": 1,
-        "queued_count_latest": 1,
+        "queued_count_latest": 0,
         "ready": 1,
         "ready_intents": [
           {
@@ -4937,14 +5047,14 @@
             "wallet_value_usd": ""
           }
         ],
-        "report_generated_at": "2026-07-20T02:21:21.587Z",
+        "report_generated_at": "2026-07-20T02:31:21.372Z",
         "status": "Ready signature",
         "wallet": "DfBb...QrNW",
         "wallet_full": "DfBb6XizbtquMMBb33mjoxfuREJ1KvbtdH7byFTiQrNW"
       },
       {
         "account_profile": {
-          "checked_at": "2026-07-20T02:21:33.365Z",
+          "checked_at": "2026-07-20T02:31:34.600Z",
           "managed_position_count": 2,
           "observed_unmanaged_count": 1,
           "scan_errors": [],
@@ -5025,7 +5135,7 @@
           "schema": "trinity.pit.add_capacity.v1",
           "scope": "current_on_chain_structural_liquidity",
           "status": "verified",
-          "verified_at": "2026-07-20T02:21:33.366Z",
+          "verified_at": "2026-07-20T02:31:34.600Z",
           "weekly_earned_adds": null,
           "weekly_earned_adds_status": "awaiting_realized_profit_and_yield_ledger"
         },
@@ -5071,14 +5181,14 @@
         "queued_count_latest": 0,
         "ready": 0,
         "ready_intents": [],
-        "report_generated_at": "2026-07-20T02:21:21.587Z",
+        "report_generated_at": "2026-07-20T02:31:21.372Z",
         "status": "Active position",
         "wallet": "F4Hz...8xZE",
         "wallet_full": "F4HzFiCPR5oTNxgiLd4Tw54Rq1vJEhEBCWHNzXeY8xZE"
       },
       {
         "account_profile": {
-          "checked_at": "2026-07-20T02:21:35.110Z",
+          "checked_at": "2026-07-20T02:31:36.273Z",
           "managed_position_count": 3,
           "observed_unmanaged_count": 5,
           "scan_errors": [],
@@ -5189,7 +5299,7 @@
           "schema": "trinity.pit.add_capacity.v1",
           "scope": "current_on_chain_structural_liquidity",
           "status": "verified",
-          "verified_at": "2026-07-20T02:21:35.110Z",
+          "verified_at": "2026-07-20T02:31:36.934Z",
           "weekly_earned_adds": null,
           "weekly_earned_adds_status": "awaiting_realized_profit_and_yield_ledger"
         },
@@ -5211,7 +5321,7 @@
         },
         "custody": "public-address manual-sign holder sleeve",
         "held_action": "",
-        "held_reason": "",
+        "held_reason": "current highest-priority PIT order remains active",
         "held_symbol": "",
         "id": "pit-5gvj-z8ut-sleeve",
         "latest_action": "buy_approved_spot_token",
@@ -5229,7 +5339,7 @@
           "status": "verified_active_sleeve"
         },
         "positions": 3,
-        "queued_count_latest": 1,
+        "queued_count_latest": 0,
         "ready": 1,
         "ready_intents": [
           {
@@ -5288,14 +5398,14 @@
             "wallet_value_usd": 17.51
           }
         ],
-        "report_generated_at": "2026-07-20T02:21:21.587Z",
+        "report_generated_at": "2026-07-20T02:31:21.372Z",
         "status": "Ready signature",
         "wallet": "5GvJ...Z8ut",
         "wallet_full": "5GvJdZdEfGsqZBW3G6cebuUYLxhyBGazuF3pu7i7Z8ut"
       },
       {
         "account_profile": {
-          "checked_at": "2026-07-20T02:21:36.859Z",
+          "checked_at": "2026-07-20T02:31:38.691Z",
           "managed_position_count": 0,
           "observed_unmanaged_count": 6,
           "scan_errors": [],
@@ -5379,7 +5489,7 @@
           "schema": "trinity.pit.add_capacity.v1",
           "scope": "current_on_chain_structural_liquidity",
           "status": "verified",
-          "verified_at": "2026-07-20T02:21:36.859Z",
+          "verified_at": "2026-07-20T02:31:39.256Z",
           "weekly_earned_adds": null,
           "weekly_earned_adds_status": "awaiting_realized_profit_and_yield_ledger"
         },
@@ -5401,7 +5511,7 @@
         },
         "custody": "public-address manual-sign holder sleeve",
         "held_action": "",
-        "held_reason": "",
+        "held_reason": "current highest-priority PIT order remains active",
         "held_symbol": "",
         "id": "pit-6kts-try6-sleeve",
         "latest_action": "buy_approved_spot_token",
@@ -5419,7 +5529,7 @@
           "status": "verified_active_sleeve"
         },
         "positions": 0,
-        "queued_count_latest": 1,
+        "queued_count_latest": 0,
         "ready": 1,
         "ready_intents": [
           {
@@ -5478,7 +5588,7 @@
             "wallet_value_usd": 2
           }
         ],
-        "report_generated_at": "2026-07-20T02:21:21.587Z",
+        "report_generated_at": "2026-07-20T02:31:21.372Z",
         "status": "Ready signature",
         "wallet": "6KTs...TRy6",
         "wallet_full": "6KTsAmnL5RvQewAYxGtQiHudCxiiu9RpZgiA4YsiTRy6"
@@ -5581,13 +5691,13 @@
   },
   "x_public": {
     "drafts": {
-      "daily": "Trinity Daily Ledger\nChecks 1 | actions 1 | holds 0\nTargets protected 226/226 | blocks 324\nAgent Zero cards 5 | X points 8\nObserved: $265.47 | custody: 100% user\nSystem GREEN | unresolved tx 0\nNo live targets.",
-      "hourly": "Trinity Noon Check-In\nSystem GREEN | Market: Defensive watch\nPIT wallets: 9 | X points: 8\nSolSpot: WAIT | qualified: 0/20\nObserved: $265.47 | custody: 100% user\nNews: South Korea probed 40 cases of crypto manipulation over 2 years (Cointelegraph)\nNo live targets.",
+      "daily": "Trinity Daily Ledger\nChecks 1 | actions 1 | holds 0\nTargets protected 227/227 | blocks 325\nAgent Zero cards 5 | X points 8\nObserved: $262.44 | custody: 100% user\nSystem GREEN | unresolved tx 0\nNo live targets.",
+      "hourly": "Trinity Noon Check-In\nSystem GREEN | Market: Defensive watch\nPIT wallets: 9 | X points: 8\nSolSpot: WAIT | qualified: 0/20\nObserved: $262.44 | custody: 100% user\nNews: Allbridge Core pauses cross-chain bridge after $1.65M exploit (Cointelegraph)\nNo live targets.",
       "master": "Trinity Trade Updates\n\nTrinity is the trading engine. The Wheelhouse tracks strategy status, P/L posture, trade activity, SolSpot radar, learning rules, and HedgAI holder signals.\n\nNo live targets. No account access.\n\ntrinitytrading.xyz"
     },
-    "generated_at": "2026-07-20T02:15:39+00:00",
+    "generated_at": "2026-07-20T02:27:50+00:00",
     "handle": "@TrinityTradeAI",
-    "latest_text": "Trinity Noon Check-In\nSystem GREEN | Market: Defensive watch\nPIT wallets: 9 | X points: 8\nSolSpot: WAIT | qualified: 0/20\nObserved: $265.47 | custody: 100% user\nNews: South Korea probed 40 cases of crypto manipulation over 2 years (Cointelegraph)\nNo live targets.",
+    "latest_text": "Trinity Noon Check-In\nSystem GREEN | Market: Defensive watch\nPIT wallets: 9 | X points: 8\nSolSpot: WAIT | qualified: 0/20\nObserved: $262.44 | custody: 100% user\nNews: Allbridge Core pauses cross-chain bridge after $1.65M exploit (Cointelegraph)\nNo live targets.",
     "plan": [
       {
         "purpose": "Anchor the day with P/L, book state, and market stance.",
