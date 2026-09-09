@@ -1,19 +1,9 @@
 {
   "agent_zero": {
     "auto_card": {
-      "allowed_actions": [
-        "convert_sol_to_usdc_reserve",
-        "buy_approved_spot_token",
-        "average_down_inside_caps",
-        "green_exit_position"
-      ],
+      "allowed_actions": [],
       "boundary": "Auto-card trading is limited to Agent Zero wallet funds and supported cards that pass every hard gate.",
-      "executable_now": [
-        "convert_sol_to_usdc_reserve",
-        "buy_approved_spot_token",
-        "average_down_inside_caps",
-        "green_exit_position"
-      ],
+      "executable_now": [],
       "scheduler": {
         "interval_minutes": 10,
         "overlap_policy": "One cycle at a time",
@@ -21,13 +11,13 @@
         "task_name": "Trinity Agent Zero 10min"
       },
       "scope": "agent_zero_wallet_only",
-      "status": "operator_authorized",
+      "status": "not_authorized",
       "system": "HedgAI + TrinityTrading.xyz Ping-In card system"
     },
     "balances": {
-      "HEDGAI": "4598.753264",
-      "SOL": 1.354444552,
-      "USDC": "13.411016"
+      "HEDGAI": null,
+      "SOL": null,
+      "USDC": null
     },
     "deployment": {
       "boundary": "Agent Zero publishes a read-only operating summary. The Trinity Drive and wallet authority remain private.",
@@ -37,87 +27,91 @@
       ],
       "latest_update": "2026-08-11T15:03:56+00:00",
       "pit_execution_state": "Paused",
-      "public_view": "Reporting only",
-      "site_data_state": "Ready",
+      "public_view": "Preparing",
+      "site_data_state": "Preparing",
       "site_url": "https://trinitytrading.xyz",
       "status": "Protected",
       "title": "Protected Public Connection"
     },
-    "eligibility": "eligible_holder_verified",
+    "eligibility": "pending",
     "execution": {
-      "blocked_or_failed": 21,
+      "blocked_or_failed": 0,
       "cap_policy": "protective_reserve_rebalance",
-      "executed_cards": 17,
-      "guarded_checks": 694,
-      "hard_failures": 21,
-      "latest_action": "convert_sol_to_usdc_reserve",
-      "latest_guard_reason": "No ready Agent Zero supported card found.",
-      "latest_received_usdc_est": "1.010000",
-      "latest_signature": "4x37Rn9TEFxRyNeDS47fRR89Lj4G96B5XNCdMd7Zbrzdr32dxM51bfG6M7HtC8d8V3fGKCYcXHvuLuJtVAu26vc9",
-      "latest_solscan": "https://solscan.io/tx/4x37Rn9TEFxRyNeDS47fRR89Lj4G96B5XNCdMd7Zbrzdr32dxM51bfG6M7HtC8d8V3fGKCYcXHvuLuJtVAu26vc9",
-      "latest_spent_sol": "0.013239862",
-      "preflight_cards": 19
+      "executed_cards": 0,
+      "guarded_checks": 0,
+      "hard_failures": 0,
+      "latest_action": "pending",
+      "latest_guard_reason": "",
+      "latest_received_usdc_est": "",
+      "latest_signature": "",
+      "latest_solscan": "",
+      "latest_spent_sol": "",
+      "preflight_cards": 0
     },
-    "last_refreshed": "2026-08-12T01:35:39.503Z",
+    "last_refreshed": "pending",
     "performance": {
-      "accounting_observed_at": "2026-08-12T01:35:39+00:00",
+      "accounting_observed_at": null,
       "accounting_ready": false,
       "band": "Accounting pending",
-      "baseline_usd": "$5.17",
+      "baseline_usd": "Pending",
       "basis": "verified_trinity_swaps_fifo_usdc_v1",
       "book": "Agent Zero",
-      "cash_flow_accounting_ready": true,
-      "cash_flow_adjusted_wallet_change_pct": 195.6,
-      "cash_flow_adjusted_wallet_change_usd": "+77.24 USD",
-      "cash_flow_basis": "Cash-flow-adjusted wallet change; not verified trading profit",
-      "contributed_capital_usd": "$39.49",
+      "cash_flow_accounting_ready": false,
+      "cash_flow_adjusted_wallet_change_pct": null,
+      "cash_flow_adjusted_wallet_change_usd": "Pending",
+      "cash_flow_basis": "Pending canonical cash-flow reconciliation",
+      "contributed_capital_usd": "Pending",
       "currency": "USD",
       "drag_pct": null,
       "drag_usd": "Pending",
       "evidence_digest": null,
       "external_flows_excluded": true,
-      "external_net_flows_sol": "0.450000000",
+      "external_net_flows_sol": "0",
       "external_net_flows_usdc": "0",
-      "fully_reconciled": true,
+      "fully_reconciled": false,
       "incoming_assets_classification": "deposit_not_profit",
-      "liquid_equity_usd": "$116.73",
+      "liquid_equity_usd": "Pending",
       "net_pct": null,
       "net_usd": "Pending",
       "open_profit_usd": "Pending",
       "open_profit_usd_exact": null,
-      "portfolio_below_drawdown_stop": false,
+      "portfolio_below_drawdown_stop": null,
       "profit_contract_errors": [
-        "profit_accounting_fields_missing",
-        "book_unverified",
-        "status_unverified",
-        "accounting_not_ready",
-        "profit_values_incomplete",
-        "return_base_invalid"
+        "profit_accounting_contract_missing"
       ],
       "realized_profit_usd": "Pending",
       "realized_profit_usd_exact": null,
-      "reconciliation_errors": [],
+      "reconciliation_errors": [
+        "canonical_portfolio_truth_missing",
+        "canonical_portfolio_truth_not_fully_reconciled",
+        "canonical_portfolio_truth_has_unresolved_transactions",
+        "canonical_portfolio_truth_integrity_unhealthy",
+        "portfolio_accounting_fields_missing",
+        "portfolio_accounting_basis_unverified",
+        "cash_flow_accounting_not_reconciled",
+        "capital_flow_row_count_mismatch"
+      ],
       "return_base_usd_exact": null,
       "return_pct_exact": null,
       "schema": "trinity.verified_profit_accounting",
       "schema_version": "1.0.0",
-      "sol_only_drawdown_is_not_equity_drawdown": false,
+      "sol_only_drawdown_is_not_equity_drawdown": null,
       "status": "pending",
-      "unresolved_transaction_count": 0,
+      "unresolved_transaction_count": null,
       "verified_trade_count": 0,
       "verified_trading_profit_usd": "Pending",
       "verified_trading_profit_usd_exact": null
     },
     "performance_row": {
       "accounting_ready": false,
-      "band": "Wallet performance verified \u00b7 trading P/L pending",
+      "band": "Accounting pending",
       "basis": "verified_trinity_swaps_fifo_usdc_v1",
       "chart_net_ready": false,
       "closed_pct": null,
       "closed_value": "Pending",
-      "component_kind": "cash_flow_adjusted_wallet_change_not_trading_profit",
-      "component_label": "Cash-flow-adjusted wallet change +77.24 USD; trading P/L pending",
-      "component_value_usd": "77.236843710955168",
+      "component_kind": null,
+      "component_label": null,
+      "component_value_usd": null,
       "name": "Agent Zero",
       "net_label": "Verified net",
       "net_pct": null,
@@ -126,29 +120,29 @@
       "open_value": "Pending",
       "pnl_scope": "wallet_component",
       "total_pct": null,
-      "wallet_change_value": "+77.24 USD"
+      "wallet_change_value": "Pending"
     },
     "pricing": {
-      "SOL_USDC": 76.281484,
-      "quote_status": "ok"
+      "SOL_USDC": null,
+      "quote_status": "pending"
     },
     "role": "Trinity Investor display modal agent",
     "safety": "Public report only. It does not expose private keys, seed phrases, balances outside Agent Zero, active targets, or order instructions.",
-    "status": "active_guarded",
+    "status": "armed_guarded",
     "summary": "Agent Zero is a tiny public test wallet and voice budget, reported separately from the main Trinity books.",
     "title": "Trinity Agent Zero",
-    "wallet": "AvJLQtsVfGdVdsWoiMiScVGaJ7bTFKVHQ7BPZAPZybf",
-    "wallet_short": "AvJL...Zybf",
+    "wallet": "",
+    "wallet_short": "Pending",
     "x": {
       "definition": "Live public X posts made by Agent Zero.",
-      "dry_runs": 5,
+      "dry_runs": 0,
       "follower_target": 500,
       "handle": "@TrinityTradeAI",
-      "latest_post_url": null,
-      "points": 69,
+      "latest_post_url": "",
+      "points": 0,
       "voice_capital": "$5.00",
-      "voice_remaining_est": "$3.96",
-      "voice_spent_est": "$1.04"
+      "voice_remaining_est": "$5.00",
+      "voice_spent_est": "$0.00"
     }
   },
   "amazon_book": {
@@ -163,7 +157,7 @@
     "status": "Available now",
     "subtitle": "A Unified Theory of Long, Short, and Neutral Capital",
     "title": "Book",
-    "verified_at": "2026-09-09T10:02:31"
+    "verified_at": "2026-09-09T10:03:39"
   },
   "build_version": "public-wheelhouse-v2.0.0",
   "delayed_fills": {
@@ -270,9 +264,9 @@
     ],
     "note": "Delayed historical tape. Symbols, events, and rounded price zones."
   },
-  "generated_at": "2026-09-09T14:02:29Z",
+  "generated_at": "2026-09-09T14:03:36Z",
   "heartbeat": {
-    "age_minutes": 35,
+    "age_minutes": 36,
     "interval_minutes": 60,
     "last_run_at": "2026-09-09T13:27:01Z",
     "reason": "heartbeat_fresh",
@@ -1191,29 +1185,34 @@
       "unresolved_transaction_count": 0
     },
     {
-      "accounting_ready": false,
-      "band": "Accounting pending",
+      "accounting_ready": true,
+      "band": "Active proof",
       "basis": "verified_trinity_solana_swap_receipts_sol_mtm_v1",
-      "chart_net_ready": false,
-      "closed_pct": null,
-      "closed_value": "Pending",
+      "chart_net_ready": true,
+      "closed_pct": -2.2,
+      "closed_value": "-0.23 USD",
       "name": "SolSpot",
-      "net_pct": null,
-      "net_value": "Pending",
-      "open_pct": null,
-      "open_value": "Pending",
-      "total_pct": null
+      "net_label": "Verified net",
+      "net_pct": -40.9,
+      "net_usd": "-4.268813990004110978385242773",
+      "net_value": "-4.27 USD",
+      "open_pct": -38.7,
+      "open_usd": "-4.037239540544110978385242773",
+      "open_value": "-4.04 USD",
+      "pnl_scope": "verified_trinity",
+      "realized_usd": "-0.23157444946",
+      "total_pct": -40.9
     },
     {
       "accounting_ready": false,
-      "band": "Wallet performance verified \u00b7 trading P/L pending",
+      "band": "Accounting pending",
       "basis": "verified_trinity_swaps_fifo_usdc_v1",
       "chart_net_ready": false,
       "closed_pct": null,
       "closed_value": "Pending",
-      "component_kind": "cash_flow_adjusted_wallet_change_not_trading_profit",
-      "component_label": "Cash-flow-adjusted wallet change +77.24 USD; trading P/L pending",
-      "component_value_usd": "77.236843710955168",
+      "component_kind": null,
+      "component_label": null,
+      "component_value_usd": null,
       "name": "Agent Zero",
       "net_label": "Verified net",
       "net_pct": null,
@@ -1222,23 +1221,24 @@
       "open_value": "Pending",
       "pnl_scope": "wallet_component",
       "total_pct": null,
-      "wallet_change_value": "+77.24 USD"
+      "wallet_change_value": "Pending"
     }
   ],
   "performance_summary": {
-    "accounting_status": "pending",
-    "combined_net": "Pending",
-    "combined_net_usd": null,
-    "combined_open": "Pending",
-    "combined_open_usd": null,
-    "combined_realized": "Pending",
-    "combined_realized_usd": null,
+    "accounting_status": "partial",
+    "combined_net": "-4.27 USD",
+    "combined_net_usd": "-4.268813990004110978385242773",
+    "combined_open": "-4.04 USD",
+    "combined_open_usd": "-4.037239540544110978385242773",
+    "combined_realized": "-0.23 USD",
+    "combined_realized_usd": "-0.23157444946",
     "excluded_books": [
       "Phemex",
-      "ApeX",
+      "ApeX"
+    ],
+    "included_books": [
       "SolSpot"
     ],
-    "included_books": [],
     "rows": [
       {
         "accounting_ready": false,
@@ -1313,40 +1313,34 @@
         "verified_trade_count": 0
       },
       {
-        "accounting_ready": false,
+        "accounting_ready": true,
         "basis": "verified_trinity_solana_swap_receipts_sol_mtm_v1",
         "book": "SolSpot",
         "currency": "USD",
-        "evidence_digest": null,
+        "evidence_digest": "5db179805247f968acaafa2a8ca90799b53ec1baf3071853be0efb2e024b49f9",
         "external_flows_excluded": true,
-        "fully_reconciled": false,
+        "fully_reconciled": true,
         "incoming_assets_classification": "deposit_not_profit",
         "name": "SolSpot",
-        "net": "Pending",
-        "net_usd": null,
-        "note": "Long-only spot proof wallet. Excluded from combined totals until verified execution accounting is ready. Evidence so far: 30 exact Trinity executions; 1 unresolved.",
-        "observed_at": null,
-        "open": "Pending",
-        "open_usd": null,
-        "pending_evidence": {
-          "reason_codes": [
-            "open_position_mark_missing"
-          ],
-          "unresolved_transaction_count": 1,
-          "verified_trade_count": 30
-        },
-        "projection_digest": null,
+        "net": "-4.27 USD",
+        "net_usd": "-4.268813990004110978385242773",
+        "note": "Long-only spot proof wallet. verified_trinity_solana_swap_receipts_sol_mtm_v1.",
+        "observed_at": "2026-09-09T13:51:03Z",
+        "open": "-4.04 USD",
+        "open_usd": "-4.037239540544110978385242773",
+        "pending_evidence": null,
+        "projection_digest": "2a8e6e57f0c64b5b7308d0c60e390b262da2886e73592a4e1821980d540f7dd4",
         "projection_schema": "trinity.public.profit_proof_projection.v1",
-        "realized": "Pending",
-        "realized_usd": null,
-        "return_base_usd": null,
-        "return_pct": null,
+        "realized": "-0.23 USD",
+        "realized_usd": "-0.23157444946",
+        "return_base_usd": "10.44045575668",
+        "return_pct": "-0.4088723796633919436164254218",
         "schema": "trinity.verified_profit_accounting",
         "schema_version": "1.0.0",
-        "status": "pending",
-        "unresolved_transaction_count": 1,
+        "status": "verified",
+        "unresolved_transaction_count": 0,
         "verified_closed_window": null,
-        "verified_trade_count": 0
+        "verified_trade_count": 30
       },
       {
         "accounting_ready": false,
@@ -1355,7 +1349,7 @@
         "currency": "USD",
         "evidence_digest": null,
         "external_flows_excluded": true,
-        "fully_reconciled": true,
+        "fully_reconciled": false,
         "incoming_assets_classification": "deposit_not_profit",
         "name": "Agent Zero",
         "net": "Pending",
@@ -1373,7 +1367,7 @@
         "schema": "trinity.verified_profit_accounting",
         "schema_version": "1.0.0",
         "status": "pending",
-        "unresolved_transaction_count": 0,
+        "unresolved_transaction_count": null,
         "verified_trade_count": 0,
         "wallet_change": "Pending"
       }
@@ -1538,13 +1532,13 @@
         "accounting_ready": false,
         "basis": "verified_trinity_swaps_fifo_usdc_v1",
         "book": "Agent Zero",
-        "cash_flow_accounting_ready": true,
+        "cash_flow_accounting_ready": false,
         "cash_flow_wallet_change_reported_separately": true,
         "combined_totals_included": false,
         "currency": "USD",
         "evidence_digest": null,
         "external_flows_excluded": true,
-        "fully_reconciled": true,
+        "fully_reconciled": false,
         "incoming_assets_classification": "deposit_not_profit",
         "net_usd": null,
         "observed_at": null,
@@ -1557,7 +1551,7 @@
         "schema": "trinity.verified_profit_accounting",
         "schema_version": "1.0.0",
         "status": "pending",
-        "unresolved_transaction_count": 0,
+        "unresolved_transaction_count": null,
         "verified_trade_count": 0
       },
       "apex": {
@@ -1625,46 +1619,41 @@
         "verified_trade_count": 0
       },
       "solspot": {
-        "accounting_ready": false,
+        "accounting_ready": true,
         "basis": "verified_trinity_solana_swap_receipts_sol_mtm_v1",
         "book": "SolSpot",
-        "combined_totals_included": false,
+        "combined_totals_included": true,
         "currency": "USD",
-        "evidence_digest": null,
+        "evidence_digest": "5db179805247f968acaafa2a8ca90799b53ec1baf3071853be0efb2e024b49f9",
         "external_flows_excluded": true,
-        "fully_reconciled": false,
+        "fully_reconciled": true,
         "incoming_assets_classification": "deposit_not_profit",
-        "net_usd": null,
-        "observed_at": null,
-        "open_usd": null,
-        "pending_evidence": {
-          "reason_codes": [
-            "open_position_mark_missing"
-          ],
-          "unresolved_transaction_count": 1,
-          "verified_trade_count": 30
-        },
-        "projection_digest": null,
+        "net_usd": "-4.268813990004110978385242773",
+        "observed_at": "2026-09-09T13:51:03Z",
+        "open_usd": "-4.037239540544110978385242773",
+        "pending_evidence": null,
+        "projection_digest": "2a8e6e57f0c64b5b7308d0c60e390b262da2886e73592a4e1821980d540f7dd4",
         "projection_schema": "trinity.public.profit_proof_projection.v1",
-        "realized_usd": null,
-        "return_base_usd": null,
-        "return_pct": null,
+        "realized_usd": "-0.23157444946",
+        "return_base_usd": "10.44045575668",
+        "return_pct": "-0.4088723796633919436164254218",
         "schema": "trinity.verified_profit_accounting",
         "schema_version": "1.0.0",
-        "status": "pending",
-        "unresolved_transaction_count": 1,
+        "status": "verified",
+        "unresolved_transaction_count": 0,
         "verified_closed_window": null,
-        "verified_trade_count": 0
+        "verified_trade_count": 30
       }
     },
-    "combined_accounting_status": "pending",
+    "combined_accounting_status": "partial",
     "combined_scope": "Verified main strategy books only; Agent Zero remains a separately reported public wallet.",
     "excluded_books": [
       "Phemex",
-      "ApeX",
+      "ApeX"
+    ],
+    "included_books": [
       "SolSpot"
     ],
-    "included_books": [],
     "incoming_asset_policy": "Incoming USDC, SOL, tokens, airdrops, and transfers are deposits or external flows, never trades or profit.",
     "missing_evidence_policy": "Publish Pending/null and exclude that wallet or book from combined totals.",
     "mode": "fail_closed",
@@ -1682,29 +1671,6 @@
   },
   "pulse_history": {
     "items": [
-      {
-        "actions": 0,
-        "activity": 42,
-        "adds": 0,
-        "checks": 54,
-        "combined_net": "Pending",
-        "holds": 54,
-        "included_books": [],
-        "open_drag": "Pending",
-        "pageviews": null,
-        "pauses": 0,
-        "performance_pressure": 50,
-        "profit_accounting_schema": "1.0.0",
-        "profit_accounting_status": "pending",
-        "repairs": 0,
-        "solspot_actions": 1,
-        "survival_floor": 90,
-        "target_cleanliness": 96,
-        "target_stretches": 0,
-        "time": "2026-09-08T20:32:07Z",
-        "trinity": 74,
-        "visitors": null
-      },
       {
         "actions": 0,
         "activity": 42,
@@ -3889,6 +3855,31 @@
         "time": "2026-09-09T14:02:29Z",
         "trinity": 76,
         "visitors": null
+      },
+      {
+        "actions": 35,
+        "activity": 84,
+        "adds": 0,
+        "checks": 63,
+        "combined_net": "-4.27 USD",
+        "holds": 28,
+        "included_books": [
+          "SolSpot"
+        ],
+        "open_drag": "-4.04 USD",
+        "pageviews": null,
+        "pauses": 35,
+        "performance_pressure": 50,
+        "profit_accounting_schema": "1.0.0",
+        "profit_accounting_status": "partial",
+        "repairs": 0,
+        "solspot_actions": 2,
+        "survival_floor": 90,
+        "target_cleanliness": 77,
+        "target_stretches": 16,
+        "time": "2026-09-09T14:03:36Z",
+        "trinity": 76,
+        "visitors": null
       }
     ]
   },
@@ -3957,7 +3948,7 @@
     ],
     "daily_limit_sol": 1,
     "daily_spent_sol": "0.004063",
-    "generated_at": "2026-09-09T13:53:01.744Z",
+    "generated_at": "2026-09-09T14:03:01.776Z",
     "hard_memory": [
       {
         "policy": "No fresh discovery buy unless the token clears hard floors for 24h volume, current-hour volume, baseline hourly volume, liquidity, transaction count, route quality, and relative volume.",
@@ -3965,9 +3956,9 @@
       }
     ],
     "latest_execution": {
-      "action": "",
-      "attempted": false,
-      "reason": "",
+      "action": "Manage workout HNT",
+      "attempted": true,
+      "reason": "Top-100 Capital Rotation token is being managed toward green exit or controlled average-down.",
       "signature": "",
       "solscan": ""
     },
@@ -3975,46 +3966,58 @@
     "max_swap_sol": 0.25,
     "mode": "auto_live",
     "performance": {
-      "accounting_ready": false,
+      "accounting_ready": true,
       "actions_today": 4,
       "actions_total": 30,
-      "net_sol": null,
-      "net_usd": null,
+      "net_sol": "-0.04108183995769522643042289263",
+      "net_usd": "-4.268813990004110978385242773",
       "note": "Verified reconciled Trinity swap receipts only. Open P/L is mark-to-market; incoming SOL, USDC, tokens, airdrops, and transfers are excluded.",
-      "open_basis_sol": null,
-      "open_est_sol": null,
-      "open_est_usd": null,
-      "realized_sol": null,
-      "realized_usd": null,
-      "sol_usd_price": null
+      "open_basis_sol": "0.080080242",
+      "open_est_sol": "-0.03885323395769522643042289263",
+      "open_est_usd": "-4.037239540544110978385242773",
+      "realized_sol": "-0.002228606",
+      "realized_usd": "-0.23157444946",
+      "sol_usd_price": "103.91"
     },
     "profit_accounting": {
-      "accounting_ready": false,
+      "accounting_ready": true,
       "basis": "verified_trinity_solana_swap_receipts_sol_mtm_v1",
       "book": "SolSpot",
       "currency": "USD",
-      "evidence_digest": null,
+      "evidence_digest": "5db179805247f968acaafa2a8ca90799b53ec1baf3071853be0efb2e024b49f9",
       "external_flows_excluded": true,
-      "fully_reconciled": false,
+      "external_inventory_rows_excluded": 0,
+      "fully_reconciled": true,
       "incoming_assets_classification": "deposit_not_profit",
-      "net_profit_usd": null,
+      "mark_observed_at": "2026-09-09T13:51:03.477000Z",
+      "mark_source": "coingecko solana-ecosystem market-cap rank",
+      "mark_source_status": "fresh",
+      "net_profit_sol_mark_to_market": "-0.04108183995769522643042289263",
+      "net_profit_usd": "-4.268813990004110978385242773",
+      "open_cost_basis_sol": "0.080080242",
+      "open_cost_basis_usd_at_mark": "8.32113794622",
+      "open_mark_value_usd": "4.283898405675889021614757227",
+      "open_position_count": 15,
       "open_profit_classification": "mark_to_market",
-      "open_profit_usd": null,
-      "realized_profit_usd": null,
-      "reason_codes": [
-        "open_position_mark_missing"
-      ],
-      "return_pct": null,
+      "open_profit_sol_mark_to_market": "-0.03885323395769522643042289263",
+      "open_profit_usd": "-4.037239540544110978385242773",
+      "realized_profit_sol": "-0.002228606",
+      "realized_profit_usd": "-0.23157444946",
+      "return_pct": "-0.4088723796633919436164254218",
       "schema": "trinity.verified_profit_accounting",
       "schema_version": "1.0.0",
-      "status": "pending",
-      "unresolved_transaction_count": 1,
+      "sol_usd_mark": "103.91",
+      "status": "verified",
+      "unresolved_transaction_count": 0,
       "valuation_method": "actual_swap_deltas_mark_to_market_usd_v1",
+      "verified_buy_count": 26,
+      "verified_cost_basis_usd_at_mark": "10.44045575668",
+      "verified_sell_count": 4,
       "verified_trade_count": 30
     },
     "recommendation": {
       "action": "Hold",
-      "reason": "Token-account scan was incomplete; holding to avoid duplicate reserve, add, or exit actions."
+      "reason": "HNT workout held. Trinity will not add capital because current top-100 identity and sustained-volume evidence are not both verified."
     },
     "rotation": {
       "candidates": [
@@ -4443,7 +4446,7 @@
         "daily_spent_sol": "0.004063",
         "label": "Main SolSpot",
         "mode": "auto_live",
-        "reason": "Token-account scan was incomplete; holding to avoid duplicate reserve, add, or exit actions.",
+        "reason": "HNT workout held. Trinity will not add capital because current top-100 identity and sustained-volume evidence are not both verified.",
         "recommendation": "Hold",
         "wallet": "2Lv7...UzA2",
         "workout_count": 8
@@ -4489,14 +4492,14 @@
       "count": 8,
       "rule": "Workout tokens can average down or green-exit only when capital capacity, reserve floor, and symbol caps allow it.",
       "symbols": [
-        "HNT",
         "WBTC",
         "ZCAT",
         "STONK",
         "STRCx",
         "ANTFUN",
         "PYTH",
-        "ZEC"
+        "ZEC",
+        "HNT"
       ]
     }
   },
