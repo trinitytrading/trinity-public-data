@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ship in a Bottle</title>
+  <link rel="stylesheet" href="./bottle.css">
+</head>
+<body>
+  <main>
+    <p class="eyebrow">Rescue</p>
+    <h1>Ship in a Bottle</h1>
+    <p>This page does not ask trinitytrading.xyz for anything. It reads your onion from Solana and, if you sign, closes it. Every lamport comes back to your wallet. The sun is not paid.</p>
+    <p>Save this folder while the site is up, or take the public copy from <a href="https://github.com/trinitytrading/trinity-public-data/tree/main/onion-ship-in-a-bottle">GitHub</a>. If the site is later down, double-click <code>start-bottle</code> and open <code>http://127.0.0.1:8789/</code>. A wallet extension will not attach to a file opened from the disk.</p>
+    <p id="status">Connect a wallet. Nothing will be signed until an onion is found.</p>
+    <button id="connect" type="button">Connect wallet</button>
+    <button id="unlock" type="button" disabled>No onion</button>
+  </main>
+  <script src="./solana-web3-1.98.4.iife.min.js"></script>
+  <script type="module" src="./bottle.mjs"></script>
+</body>
+</html>
