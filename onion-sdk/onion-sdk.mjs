@@ -236,7 +236,7 @@ export async function houseCrank(web3, input) {
   const floor = buy ? raw * 1000n / mark * 99n / 100n : raw * mark / 1000n * 99n / 100n;
   const inputMint = buy ? PROGRAMS.usdc : PROGRAMS.jup;
   const outputMint = buy ? PROGRAMS.jup : PROGRAMS.usdc;
-  const quoted = await fetch(`https://lite-api.jup.ag/swap/v1/quote?inputMint=${inputMint}&outputMint=${outputMint}&amount=${amount}&slippageBps=50`);
+  const quoted = await fetch(`https://lite-api.jup.ag/swap/v1/quote?inputMint=${inputMint}&outputMint=${outputMint}&amount=${amount}&slippageBps=50&asLegacyTransaction=true`);
   const quote = await quoted.json();
   if (!quoted.ok || BigInt(quote?.outAmount || "0") < floor) throw new Error("The Jupiter price is outside the house band. Nothing to sign.");
   const built = await fetch("https://lite-api.jup.ag/swap/v1/swap", {
