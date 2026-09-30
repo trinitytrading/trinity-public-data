@@ -26,3 +26,5 @@ const signed = await wallet.signTransaction(tx);
 ```
 
 `houseCrank` takes only the sailor. `delegatedCrank` takes the sailor and the vessel the API listed. Passing an amount, a mark, or a destination throws, and nothing is signed.
+
+A bug bounty is separate. Screenshot the problem, post it on X with @TrinityTradeAI and the bug. The first accepted report for a wallet pays 0.00001 SOL, two network fees. One wallet, once. The sun does not pay it.
